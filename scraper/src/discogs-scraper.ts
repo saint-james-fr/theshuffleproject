@@ -3,14 +3,13 @@ import { CSVWriter } from "./csv-writer";
 import { deduplicateVideos } from "./utils";
 import * as path from "path";
 import * as fs from "fs";
-import { DiscogsApiAnswer, DiscogsApiArtist, DiscogsApiRelease, DiscogsVideo } from "./disconnect";
+import { DiscogsVideo } from "./disconnect";
 import Discogs from "disconnect";
 
 const DiscogsClient = Discogs.Client;
 const DiscogsDatabase = new DiscogsClient().database();
 
 export class DiscogsScraper {
-  private readonly baseUrl = "https://www.discogs.com";
   private collectedVideos: VideoData[] = [];
   private db = DiscogsDatabase;
 
@@ -37,15 +36,19 @@ export class DiscogsScraper {
         }
       }
 
-      console.log(releasesIds.length);
+      console.log(releasesIds.length, "releasesIds length");
 
       // Visit each release
       const videos: DiscogsVideo[] = [];
 
-      for (const releaseId of releasesIds) {
-        const release = (await this.db.getRelease(releaseId)) as DiscogsApiRelease;
+      for (const id of releasesIds) {
+        console.log(`🔍 Getting release ${id}`);
+        const release = await this.db.getRelease(id);
         videos.push(...release.videos);
+        console.log(`pushed ${release.videos.length} videos`);
       }
+
+      console.log(videos.length, "videos length");
 
       // Push the videos
       /* 
@@ -64,8 +67,6 @@ export class DiscogsScraper {
         videoId: video.uri.split("v=")[1],
         channel: "Discogs",
       }));
-
-      console.log(videosData);
 
       //
 
