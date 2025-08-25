@@ -1,61 +1,45 @@
 <template>
   <div class="video-controls">
     <div class="main-controls">
-      <button
-        @click="onPrevious"
-        class="control-button"
-        title="Previous track"
-      >
-        ‹ PREV
-      </button>
-      
+      <button @click="onPrevious" class="control-button" title="Previous track">‹ PREV</button>
+
       <div class="video-counter">
-        {{ String(currentIndex + 1).padStart(3, '0') }} / {{ String(totalVideos).padStart(3, '0') }}
+        {{ String(currentIndex + 1).padStart(3, "0") }} / {{ String(totalVideos).padStart(3, "0") }}
       </div>
-      
-      <button
-        @click="onNext"
-        class="control-button"
-        title="Next track"
-      >
-        NEXT ›
-      </button>
+
+      <button @click="onNext" class="control-button" title="Next track">NEXT ›</button>
     </div>
-    
-    <button
-      @click="onShuffle"
-      class="shuffle-button"
-      title="Reshuffle playlist"
-    >
-      SHUFFLE
-    </button>
+
+    <button @click="onShuffle" class="shuffle-button" title="Reshuffle playlist">SHUFFLE</button>
   </div>
 </template>
 
 <script setup lang="ts">
 type Props = {
-  currentIndex: number
-  totalVideos: number
-  hasNext: boolean
-  hasPrevious: boolean
-}
+  currentIndex: number;
+  totalVideos: number;
+  hasNext: boolean;
+  hasPrevious: boolean;
+};
 
 type Emits = {
-  next: []
-  previous: []
-  shuffle: []
-}
+  next: [];
+  previous: [];
+  shuffle: [];
+};
 
-defineProps<Props>()
-const emit = defineEmits<Emits>()
+defineProps<Props>();
+const emit = defineEmits<Emits>();
 
-const onNext = () => emit('next')
-const onPrevious = () => emit('previous')
-const onShuffle = () => emit('shuffle')
+const onNext = () => emit("next");
+const onPrevious = () => emit("previous");
+const onShuffle = () => emit("shuffle");
 </script>
 
 <style scoped>
 .video-controls {
+  margin: 0 auto;
+  max-width: 400px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
@@ -132,22 +116,22 @@ const onShuffle = () => emit('shuffle')
     padding: 16px;
     gap: 12px;
   }
-  
+
   .main-controls {
     gap: 16px;
   }
-  
+
   .control-button {
     padding: 10px 16px;
     font-size: 0.7rem;
     min-width: 60px;
   }
-  
+
   .video-counter {
     font-size: 0.8rem;
     min-width: 100px;
   }
-  
+
   .shuffle-button {
     font-size: 0.65rem;
     padding: 6px 12px;

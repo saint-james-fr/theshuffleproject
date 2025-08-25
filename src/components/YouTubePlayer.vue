@@ -2,7 +2,7 @@
   <div class="youtube-player">
     <div class="video-container">
       <iframe
-        :src="`https://www.youtube.com/embed/${videoId}?autoplay=0&rel=0`"
+        :src="`https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`"
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -18,11 +18,11 @@
 
 <script setup lang="ts">
 type Props = {
-  videoId: string
-  title: string
-}
+  videoId: string;
+  title: string;
+};
 
-defineProps<Props>()
+defineProps<Props>();
 </script>
 
 <style scoped>
@@ -73,7 +73,7 @@ defineProps<Props>()
   .video-title {
     font-size: 0.8rem;
   }
-  
+
   .video-info {
     padding: 16px;
   }
