@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import YouTubePlayer from './components/YouTubePlayer.vue'
-import VideoControls from './components/VideoControls.vue'
-import { useVideoPlayer } from './composables/useVideoPlayer'
+import YouTubePlayer from "./components/YouTubePlayer.vue";
+import VideoControls from "./components/VideoControls.vue";
+import { useVideoPlayer } from "./composables/useVideoPlayer";
 
 const {
   currentVideo,
@@ -11,24 +11,20 @@ const {
   hasPrevious,
   nextVideo,
   previousVideo,
-  shuffleToRandomStart
-} = useVideoPlayer()
+  shuffleToRandomStart,
+} = useVideoPlayer();
 </script>
 
 <template>
   <div class="app">
     <header class="app-header">
-      <h1 class="app-title">Larry Heard Shuffle</h1>
-      <p class="app-subtitle">{{ totalVideos }} tracks • shuffled order</p>
+      <h1 class="app-title">The Shuffle Project: Larry Heard</h1>
+      <p class="app-subtitle">{{ totalVideos }} tracks • scraped from Youtube & Discogs</p>
     </header>
 
     <main class="app-main">
-      <YouTubePlayer
-        v-if="currentVideo"
-        :video-id="currentVideo.videoId"
-        :title="currentVideo.title"
-      />
-      
+      <YouTubePlayer v-if="currentVideo" :video-id="currentVideo.videoId" :title="currentVideo.title" />
+
       <VideoControls
         :current-index="currentIndex"
         :total-videos="totalVideos"
@@ -48,7 +44,7 @@ const {
   width: 100vw;
   background: #000;
   color: white;
-  font-family: 'SF Mono', 'Monaco', 'Cascadia Code', 'Roboto Mono', 'Consolas', 'Courier New', monospace;
+  font-family: "SF Mono", "Monaco", "Cascadia Code", "Roboto Mono", "Consolas", "Courier New", monospace;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -89,11 +85,11 @@ const {
   .app-title {
     font-size: 1.5rem;
   }
-  
+
   .app-subtitle {
     font-size: 0.75rem;
   }
-  
+
   .app-header {
     padding: 16px;
   }
