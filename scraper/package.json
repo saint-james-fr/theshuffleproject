@@ -4,11 +4,11 @@
   "description": "YouTube scraper for Larry Heard videos",
   "main": "dist/index.js",
   "scripts": {
-    "scrape": "ts-node src/ultimate-scraper.ts && ts-node src/convert-to-vue.ts",
-    "add-playlist": "ts-node src/add-playlist.ts",
-    "add-video": "ts-node src/add-video.ts",
-    "add-discogs": "ts-node src/discogs-scraper.ts",
-    "update-vue": "ts-node src/convert-to-vue.ts",
+    "scrape": "npx tsx src/ultimate-scraper.ts && npx tsx src/convert-to-vue.ts",
+    "add-playlist": "npx tsx src/add-playlist.ts",
+    "add-video": "npx tsx src/add-video.ts",
+    "add-discogs": "npx tsx src/discogs-scraper.ts",
+    "update-vue": "npx tsx src/convert-to-vue.ts",
     "build": "tsc"
   },
   "keywords": [
@@ -24,6 +24,7 @@
     "cheerio": "^1.1.2",
     "csv-parser": "^3.2.0",
     "csv-writer": "^1.6.0",
+    "disconnect": "^1.2.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.2"
   }

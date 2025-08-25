@@ -175,6 +175,13 @@ diff@^4.0.1:
   resolved "https://registry.yarnpkg.com/diff/-/diff-4.0.2.tgz#60f3aecb89d5fae520c11aa19efc2bb982aade7d"
   integrity sha512-58lmxKSA4BNyLz+HHMUzlOEpg09FV+ev6ZMe3vJihgdxzgcwZ8VoEEPmALCZG9LmqfVoNMMKpttIYTVG6uDY7A==
 
+disconnect@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/disconnect/-/disconnect-1.2.2.tgz#449e43c70e2f8bff0f36a0a18826a406bfd8f82a"
+  integrity sha512-0QWtdUdijooW0hUa4V5CYm6eQcWThKBh+1pnFk3C8gJo7zQQz+AX6Hs41df/DMjUeD6SN7UBQzdFwpxZv+Vdbw==
+  dependencies:
+    oauth-1.0a "2.x.x"
+
 dom-serializer@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/dom-serializer/-/dom-serializer-2.0.0.tgz#e41b802e1eedf9f6cae183ce5e622d789d7d8e53"
@@ -373,6 +380,11 @@ nth-check@^2.0.1:
   integrity sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w==
   dependencies:
     boolbase "^1.0.0"
+
+oauth-1.0a@2.x.x:
+  version "2.2.6"
+  resolved "https://registry.yarnpkg.com/oauth-1.0a/-/oauth-1.0a-2.2.6.tgz#eadbccdb3bceea412d24586e6f39b2b412f0e491"
+  integrity sha512-6bkxv3N4Gu5lty4viIcIAnq5GbxECviMBeKR3WX/q87SPQ8E8aursPZUtsXDnxCs787af09WPRBLqYrf/lwoYQ==
 
 parse5-htmlparser2-tree-adapter@^7.1.0:
   version "7.1.0"

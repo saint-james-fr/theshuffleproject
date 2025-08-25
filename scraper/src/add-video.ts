@@ -6,6 +6,7 @@ import * as fs from 'fs'
 import axios from 'axios'
 import * as cheerio from 'cheerio'
 
+
 const addVideoMain = async (videoUrl: string): Promise<void> => {
   console.log('🎵 Adding YouTube Video to Larry Heard Collection')
   console.log('=' .repeat(60))
