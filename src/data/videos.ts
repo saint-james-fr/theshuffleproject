@@ -62,18 +62,6 @@ export const larryHeardVideos: VideoData[] = [
     "channel": "39 Herzios"
   },
   {
-    "url": "https://www.youtube.com/watch?v=VT1N9RWYxgA",
-    "title": "Hush Hush - Fingers Inc (Encause Rework)",
-    "videoId": "VT1N9RWYxgA",
-    "channel": "Bracknell TV"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=wm8YVGUHJUk",
-    "title": "AKA  Anatii - 10 Fingers",
-    "videoId": "wm8YVGUHJUk",
-    "channel": "ANATII"
-  },
-  {
     "url": "https://www.youtube.com/watch?v=YeTkjp-uQKk",
     "title": "Fingers Inc - Mystery of Love (1986 Instrumental Mix) Old School House",
     "videoId": "YeTkjp-uQKk",
@@ -182,12 +170,6 @@ export const larryHeardVideos: VideoData[] = [
     "channel": "Basement Tracks"
   },
   {
-    "url": "https://www.youtube.com/watch?v=eXWCUn1gXSo",
-    "title": "3 Finger Fastest Brazilian  Custom Hud Code  Best 3 Finger Freestyle  Custom Hud Code  In FF",
-    "videoId": "eXWCUn1gXSo",
-    "channel": "Sofi Gamer 1m"
-  },
-  {
     "url": "https://www.youtube.com/watch?v=5tqErnknRsE",
     "title": "Mystery of Love",
     "videoId": "5tqErnknRsE",
@@ -198,12 +180,6 @@ export const larryHeardVideos: VideoData[] = [
     "title": "Mr Fingers is here",
     "videoId": "9VtowVpzrcY",
     "channel": "Mr. fingers"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=sUtOZ57Qqro",
-    "title": "Animal Collective - Mr Fingers",
-    "videoId": "sUtOZ57Qqro",
-    "channel": "richard"
   },
   {
     "url": "https://www.youtube.com/watch?v=kVZDcUxosMw",
@@ -228,12 +204,6 @@ export const larryHeardVideos: VideoData[] = [
     "title": "Closer",
     "videoId": "_O4e2ls346Y",
     "channel": "Mr. Fingers - Topic"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=jyW3hQ1R8Go",
-    "title": "As 2nd Avenue subway advances eminent domain will force dozens to move",
-    "videoId": "jyW3hQ1R8Go",
-    "channel": "CBS New York"
   },
   {
     "url": "https://www.youtube.com/watch?v=mw5yviY04OQ",
@@ -350,24 +320,6 @@ export const larryHeardVideos: VideoData[] = [
     "channel": "Mr. Fingers - Topic"
   },
   {
-    "url": "https://www.youtube.com/watch?v=IfDrBN7wbqw",
-    "title": "Summer Love (Gherkin Jerks Tribute Mix I)",
-    "videoId": "IfDrBN7wbqw",
-    "channel": "basiC realitieS - Topic"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=ebYf3FkYpTI",
-    "title": "basiC realitieS - Summer Love (Gherkin Jerks Tribute Mix I)",
-    "videoId": "ebYf3FkYpTI",
-    "channel": "Felizmente"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=vJlpRoBWDps",
-    "title": "Skrilla - Loose Fingers (Dir MajorMotionn)",
-    "videoId": "vJlpRoBWDps",
-    "channel": "Skrilla"
-  },
-  {
     "url": "https://www.youtube.com/watch?v=nQWYVRK7JDs",
     "title": "Loosefingers - Deep Inside",
     "videoId": "nQWYVRK7JDs",
@@ -420,12 +372,6 @@ export const larryHeardVideos: VideoData[] = [
     "title": "Loosefingers  What Is House (Long Version)",
     "videoId": "nhWGghXzSLA",
     "channel": "In House We Trust"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=UOA9SlazS5w",
-    "title": "Loosefingers - What is House (Brawther Re-Rub)",
-    "videoId": "UOA9SlazS5w",
-    "channel": "Some Underground Stuff"
   },
   {
     "url": "https://www.youtube.com/watch?v=X0L8wX4i6Pk",
@@ -818,12 +764,6 @@ export const larryHeardVideos: VideoData[] = [
     "channel": "XtremEthan"
   },
   {
-    "url": "https://www.youtube.com/watch?v=JU8qWkTkLLE",
-    "title": "Disney Bedtime Sleeping Piano Music Collection 247",
-    "videoId": "JU8qWkTkLLE",
-    "channel": "kno Music"
-  },
-  {
     "url": "https://www.youtube.com/watch?v=J4yMTS7snEM",
     "title": "Larry Heard interview with Charlie Bones July 2019",
     "videoId": "J4yMTS7snEM",
@@ -1034,12 +974,6 @@ export const larryHeardVideos: VideoData[] = [
     "channel": "qwerty2009ful"
   },
   {
-    "url": "https://www.youtube.com/watch?v=OgKr5sVoFes",
-    "title": "1990s  2000s House Music Mix - August 2025 (100 VINYL)",
-    "videoId": "OgKr5sVoFes",
-    "channel": "VinylDJ"
-  },
-  {
     "url": "https://www.youtube.com/watch?v=ZMVxEfuhY6Y",
     "title": "Larry Heard - Midnight Movement",
     "videoId": "ZMVxEfuhY6Y",
@@ -1050,12 +984,6 @@ export const larryHeardVideos: VideoData[] = [
     "title": "Mr Fingers - Closer",
     "videoId": "ESS2oExpNWI",
     "channel": "UNDERGROUND CLASSICS HOUSE"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=DGpN5Sbsah4",
-    "title": "Glenn Scott - Larry Heard [house music  EDM]",
-    "videoId": "DGpN5Sbsah4",
-    "channel": "Feel Fiolette"
   },
   {
     "url": "https://www.youtube.com/watch?v=wowhp5xYT20",
@@ -1128,12 +1056,6 @@ export const larryHeardVideos: VideoData[] = [
     "title": "Larry Heard  Freaky (Chaos)",
     "videoId": "y8FWwe0o0P8",
     "channel": "MyHouse Channel"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=RZ7qtcfN37U",
-    "title": "Acid House party - Sunday Sessions Voll 70 - Acid Breaks",
-    "videoId": "RZ7qtcfN37U",
-    "channel": "dopeNL"
   },
   {
     "url": "https://www.youtube.com/watch?v=U0sqXH6b_hE",
@@ -1520,36 +1442,6 @@ export const larryHeardVideos: VideoData[] = [
     "channel": "Compost Records"
   },
   {
-    "url": "https://www.youtube.com/watch?v=up2AjkLgssM",
-    "title": "Coffee Break Larry Heard Ep 5",
-    "videoId": "up2AjkLgssM",
-    "channel": "TranswesternTV"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=lCPa7ey2dOA",
-    "title": "Coffee Break Larry P Heard Ep 3",
-    "videoId": "lCPa7ey2dOA",
-    "channel": "TranswesternTV"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=54BhIxpIeAQ",
-    "title": "Coffee Break Larry Heard Ep 1",
-    "videoId": "54BhIxpIeAQ",
-    "channel": "TranswesternTV"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=Es3Vsfzdr14",
-    "title": "Sittin On The Dock Of The Bay (Otis Redding)  Playing For Change  Song Around The World",
-    "videoId": "Es3Vsfzdr14",
-    "channel": "Playing For Change"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=VyuXZtSxezE",
-    "title": "BISNOW CRE Legends Panel QA with Larry Heard (part 3)",
-    "videoId": "VyuXZtSxezE",
-    "channel": "TranswesternTV"
-  },
-  {
     "url": "https://www.youtube.com/watch?v=JIUulIpuuHA",
     "title": "Larry Heard Presents Mr White - The Sun Cant Compare (Long Version) - 2006",
     "videoId": "JIUulIpuuHA",
@@ -1572,12 +1464,6 @@ export const larryHeardVideos: VideoData[] = [
     "title": "Family Reunion In Gloryland - Jerry  Larry",
     "videoId": "fUAriACHlT0",
     "channel": "Larry Heard"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=Us-TVg40ExM",
-    "title": "Stand By Me  Playing For Change  Song Around The World",
-    "videoId": "Us-TVg40ExM",
-    "channel": "Playing For Change"
   },
   {
     "url": "https://www.youtube.com/watch?v=YIXh0JNvuHs",
@@ -2513,12 +2399,6 @@ export const larryHeardVideos: VideoData[] = [
     "url": "https://www.youtube.com/watch?v=h_gnP-56z1o",
     "title": "Larry Heard - Tente Imaginar",
     "videoId": "h_gnP-56z1o",
-    "channel": "Unknown"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=zqI4UcXddYQ",
-    "title": "Glenn Underground  A Soft Drink  GVR1228",
-    "videoId": "zqI4UcXddYQ",
     "channel": "Unknown"
   }
 ]

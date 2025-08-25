@@ -108,4 +108,4 @@ The scraper **guarantees no duplicates** by using YouTube video IDs as unique ke
 
 ---
 
-**One command. Complete collection. Perfect for the Larry Heard Generator!** 🎵✨
+**One command. Complete collection. Perfect for the Larry Heard Mix!** 🎵✨

@@ -18,7 +18,7 @@ const {
 <template>
   <div class="app">
     <header class="app-header">
-      <h1 class="app-title">Larry Heard Generator</h1>
+      <h1 class="app-title">Larry Heard Shuffle</h1>
       <p class="app-subtitle">{{ totalVideos }} tracks • shuffled order</p>
     </header>
 
