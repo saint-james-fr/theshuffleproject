@@ -1,0 +1,26 @@
+{
+  "name": "larry-heard-scraper",
+  "version": "1.0.0",
+  "description": "YouTube scraper for Larry Heard videos",
+  "main": "dist/index.js",
+  "scripts": {
+    "scrape": "ts-node src/ultimate-scraper.ts && ts-node src/convert-to-vue.ts",
+    "build": "tsc"
+  },
+  "keywords": [
+    "youtube",
+    "scraper",
+    "larry-heard",
+    "house-music"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^24.3.0",
+    "axios": "^1.11.0",
+    "cheerio": "^1.1.2",
+    "csv-parser": "^3.2.0",
+    "csv-writer": "^1.6.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
