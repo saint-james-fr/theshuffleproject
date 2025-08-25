@@ -644,18 +644,6 @@ export const larryHeardVideos: VideoData[] = [
     "channel": "tevz"
   },
   {
-    "url": "https://www.youtube.com/watch?v=ItAUzgVsJk4",
-    "title": "THE RAM PROJECT - Changes 1996",
-    "videoId": "ItAUzgVsJk4",
-    "channel": "ECLEKTIKMAN"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=8mpzzgg_iXs",
-    "title": "Breath of Ram - Live Session - Music Video",
-    "videoId": "8mpzzgg_iXs",
-    "channel": "The Hanuman Project"
-  },
-  {
     "url": "https://www.youtube.com/watch?v=5l96HB_KMLI",
     "title": "Fingers N Flowers - Between Us (Vocal) [ML2244]",
     "videoId": "5l96HB_KMLI",
@@ -1118,12 +1106,6 @@ export const larryHeardVideos: VideoData[] = [
     "channel": "UNDERGROUND CLASSICS HOUSE"
   },
   {
-    "url": "https://www.youtube.com/watch?v=suoycDsXIC4",
-    "title": "Classic Tech House Mix",
-    "videoId": "suoycDsXIC4",
-    "channel": "Adrian Cline-Bailey"
-  },
-  {
     "url": "https://www.youtube.com/watch?v=EwDqpeM_umM",
     "title": "Larry Heard - One Three Five Seven",
     "videoId": "EwDqpeM_umM",
@@ -1172,22 +1154,10 @@ export const larryHeardVideos: VideoData[] = [
     "channel": "M r . C h a w a k s"
   },
   {
-    "url": "https://www.youtube.com/watch?v=TZTTHMliqDU",
-    "title": "12325244 Eye Talk Larry Heard s Spaceacid mix",
-    "videoId": "TZTTHMliqDU",
-    "channel": "303 strictly acid house"
-  },
-  {
     "url": "https://www.youtube.com/watch?v=FLKZCFL_rn8",
     "title": "Larry Heard - Balance",
     "videoId": "FLKZCFL_rn8",
     "channel": "Techno & House Classics"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=W8eB-q1PftM",
-    "title": "SNDWave  minimal  house",
-    "videoId": "W8eB-q1PftM",
-    "channel": "streako"
   },
   {
     "url": "https://www.youtube.com/watch?v=pUt7T5hh9L0",
@@ -1394,7 +1364,7 @@ export const larryHeardVideos: VideoData[] = [
     "channel": "Rainbow Arts"
   },
   {
-    "url": "https://www.youtube.com/watch?v=gJHNay9vRcA",
+    "url": "https://www.youtube.comcan /watch?v=gJHNay9vRcA",
     "title": "Larry Heard  Another Night (Re-Edit)",
     "videoId": "gJHNay9vRcA",
     "channel": "MyHouse Channel"
@@ -1428,12 +1398,6 @@ export const larryHeardVideos: VideoData[] = [
     "title": "Larry Heard Live Zimmer Mannheim 2932008 cd1",
     "videoId": "iD7lI_53mGw",
     "channel": "Cello & Ciccio"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=DdfSl-du_xc",
-    "title": "This House is a Home Welcoming Back Larry Heard",
-    "videoId": "DdfSl-du_xc",
-    "channel": "Stamp The Wax"
   },
   {
     "url": "https://www.youtube.com/watch?v=KdZr6KjX61g",
@@ -2081,6 +2045,480 @@ export const larryHeardVideos: VideoData[] = [
     "url": "https://www.youtube.com/watch?v=L2TgMP0bqB8",
     "title": "Luminous Energy",
     "videoId": "L2TgMP0bqB8",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=HpEOuARBLyw",
+    "title": "Larry Heard - Night Images (Swayzak Remix)",
+    "videoId": "HpEOuARBLyw",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=NAbLiJAGp_8",
+    "title": "Larry Heard - Feathers Floating",
+    "videoId": "NAbLiJAGp_8",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=p2XxyBViBog",
+    "title": "Can You Feel It",
+    "videoId": "p2XxyBViBog",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=yiGg6I934M0",
+    "title": "Washing Machine",
+    "videoId": "yiGg6I934M0",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=PUqh9nSL0aI",
+    "title": "Beyond the Clouds",
+    "videoId": "PUqh9nSL0aI",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=9FTNrR8P7cI",
+    "title": "Slam Dance",
+    "videoId": "9FTNrR8P7cI",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=wT2Foqa7irc",
+    "title": "Stars",
+    "videoId": "wT2Foqa7irc",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=1ZHEcCcvVS8",
+    "title": "Waterfall",
+    "videoId": "1ZHEcCcvVS8",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=-kKiKgI3jnM",
+    "title": "Lets Dance All Night",
+    "videoId": "-kKiKgI3jnM",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=iHx-pyJX9mw",
+    "title": "Bye Bye",
+    "videoId": "iHx-pyJX9mw",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=D7AXa2O1T-o",
+    "title": "For So Long",
+    "videoId": "D7AXa2O1T-o",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=XxwHwDFWz7I",
+    "title": "Amnesia",
+    "videoId": "XxwHwDFWz7I",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=4L-Kh9DBgNA",
+    "title": "The Juice",
+    "videoId": "4L-Kh9DBgNA",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=0M0D17kbeK4",
+    "title": "Larry Heard - Sweet Wine",
+    "videoId": "0M0D17kbeK4",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=av7pkVDbE30",
+    "title": "Dreaming of Better Days",
+    "videoId": "av7pkVDbE30",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=h1OK2zkMBuk",
+    "title": "In Early May",
+    "videoId": "h1OK2zkMBuk",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=y-ghmjQj1wQ",
+    "title": "Glancing at the Moon (12 Version)",
+    "videoId": "y-ghmjQj1wQ",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=I8fEMf1wL0Q",
+    "title": "Dead End Alley",
+    "videoId": "I8fEMf1wL0Q",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=7aqmspL4Si4",
+    "title": "What About This Love (Extended Version)",
+    "videoId": "7aqmspL4Si4",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=gPoVmdXVqXc",
+    "title": "Mr Fingers - Angel Eyes",
+    "videoId": "gPoVmdXVqXc",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=ggiPcq_mWyk",
+    "title": "Larry Heard aka Mr Fingers - Never Take Your Place",
+    "videoId": "ggiPcq_mWyk",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=-Id6fG2DVg0",
+    "title": "Mr Fingers - Loves Guaranteed",
+    "videoId": "-Id6fG2DVg0",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=m6B-k4t7brs",
+    "title": "Mr Fingers - Mystical People",
+    "videoId": "m6B-k4t7brs",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=crnHLY-Kgdg",
+    "title": "Mr Fingers - Share My Love",
+    "videoId": "crnHLY-Kgdg",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=hqZTd9X1Ymg",
+    "title": "Mr Fingers - Show Me",
+    "videoId": "hqZTd9X1Ymg",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=reRDmkoUbcs",
+    "title": "Mr Fingers - Teasing",
+    "videoId": "reRDmkoUbcs",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=BJGFL4nxvV8",
+    "title": "Mr Fingers - Ive Fallen (Under A Spell)",
+    "videoId": "BJGFL4nxvV8",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=-pQuKnCLTRw",
+    "title": "Mr Fingers - Caress",
+    "videoId": "-pQuKnCLTRw",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=JTZ6v0G1um4",
+    "title": "Larry Heard - Dolphin Dream",
+    "videoId": "JTZ6v0G1um4",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=n9bGT3ZHP4w",
+    "title": "Larry Heard - Snowcaps",
+    "videoId": "n9bGT3ZHP4w",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=VkHypDcSYoI",
+    "title": "Larry Heard - Winter Winds  Chill [Spiral Records]",
+    "videoId": "VkHypDcSYoI",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=UMblndOhcT4",
+    "title": "Larry Heard - One Three Five Seven",
+    "videoId": "UMblndOhcT4",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=kMu48sKkg-A",
+    "title": "Larry Heard - Question Of Time",
+    "videoId": "kMu48sKkg-A",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=UI1j-flUd2I",
+    "title": "Larry Heard - Teleportation",
+    "videoId": "UI1j-flUd2I",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=7eOxSa1ec7k",
+    "title": "Larry Heard - And So I Dance",
+    "videoId": "7eOxSa1ec7k",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=bV_lu22zfhs",
+    "title": "Larry Heard  Psychotic Fantasy (C2)",
+    "videoId": "bV_lu22zfhs",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=UzGx9aOcX-I",
+    "title": "Nookie  Larry Heard - Special Kind of Love",
+    "videoId": "UzGx9aOcX-I",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=IVTnAJ1r9Cc",
+    "title": "Nookie  Larry Heard - Moments in Space",
+    "videoId": "IVTnAJ1r9Cc",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=4z5WBUXVmYs",
+    "title": "Nookie  Larry Heard - Say Musical",
+    "videoId": "4z5WBUXVmYs",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=c26ulXeFzoM",
+    "title": "Nookie feat Larry Heard Paradise (Tease Mix)",
+    "videoId": "c26ulXeFzoM",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=0qIiiv96Hjw",
+    "title": "Larry Heard - Genesis",
+    "videoId": "0qIiiv96Hjw",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=DZ04WG-JX8Q",
+    "title": "Larry Heard - Interlaced Expressions",
+    "videoId": "DZ04WG-JX8Q",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=Ojc0PlEOig8",
+    "title": "Kaleidoscopic Events",
+    "videoId": "Ojc0PlEOig8",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=y-68mINkobs",
+    "title": "Larry Heard - Fantasy",
+    "videoId": "y-68mINkobs",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=luGNvW9DumY",
+    "title": "Larry Heard - Riverside Drive - Track Mode 031",
+    "videoId": "luGNvW9DumY",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=1cmD0KRfgeQ",
+    "title": "Larry Heard - Dew Drops",
+    "videoId": "1cmD0KRfgeQ",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=ORrKh2HbIN4",
+    "title": "Larry Heard - Another Night",
+    "videoId": "ORrKh2HbIN4",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=spPuVN-4-P8",
+    "title": "Larry Heard-When I Think Of You",
+    "videoId": "spPuVN-4-P8",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=6DWNWc8Q1oo",
+    "title": "Larry Heard - To Try",
+    "videoId": "6DWNWc8Q1oo",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=chOJyI5LV-w",
+    "title": "Larry Heard  Loves Arrival Dub (D1)",
+    "videoId": "chOJyI5LV-w",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=W1shabNiK8U",
+    "title": "Missing You (Jazz Cafe Mix)",
+    "videoId": "W1shabNiK8U",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=nS1MspmZFFw",
+    "title": "Larry Heard - Havana",
+    "videoId": "nS1MspmZFFw",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=ayS5euXeKbA",
+    "title": "Larry Heard - Until The Last Goodbye",
+    "videoId": "ayS5euXeKbA",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=0HPajybbKN8",
+    "title": "When I Think of You",
+    "videoId": "0HPajybbKN8",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=hEGFGzLUhko",
+    "title": "To Try",
+    "videoId": "hEGFGzLUhko",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=FbnyFXhJdXU",
+    "title": "Missing You (Jazz Cafe Mix Edit)",
+    "videoId": "FbnyFXhJdXU",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=WZQ2O4F55NU",
+    "title": "Virtual Emotion (Main)",
+    "videoId": "WZQ2O4F55NU",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=xngVhsqg93E",
+    "title": "Virtual Emotion (Dub)",
+    "videoId": "xngVhsqg93E",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=wMZRLY4a2c4",
+    "title": "Supernova (Main)",
+    "videoId": "wMZRLY4a2c4",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=ezOuwuNzFMo",
+    "title": "Supernova (Dub)",
+    "videoId": "ezOuwuNzFMo",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=1CKenI4srLE",
+    "title": "Mr Fingers - What About This Love",
+    "videoId": "1CKenI4srLE",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=IcPyD5ix1Dc",
+    "title": "MR FINGERS - Full Moon",
+    "videoId": "IcPyD5ix1Dc",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=uw9iOVdCe4k",
+    "title": "MR FINGERS - Closer (Frankie Foncett Dude Mix)",
+    "videoId": "uw9iOVdCe4k",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=F7haWOBL7tM",
+    "title": "MR FINGERS - Crying Over You",
+    "videoId": "F7haWOBL7tM",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=kOvEtlUh0gk",
+    "title": "Larry Heard - The Dance Of Planet X",
+    "videoId": "kOvEtlUh0gk",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=GbQaKeCOtG8",
+    "title": "Larry Heard - I know its you",
+    "videoId": "GbQaKeCOtG8",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=dGpE0_fyqWg",
+    "title": "Part 2 of 2 Larry Heard (MRFINGERS) interview 10th March 1992",
+    "videoId": "dGpE0_fyqWg",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=RgkIjFS7XIY",
+    "title": "Larry Heard - Black Oceans",
+    "videoId": "RgkIjFS7XIY",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=os1Pznk4zJU",
+    "title": "mr FINGERS On My Way 1992 Album version Introduction",
+    "videoId": "os1Pznk4zJU",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=xj-MPJ5glYc",
+    "title": "Mr Fingers - Stars (1992 Version)",
+    "videoId": "xj-MPJ5glYc",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=7VqAP4fCJOg",
+    "title": "Mr Fingers - Beyond The Clouds",
+    "videoId": "7VqAP4fCJOg",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=3wjAgE6CrpY",
+    "title": "Larry Heard - Burning 4 Love",
+    "videoId": "3wjAgE6CrpY",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=Nz-Q0YXJFRc",
+    "title": "Mr Fingers (Larry Heard) - Summertime Breeze",
+    "videoId": "Nz-Q0YXJFRc",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=hI84i2n0bOc",
+    "title": "Larry Heard aka Mr Fingers  Full Moon",
+    "videoId": "hI84i2n0bOc",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=vl5NNr821Ig",
+    "title": "Larry Heard - Crystal Fantasy",
+    "videoId": "vl5NNr821Ig",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=zKmcFBYwAyw",
+    "title": "Larry Heard - Solitude",
+    "videoId": "zKmcFBYwAyw",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=risSmWzQakc",
+    "title": "Larry Heard - Ice Castles",
+    "videoId": "risSmWzQakc",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=h_gnP-56z1o",
+    "title": "Larry Heard - Tente Imaginar",
+    "videoId": "h_gnP-56z1o",
+    "channel": "Unknown"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=zqI4UcXddYQ",
+    "title": "Glenn Underground  A Soft Drink  GVR1228",
+    "videoId": "zqI4UcXddYQ",
     "channel": "Unknown"
   }
 ]

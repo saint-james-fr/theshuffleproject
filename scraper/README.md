@@ -1,12 +1,30 @@
-# Larry Heard Ultimate Collection Scraper 🎵
+# Larry Heard Collection Manager 🎵
 
-## 🚀 Single Command - Complete Collection
+## 🚀 Commands
 
+### **Complete Collection Scraper**
 ```bash
 yarn scrape
 ```
+Scrapes the entire Larry Heard universe and updates the Vue app.
 
-That's it! This single command does **everything**:
+### **Add Individual Playlist**
+```bash
+yarn add-playlist "https://www.youtube.com/playlist?list=PLAYLIST_ID"
+```
+Adds all videos from a specific playlist to your collection.
+
+### **Add Single Video**
+```bash
+yarn add-video "https://www.youtube.com/watch?v=VIDEO_ID"
+```
+Adds a single video to your collection.
+
+### **Update Vue App**
+```bash
+yarn update-vue
+```
+Converts the current collection to Vue format (run after adding content).
 
 ## ✨ What It Does
 
@@ -48,11 +66,33 @@ The ultimate scraper will give you **the most complete Larry Heard collection po
 # Build TypeScript (if needed)
 yarn build
 
-# Run ultimate scraper only (no Vue update)
+# Run scripts directly
 ts-node src/ultimate-scraper.ts
-
-# Convert existing data to Vue format
+ts-node src/add-playlist.ts "PLAYLIST_URL"
+ts-node src/add-video.ts "VIDEO_URL"
 ts-node src/convert-to-vue.ts
+```
+
+## 📋 Examples
+
+### Add a Larry Heard playlist:
+```bash
+yarn add-playlist "https://www.youtube.com/playlist?list=PLsfO53doee0fzd6hDScc13_DNiCXbKHl8"
+```
+
+### Add a single track:
+```bash
+yarn add-video "https://www.youtube.com/watch?v=NKD0MBgXmYY"
+```
+
+### Full workflow:
+```bash
+# Add some content
+yarn add-playlist "https://www.youtube.com/playlist?list=YOUR_PLAYLIST"
+yarn add-video "https://www.youtube.com/watch?v=YOUR_VIDEO"
+
+# Update the Vue app
+yarn update-vue
 ```
 
 ## 📁 Output
