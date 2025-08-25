@@ -8,6 +8,7 @@
     "add-playlist": "npx tsx src/add-playlist.ts",
     "add-video": "npx tsx src/add-video.ts",
     "add-discogs": "npx tsx src/discogs-scraper.ts",
+    "add-discogs-puppeteer": "npx tsx src/discogs-puppeteer-scraper.ts",
     "update-vue": "npx tsx src/convert-to-vue.ts",
     "build": "tsc"
   },
@@ -20,11 +21,13 @@
   "license": "MIT",
   "dependencies": {
     "@types/node": "^24.3.0",
+    "@types/puppeteer": "^7.0.4",
     "axios": "^1.11.0",
     "cheerio": "^1.1.2",
     "csv-parser": "^3.2.0",
     "csv-writer": "^1.6.0",
     "disconnect": "^1.2.2",
+    "puppeteer": "^24.17.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.2"
   }

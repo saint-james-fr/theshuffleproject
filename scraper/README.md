@@ -22,7 +22,7 @@ Adds a single video to your collection.
 
 ### **Add from Discogs Artist**
 ```bash
-yarn add-discogs "https://www.discogs.com/artist/1234-Artist-Name"
+yarn add-discogs-puppeteer "https://www.discogs.com/artist/148-Larry-Heard"
 ```
 Scrapes YouTube links from Discogs artist page, including aliases and groups.
 
