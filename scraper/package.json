@@ -7,6 +7,7 @@
     "scrape": "ts-node src/ultimate-scraper.ts && ts-node src/convert-to-vue.ts",
     "add-playlist": "ts-node src/add-playlist.ts",
     "add-video": "ts-node src/add-video.ts",
+    "add-discogs": "ts-node src/discogs-scraper.ts",
     "update-vue": "ts-node src/convert-to-vue.ts",
     "build": "tsc"
   },

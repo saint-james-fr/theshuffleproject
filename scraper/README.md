@@ -20,6 +20,12 @@ yarn add-video "https://www.youtube.com/watch?v=VIDEO_ID"
 ```
 Adds a single video to your collection.
 
+### **Add from Discogs Artist**
+```bash
+yarn add-discogs "https://www.discogs.com/artist/1234-Artist-Name"
+```
+Scrapes YouTube links from Discogs artist page, including aliases and groups.
+
 ### **Update Vue App**
 ```bash
 yarn update-vue
@@ -85,11 +91,17 @@ yarn add-playlist "https://www.youtube.com/playlist?list=PLsfO53doee0fzd6hDScc13
 yarn add-video "https://www.youtube.com/watch?v=NKD0MBgXmYY"
 ```
 
+### Add from Discogs:
+```bash
+yarn add-discogs "https://www.discogs.com/artist/1234-Larry-Heard"
+```
+
 ### Full workflow:
 ```bash
 # Add some content
 yarn add-playlist "https://www.youtube.com/playlist?list=YOUR_PLAYLIST"
 yarn add-video "https://www.youtube.com/watch?v=YOUR_VIDEO"
+yarn add-discogs "https://www.discogs.com/artist/1234-Artist"
 
 # Update the Vue app
 yarn update-vue
