@@ -7,7 +7,6 @@
     "scrape": "npx tsx src/ultimate-scraper.ts && npx tsx src/convert-to-vue.ts",
     "add-playlist": "npx tsx src/add-playlist.ts",
     "add-video": "npx tsx src/add-video.ts",
-    "add-discogs": "npx tsx src/discogs-scraper.ts",
     "add-discogs-puppeteer": "npx tsx src/discogs-puppeteer-scraper.ts",
     "update-vue": "npx tsx src/convert-to-vue.ts",
     "build": "tsc"
