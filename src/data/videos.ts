@@ -6,7 +6,7 @@ export type VideoData = {
 }
 
 // Auto-generated from scraped YouTube data
-export const larryHeardVideos: VideoData[] = [
+export const videos: VideoData[] = [
   {
     "url": "https://www.youtube.com/watch?v=nexIxpuSMGw",
     "title": "Larry Heard - Mr Fingers Mix (1996)",
@@ -2450,6 +2450,9 @@ export const larryHeardVideos: VideoData[] = [
     "channel": "mr."
   }
 ]
+
+// Backward compatibility alias
+export const larryHeardVideos = videos
 
 // Utility function to extract video ID from YouTube URL
 export const extractVideoId = (url: string): string => {

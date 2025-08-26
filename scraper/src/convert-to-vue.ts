@@ -1,12 +1,20 @@
 import * as fs from 'fs'
 import * as path from 'path'
 import { VideoData } from './types'
+import { ConfigLoader } from './config-loader'
 
 const csv = require('csv-parser')
 
-const convertCsvToVueData = async (inputFile?: string): Promise<void> => {
-  // Priority order: collection (ultimate) > others as fallback
-  const collectionPath = path.join(__dirname, '../data/larry-heard-collection.csv')
+const convertCsvToVueData = async (artistName?: string, inputFile?: string): Promise<void> => {
+  const configArtist = artistName || 'larry-heard'
+  
+  // Load artist configuration
+  const config = ConfigLoader.loadArtistConfig(configArtist)
+  
+  // Use the output file from the artist configuration
+  const collectionPath = config.outputFile
+  
+  // Legacy fallback paths for Larry Heard
   const ultimatePath = path.join(__dirname, '../data/larry-heard-ultimate.csv')
   const comprehensivePath = path.join(__dirname, '../data/larry-heard-comprehensive.csv')
   const masterPath = path.join(__dirname, '../data/larry-heard-master.csv')
@@ -59,7 +67,10 @@ const convertCsvToVueData = async (inputFile?: string): Promise<void> => {
 }
 
 // Auto-generated from scraped YouTube data
-export const larryHeardVideos: VideoData[] = ${JSON.stringify(videos, null, 2)}
+export const videos: VideoData[] = ${JSON.stringify(videos, null, 2)}
+
+// Backward compatibility alias
+export const larryHeardVideos = videos
 
 // Utility function to extract video ID from YouTube URL
 export const extractVideoId = (url: string): string => {
@@ -74,7 +85,7 @@ export const getRandomStartIndex = (length: number): number => {
 `
           
           fs.writeFileSync(outputPath, tsContent)
-          console.log(`✅ Successfully converted ${videos.length} videos to Vue data`)
+          console.log(`✅ Successfully converted ${videos.length} videos to Vue data for ${config.displayName}`)
           console.log(`📁 Input: ${path.basename(csvPath)}`)
           console.log(`📁 Output: ${outputPath}`)
           resolve()
@@ -87,7 +98,9 @@ export const getRandomStartIndex = (length: number): number => {
 }
 
 if (require.main === module) {
-  convertCsvToVueData().catch(console.error)
+  const artistName = process.argv[2]
+  const inputFile = process.argv[3]
+  convertCsvToVueData(artistName, inputFile).catch(console.error)
 }
 
 export { convertCsvToVueData }

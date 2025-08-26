@@ -2,6 +2,7 @@
 import YouTubePlayer from "./components/YouTubePlayer.vue";
 import VideoControls from "./components/VideoControls.vue";
 import { useVideoPlayer } from "./composables/useVideoPlayer";
+import { artistConfig } from "./config/artist";
 
 const {
   currentVideo,
@@ -18,7 +19,7 @@ const {
 <template>
   <div class="app">
     <header class="app-header">
-      <h1 class="app-title">The Shuffle Project: Larry Heard</h1>
+      <h1 class="app-title">The Shuffle Project: {{ artistConfig.displayName }}</h1>
       <p class="app-subtitle">{{ totalVideos }} tracks • scraped from Youtube & Discogs</p>
     </header>
 

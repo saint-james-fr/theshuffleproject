@@ -1,13 +1,12 @@
 import { VideoData } from "./types";
 import { CSVWriter } from "./csv-writer";
 import { deduplicateVideos } from "./utils";
-import * as path from "path";
+import { ConfigLoader } from "./config-loader";
+
 import * as fs from "fs";
 import puppeteer from 'puppeteer';
 
 export class DiscogsPuppeteerScraper {
-  private readonly RETRY_ATTEMPTS = 3;
-  private readonly RETRY_DELAY = 2000; // 2 seconds
 
   async scrapeArtistVideos(artistUrl: string): Promise<VideoData[]> {
     console.log(`🎵 Starting Puppeteer Discogs scrape for: ${artistUrl}`);
@@ -59,11 +58,11 @@ export class DiscogsPuppeteerScraper {
             button.textContent?.includes('Videos') && 
             (button.getAttribute('role') === 'radio' || button.classList.contains('selection_bYgO1'))
           );
-        });
+        }) as any;
 
         if (videosButton) {
           console.log("✅ Found Videos button, clicking...");
-          await videosButton.asElement()?.click();
+          await videosButton.click();
           
           // Wait for the videos section to load
           await this.sleep(3000);
@@ -119,7 +118,7 @@ export class DiscogsPuppeteerScraper {
         videosSection = sections.find(section => 
           section.textContent?.includes('Videos') || 
           section.querySelector('h2')?.textContent?.includes('Videos')
-        );
+        ) || null;
       }
       
       if (!videosSection) {
@@ -160,23 +159,29 @@ export class DiscogsPuppeteerScraper {
           
           // If item is an image, get its parent container
           if (item.tagName === 'IMG') {
-            container = item.closest('button') || item.closest('li') || item.parentElement;
+            container = item.closest('button') || item.closest('li') || item.parentElement || item;
           }
 
           // Extract thumbnail URL to get video ID
           const thumbnail = container.querySelector('img[src*="ytimg.com"], img[src*="youtube.com"]') || 
-                           (item.tagName === 'IMG' ? item : null) as HTMLImageElement;
+                           (item.tagName === 'IMG' ? item : null);
           
-          if (!thumbnail || !thumbnail.src) {
+          if (!thumbnail) {
             console.log(`No YouTube thumbnail found for item ${index}`);
+            return;
+          }
+
+          const thumbnailSrc = (thumbnail as HTMLImageElement).src;
+          if (!thumbnailSrc) {
+            console.log(`No thumbnail src found for item ${index}`);
             return;
           }
 
           // Extract video ID from thumbnail URL
           // YouTube thumbnail URLs: https://i.ytimg.com/vi/VIDEO_ID/default.jpg
-          const thumbnailMatch = thumbnail.src.match(/\/vi\/([a-zA-Z0-9_-]+)\//);
+          const thumbnailMatch = thumbnailSrc.match(/\/vi\/([a-zA-Z0-9_-]+)\//);
           if (!thumbnailMatch) {
-            console.log(`Could not extract video ID from thumbnail: ${thumbnail.src}`);
+            console.log(`Could not extract video ID from thumbnail: ${thumbnailSrc}`);
             return;
           }
 
@@ -202,8 +207,9 @@ export class DiscogsPuppeteerScraper {
           
           // If no title found, try to get it from alt text or nearby text
           if (title === 'Unknown Title') {
-            if (thumbnail.alt) {
-              title = thumbnail.alt;
+            const thumbnailAlt = (thumbnail as HTMLImageElement).alt;
+            if (thumbnailAlt) {
+              title = thumbnailAlt;
             } else {
               // Look for any text content in the container
               const textContent = container.textContent?.trim();
@@ -255,18 +261,26 @@ export class DiscogsPuppeteerScraper {
 }
 
 // Main function to run Puppeteer Discogs scraper
-const discogsPuppeteerScrapingMain = async (artistUrl: string): Promise<void> => {
-  console.log("🎵 Puppeteer Discogs Artist Scraper for Larry Heard Collection");
-  console.log("=".repeat(70));
-  console.log(`🔗 Artist URL: ${artistUrl}`);
-
-  const scraper = new DiscogsPuppeteerScraper();
-  const collectionPath = path.join(__dirname, "../data/larry-heard-collection.csv");
-  const csvWriter = new CSVWriter(collectionPath);
-
-  const allVideos: VideoData[] = [];
-
+const discogsPuppeteerScrapingMain = async (artistName: string, artistUrl?: string, outputFile?: string): Promise<void> => {
   try {
+    // Load artist configuration
+    const config = ConfigLoader.loadArtistConfig(artistName);
+    const url = artistUrl || config.discogsUrl;
+    
+    if (!url) {
+      throw new Error(`No Discogs URL provided and none found in configuration for ${artistName}`);
+    }
+
+    console.log(`🎵 Puppeteer Discogs Scraper - ${config.displayName}`);
+    console.log("=".repeat(70));
+    console.log(`🔗 Artist URL: ${url}`);
+
+    const scraper = new DiscogsPuppeteerScraper();
+    const collectionPath = outputFile || config.outputFile;
+    const csvWriter = new CSVWriter(collectionPath);
+
+    const allVideos: VideoData[] = [];
+
     // Step 1: Load existing collection
     console.log("📚 Loading existing collection...");
     if (fs.existsSync(collectionPath)) {
@@ -276,14 +290,14 @@ const discogsPuppeteerScrapingMain = async (artistUrl: string): Promise<void> =>
     }
 
     // Step 2: Scrape videos from Discogs artist page
-    const discogsVideos = await scraper.scrapeArtistVideos(artistUrl);
+    const discogsVideos = await scraper.scrapeArtistVideos(url);
 
     if (discogsVideos.length === 0) {
-      console.log("❌ No YouTube videos found on Discogs artist page.");
+      console.log(`❌ No YouTube videos found on ${config.displayName}'s Discogs page.`);
       return;
     }
 
-    console.log(`✅ Found ${discogsVideos.length} YouTube videos from Discogs`);
+    console.log(`✅ Found ${discogsVideos.length} YouTube videos from ${config.displayName}'s Discogs`);
     allVideos.push(...discogsVideos);
 
     // Step 3: Deduplication
@@ -293,22 +307,22 @@ const discogsPuppeteerScrapingMain = async (artistUrl: string): Promise<void> =>
     const newVideos = uniqueVideos.length - (initialCount - discogsVideos.length);
     const duplicatesRemoved = discogsVideos.length - newVideos;
 
-    console.log(`📊 Discogs videos: ${discogsVideos.length}`);
+    console.log(`📊 ${config.displayName} Discogs videos: ${discogsVideos.length}`);
     console.log(`📊 New videos added: ${newVideos}`);
     console.log(`🔄 Duplicates skipped: ${duplicatesRemoved}`);
-    console.log(`📊 Total collection size: ${uniqueVideos.length}`);
+    console.log(`📊 Total ${config.displayName} collection size: ${uniqueVideos.length}`);
 
     // Step 4: Save updated collection
     await csvWriter.writeVideos(uniqueVideos);
 
     console.log("\\n" + "✅".repeat(30));
-    console.log("✅ PUPPETEER DISCOGS SCRAPING COMPLETED!");
+    console.log(`✅ ${config.displayName.toUpperCase()} DISCOGS SCRAPING COMPLETED!`);
     console.log("✅".repeat(30));
     console.log(`📁 Updated: ${collectionPath}`);
-    console.log(`🎵 Collection now contains ${uniqueVideos.length} unique videos`);
+    console.log(`🎵 ${config.displayName} collection now contains ${uniqueVideos.length} unique videos`);
 
     if (newVideos > 0) {
-      console.log("\\n🎵 Sample of newly added videos from Discogs:");
+      console.log(`\\n🎵 Sample of newly added ${config.displayName} videos from Discogs:`);
       const newlyAdded = uniqueVideos.slice(-Math.min(newVideos, 8));
       newlyAdded.forEach((video, index) => {
         console.log(`${index + 1}. ${video.title}`);
@@ -319,7 +333,7 @@ const discogsPuppeteerScrapingMain = async (artistUrl: string): Promise<void> =>
       });
     }
 
-    console.log(`\\n🚀 Run 'yarn update-vue' to update the Vue app with new videos!`);
+    console.log(`\\n🚀 Run 'yarn scraper update-vue ${artistName}' to update the Vue app with new videos!`);
   } catch (error) {
     console.error("❌ Failed to scrape Discogs:", error instanceof Error ? error.message : "Unknown error");
     process.exit(1);
@@ -352,24 +366,33 @@ const loadCsvData = async (filePath: string): Promise<VideoData[]> => {
 
 // Run the script
 if (require.main === module) {
-  const artistUrl = process.argv[2];
+  const artistName = process.argv[2];
+  const artistUrl = process.argv[3];
 
-  if (!artistUrl) {
-    console.error("❌ Please provide a Discogs artist URL as an argument");
+  if (!artistName) {
+    console.error("❌ Please provide an artist name as first argument");
     console.log("\\n🔗 Usage:");
-    console.log('   npx tsx src/discogs-puppeteer-scraper.ts "https://www.discogs.com/artist/1234-Artist-Name"');
-    console.log('   yarn add-discogs-puppeteer "https://www.discogs.com/artist/1234-Artist-Name"');
+    console.log('   npx tsx src/discogs-puppeteer-scraper.ts <artist-name> [url]');
+    console.log('   yarn scraper discogs larry-heard "https://www.discogs.com/artist/1234-Larry-Heard"');
+    console.log('');
+    console.log('📋 Available artists:');
+    try {
+      const configs = ConfigLoader.listAvailableConfigs();
+      configs.forEach(config => console.log(`   - ${config}`));
+    } catch {
+      console.log('   (No configurations found)');
+    }
     process.exit(1);
   }
 
-  if (!artistUrl.includes("discogs.com/artist/")) {
+  if (artistUrl && !artistUrl.includes("discogs.com/artist/")) {
     console.error("❌ Invalid Discogs artist URL. Please provide a valid Discogs artist URL.");
     console.log("\\n🔗 Example:");
     console.log("   https://www.discogs.com/artist/1234-Larry-Heard");
     process.exit(1);
   }
 
-  discogsPuppeteerScrapingMain(artistUrl).catch((error) => {
+  discogsPuppeteerScrapingMain(artistName, artistUrl).catch((error) => {
     console.error("❌ Fatal error:", error);
     process.exit(1);
   });

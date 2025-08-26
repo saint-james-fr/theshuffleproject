@@ -1,5 +1,6 @@
 import { CSVWriter } from './csv-writer'
 import { VideoData } from './types'
+import { ConfigLoader } from './config-loader'
 import { deduplicateVideos, extractVideoId, cleanTitle } from './utils'
 import * as path from 'path'
 import * as fs from 'fs'
@@ -7,12 +8,15 @@ import axios from 'axios'
 import * as cheerio from 'cheerio'
 
 
-const addVideoMain = async (videoUrl: string): Promise<void> => {
-  console.log('🎵 Adding YouTube Video to Larry Heard Collection')
+const addVideoMain = async (artistName: string, videoUrl: string): Promise<void> => {
+  const config = ConfigLoader.loadArtistConfig(artistName)
+  
+  console.log(`🎵 Adding YouTube Video to ${config.displayName} Collection`)
   console.log('=' .repeat(60))
+  console.log(`🎨 Artist: ${config.displayName}`)
   console.log(`🔗 Video URL: ${videoUrl}`)
   
-  const collectionPath = path.join(__dirname, '../data/larry-heard-collection.csv')
+  const collectionPath = config.outputFile
   const csvWriter = new CSVWriter(collectionPath)
   
   const allVideos: VideoData[] = []
@@ -77,7 +81,7 @@ const addVideoMain = async (videoUrl: string): Promise<void> => {
       console.log(`   Channel: ${videoData.channel}`)
       console.log(`   Video ID: ${videoData.videoId}`)
       
-      console.log(`\\n🚀 Run 'yarn scrape' to update the Vue app with the new video!`)
+      console.log(`\\n🚀 Run 'yarn scraper scrape ${artistName}' to update the Vue app with the new video!`)
     }
     
   } catch (error) {
@@ -172,13 +176,21 @@ const loadCsvData = async (filePath: string): Promise<VideoData[]> => {
 
 // Run the script
 if (require.main === module) {
-  const videoUrl = process.argv[2]
+  const artistName = process.argv[2]
+  const videoUrl = process.argv[3]
   
-  if (!videoUrl) {
-    console.error('❌ Please provide a YouTube video URL as an argument')
+  if (!artistName || !videoUrl) {
+    console.error('❌ Please provide both artist name and YouTube video URL as arguments')
     console.log('\\n🔗 Usage:')
-    console.log('   ts-node src/add-video.ts "https://www.youtube.com/watch?v=VIDEO_ID"')
-    console.log('   yarn add-video "https://www.youtube.com/watch?v=VIDEO_ID"')
+    console.log('   npx tsx src/add-video.ts <artist-name> "https://www.youtube.com/watch?v=VIDEO_ID"')
+    console.log('   yarn scraper add-video larry-heard "https://www.youtube.com/watch?v=VIDEO_ID"')
+    console.log('\\n📋 Available artists:')
+    const availableConfigs = ConfigLoader.listAvailableConfigs()
+    if (availableConfigs.length > 0) {
+      availableConfigs.forEach(config => console.log(`   - ${config}`))
+    } else {
+      console.log('   No configurations found.')
+    }
     process.exit(1)
   }
   
@@ -190,7 +202,7 @@ if (require.main === module) {
     process.exit(1)
   }
   
-  addVideoMain(videoUrl).catch(error => {
+  addVideoMain(artistName, videoUrl).catch(error => {
     console.error('❌ Fatal error:', error)
     process.exit(1)
   })

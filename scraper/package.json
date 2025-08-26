@@ -1,21 +1,23 @@
 {
-  "name": "larry-heard-scraper",
+  "name": "music-scraper",
   "version": "1.0.0",
-  "description": "YouTube scraper for Larry Heard videos",
+  "description": "Generic YouTube scraper for any music artist",
   "main": "dist/index.js",
   "scripts": {
-    "scrape": "npx tsx src/ultimate-scraper.ts && npx tsx src/convert-to-vue.ts",
-    "add-playlist": "npx tsx src/add-playlist.ts",
-    "add-video": "npx tsx src/add-video.ts",
-    "add-discogs-puppeteer": "npx tsx src/discogs-puppeteer-scraper.ts",
-    "update-vue": "npx tsx src/convert-to-vue.ts",
+    "scraper": "npx tsx src/scraper-runner.ts",
+    "scrape": "npx tsx src/scraper-runner.ts scrape larry-heard && npx tsx src/scraper-runner.ts update-vue larry-heard",
+    "add-playlist": "npx tsx src/scraper-runner.ts add-playlist",
+    "add-video": "npx tsx src/scraper-runner.ts add-video",
+    "add-discogs-puppeteer": "npx tsx src/scraper-runner.ts discogs",
+    "update-vue": "npx tsx src/scraper-runner.ts update-vue",
     "build": "tsc"
   },
   "keywords": [
     "youtube",
     "scraper",
-    "larry-heard",
-    "house-music"
+    "music",
+    "artist",
+    "generic"
   ],
   "license": "MIT",
   "dependencies": {

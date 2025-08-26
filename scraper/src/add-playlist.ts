@@ -1,17 +1,21 @@
 import { YouTubeScraper } from './scraper'
 import { CSVWriter } from './csv-writer'
 import { VideoData } from './types'
+import { ConfigLoader } from './config-loader'
 import { deduplicateVideos } from './utils'
 import * as path from 'path'
 import * as fs from 'fs'
 
-const addPlaylistMain = async (playlistUrl: string): Promise<void> => {
-  console.log('🎵 Adding YouTube Playlist to Larry Heard Collection')
+const addPlaylistMain = async (artistName: string, playlistUrl: string): Promise<void> => {
+  const config = ConfigLoader.loadArtistConfig(artistName)
+  
+  console.log(`🎵 Adding YouTube Playlist to ${config.displayName} Collection`)
   console.log('=' .repeat(60))
+  console.log(`🎨 Artist: ${config.displayName}`)
   console.log(`📋 Playlist URL: ${playlistUrl}`)
   
   const scraper = new YouTubeScraper()
-  const collectionPath = path.join(__dirname, '../data/larry-heard-collection.csv')
+  const collectionPath = config.outputFile
   const csvWriter = new CSVWriter(collectionPath)
   
   const allVideos: VideoData[] = []
@@ -73,7 +77,7 @@ const addPlaylistMain = async (playlistUrl: string): Promise<void> => {
       })
     }
     
-    console.log(`\\n🚀 Run 'yarn scrape' to update the Vue app with new videos!`)
+    console.log(`\\n🚀 Run 'yarn scraper scrape ${artistName}' to update the Vue app with new videos!`)
     
   } catch (error) {
     console.error('❌ Failed to add playlist:', error instanceof Error ? error.message : 'Unknown error')
@@ -106,13 +110,21 @@ const loadCsvData = async (filePath: string): Promise<VideoData[]> => {
 
 // Run the script
 if (require.main === module) {
-  const playlistUrl = process.argv[2]
+  const artistName = process.argv[2]
+  const playlistUrl = process.argv[3]
   
-  if (!playlistUrl) {
-    console.error('❌ Please provide a YouTube playlist URL as an argument')
+  if (!artistName || !playlistUrl) {
+    console.error('❌ Please provide both artist name and YouTube playlist URL as arguments')
     console.log('\\n📋 Usage:')
-    console.log('   ts-node src/add-playlist.ts "https://www.youtube.com/playlist?list=PLAYLIST_ID"')
-    console.log('   yarn add-playlist "https://www.youtube.com/playlist?list=PLAYLIST_ID"')
+    console.log('   npx tsx src/add-playlist.ts <artist-name> "https://www.youtube.com/playlist?list=PLAYLIST_ID"')
+    console.log('   yarn scraper add-playlist larry-heard "https://www.youtube.com/playlist?list=PLAYLIST_ID"')
+    console.log('\\n📋 Available artists:')
+    const availableConfigs = ConfigLoader.listAvailableConfigs()
+    if (availableConfigs.length > 0) {
+      availableConfigs.forEach(config => console.log(`   - ${config}`))
+    } else {
+      console.log('   No configurations found.')
+    }
     process.exit(1)
   }
   
@@ -123,7 +135,7 @@ if (require.main === module) {
     process.exit(1)
   }
   
-  addPlaylistMain(playlistUrl).catch(error => {
+  addPlaylistMain(artistName, playlistUrl).catch(error => {
     console.error('❌ Fatal error:', error)
     process.exit(1)
   })

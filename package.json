@@ -1,6 +1,6 @@
 {
-  "name": "larry-heard",
-  "version": "0.0.0",
+  "name": "shuffle-project",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "engines": {
@@ -11,7 +11,11 @@
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
     "build-only": "vite build",
-    "type-check": "vue-tsc --build"
+    "type-check": "vue-tsc --build",
+    "prepare-assets": "./scripts/prepare-assets.sh",
+    "build-for-artist": "./scripts/build-for-artist.sh",
+    "docker-build": "./scripts/docker-build.sh",
+    "scraper": "cd scraper && yarn scraper"
   },
   "dependencies": {
     "vue": "^3.5.18"

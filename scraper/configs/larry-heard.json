@@ -1,0 +1,75 @@
+{
+  "name": "larry-heard",
+  "displayName": "Larry Heard",
+  "mainIdentities": [
+    "Larry Heard",
+    "Mr. Fingers",
+    "Mr Fingers"
+  ],
+  "aliases": [
+    "2nd Avenew",
+    "Ace \"Smokin\" Amy",
+    "Ace Smokin Amy",
+    "Blakk Society",
+    "Disco-D Larry Heard",
+    "Gherkin Jerks",
+    "Loosefingers",
+    "The Housefactors",
+    "Trio Zero"
+  ],
+  "groups": [
+    "Fingers Inc",
+    "Fingers Inc.",
+    "Nightshift Chicago house",
+    "The It Larry Heard",
+    "The Ram Project",
+    "Fingers N Flowers"
+  ],
+  "maxResults": 35,
+  "maxResultsPerPlaylist": 80,
+  "outputFile": "larry-heard-collection.csv",
+  "enhancedSearchTerms": [
+    "albums",
+    "discography",
+    "complete",
+    "collection",
+    "essential",
+    "best of",
+    "greatest hits",
+    "compilation"
+  ],
+  "playlistSearchTerms": [
+    "playlist",
+    "collection playlist",
+    "mix playlist",
+    "essential playlist"
+  ],
+  "styleSearchTerms": [
+    "house music",
+    "deep house",
+    "Chicago house",
+    "classic house",
+    "acid house",
+    "minimal",
+    "classic",
+    "rare",
+    "vinyl",
+    "unreleased"
+  ],
+  "performanceSearchTerms": [
+    "live",
+    "DJ set",
+    "mix",
+    "radio"
+  ],
+  "collaborationSearchTerms": [
+    "remix",
+    "collaboration",
+    "production",
+    "featuring"
+  ],
+  "knownPlaylists": [
+    "https://www.youtube.com/playlist?list=PLsfO53doee0fzd6hDScc13_DNiCXbKHl8"
+  ],
+  "discogsUrl": "https://www.discogs.com/artist/1234-Larry-Heard"
+}

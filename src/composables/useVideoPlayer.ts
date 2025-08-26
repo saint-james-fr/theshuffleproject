@@ -1,5 +1,5 @@
 import { ref, computed, onMounted } from 'vue'
-import { larryHeardVideos, type VideoData } from '@/data/videos'
+import { videos, type VideoData } from '@/data/videos'
 
 // Shuffle array function
 const shuffleArray = <T>(array: T[]): T[] => {
@@ -45,7 +45,7 @@ export const useVideoPlayer = () => {
   }
   
   const reshuffleAndStart = () => {
-    shuffledVideos.value = shuffleArray(larryHeardVideos)
+    shuffledVideos.value = shuffleArray(videos)
     currentIndex.value = 0
   }
   

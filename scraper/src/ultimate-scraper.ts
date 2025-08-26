@@ -1,117 +1,41 @@
 import { YouTubeScraper } from './scraper'
 import { CSVWriter } from './csv-writer'
-import { VideoData } from './types'
+import { VideoData, ArtistConfig } from './types'
+import { ConfigLoader } from './config-loader'
 import { deduplicateVideos } from './utils'
 import * as path from 'path'
 import * as fs from 'fs'
 
-const ultimateScrapingMain = async (): Promise<void> => {
-  console.log('🎵 ULTIMATE Larry Heard Collection Scraper')
-  console.log('🚀 Everything: All aliases, groups, playlists, and searches')
-  console.log('=' .repeat(80))
-  
-  const scraper = new YouTubeScraper()
-  const csvWriter = new CSVWriter(path.join(__dirname, '../data/larry-heard-collection.csv'))
-  
-  const allVideos: VideoData[] = []
-  
-  // Load existing data from all previous scrapes
-  const existingFiles = [
-    path.join(__dirname, '../data/larry-heard-videos.csv'),
-    path.join(__dirname, '../data/larry-heard-enhanced.csv'),
-    path.join(__dirname, '../data/larry-heard-albums-playlists.csv'),
-    path.join(__dirname, '../data/larry-heard-master.csv'),
-    path.join(__dirname, '../data/larry-heard-comprehensive.csv'),
-    path.join(__dirname, '../data/larry-heard-ultimate.csv')
-  ]
-  
-  // Known high-quality playlists (manually curated)
-  const knownPlaylists = [
-    'https://www.youtube.com/playlist?list=PLsfO53doee0fzd6hDScc13_DNiCXbKHl8',
-    // Add more manually discovered high-quality playlists here
-  ]
-  
-  // Specific playlist search terms (more likely to find playlists)
-  const playlistSearchTerms = [
-    'Larry Heard playlist',
-    'Mr Fingers playlist',
-    'Larry Heard collection playlist',
-    'Larry Heard mix playlist',
-    'deep house Larry Heard playlist',
-    'Chicago house Larry Heard playlist',
-    'Fingers Inc playlist',
-    'Larry Heard essential playlist',
-    'Mr Fingers deep house playlist'
-  ]
-  
-  // Complete list of ALL search terms
-  const ultimateSearchTerms = [
-    // Main identity
-    'Larry Heard',
-    'Mr. Fingers',
-    'Mr Fingers',
-    
-    // Aliases
-    '2nd Avenew',
-    'Ace "Smokin" Amy',
-    'Ace Smokin Amy',
-    'Blakk Society',
-    'Disco-D Larry Heard',
-    'Gherkin Jerks',
-    'Loosefingers',
-    'The Housefactors',
-    'Trio Zero',
-    
-    // Groups
-    'Fingers Inc',
-    'Fingers Inc.',
-    'Nightshift Chicago house',
-    'The It Larry Heard',
-    'The Ram Project',
-    'Fingers N Flowers',
-    
-    // Enhanced searches
-    'Larry Heard albums',
-    'Larry Heard discography',
-    'Larry Heard complete',
-    'Larry Heard collection',
-    'Larry Heard essential',
-    'Larry Heard best of',
-    'Larry Heard greatest hits',
-    'Larry Heard compilation',
-    'Mr Fingers albums',
-    'Mr Fingers discography',
-    'Mr Fingers essential',
-    'Fingers Inc albums',
-    
-    // Style searches
-    'Larry Heard house music',
-    'Larry Heard deep house',
-    'Larry Heard Chicago house',
-    'Larry Heard classic house',
-    'Larry Heard acid house',
-    'Larry Heard minimal',
-    'Larry Heard classic',
-    'Larry Heard rare',
-    'Larry Heard vinyl',
-    'Larry Heard unreleased',
-    
-    // Performance searches
-    'Larry Heard live',
-    'Larry Heard DJ set',
-    'Larry Heard mix',
-    'Larry Heard radio',
-    'Mr Fingers live',
-    'Mr Fingers DJ set',
-    
-    // Collaboration searches
-    'Larry Heard remix',
-    'Larry Heard collaboration',
-    'Larry Heard production',
-    'Larry Heard featuring'
-  ]
+const ultimateScrapingMain = async (artistName?: string): Promise<void> => {
+  // Use provided artist name or default to larry-heard
+  const configArtist = artistName || 'larry-heard'
   
   try {
+    // Load artist configuration
+    const config = ConfigLoader.loadArtistConfig(configArtist)
+    
+    console.log(`🎵 ULTIMATE ${config.displayName} Collection Scraper`)
+    console.log('🚀 Everything: All aliases, groups, playlists, and searches')
+    console.log('=' .repeat(80))
+    console.log(`🎨 Artist: ${config.displayName}`)
+    console.log(`📝 Config: ${configArtist}`)
+    console.log(`📁 Output: ${config.outputFile}`)
+    console.log('=' .repeat(80))
+  
+    const scraper = new YouTubeScraper()
+    const csvWriter = new CSVWriter(config.outputFile)
+    
+    const allVideos: VideoData[] = []
+    
+    // Generate search terms from configuration
+    const ultimateSearchTerms = ConfigLoader.generateSearchTerms(config)
+    const playlistSearchTerms = ConfigLoader.generatePlaylistSearchTerms(config)
+    
+    // Get known playlists from configuration
+    const knownPlaylists = config.knownPlaylists || []
+    
+    // Load existing data from current output file
+    const existingFiles = [config.outputFile]
     // Step 1: Load all existing data
     console.log('📚 Step 1: Loading ALL existing data...')
     for (const filePath of existingFiles) {
@@ -137,7 +61,7 @@ const ultimateScrapingMain = async (): Promise<void> => {
     
     for (const playlistTerm of playlistSearchTerms) {
       console.log(`   📋 "${playlistTerm}"`)
-      const videos = await scraper.searchPlaylistsAndVideos(playlistTerm, 20)
+      const videos = await scraper.searchPlaylistsAndVideos(playlistTerm, Math.floor(config.maxResults * 0.6))
       allVideos.push(...videos)
       if (videos.length > 0) {
         console.log(`   ✅ Found ${videos.length} videos`)
@@ -157,7 +81,7 @@ const ultimateScrapingMain = async (): Promise<void> => {
       console.log(`[${searchCount}/${ultimateSearchTerms.length}] 🔍 "${searchTerm}"`)
       
       // Search for both videos and playlists
-      const videos = await scraper.searchPlaylistsAndVideos(searchTerm, 35)
+      const videos = await scraper.searchPlaylistsAndVideos(searchTerm, config.maxResults)
       allVideos.push(...videos)
       
       if (videos.length > 0) {
@@ -188,7 +112,7 @@ const ultimateScrapingMain = async (): Promise<void> => {
     // Step 5: Scrape ALL discovered playlists
     console.log('\\n🎵 Step 5: Scraping ALL discovered playlists...')
     if (discoveredPlaylists.length > 0) {
-      const playlistVideos = await scraper.scrapeAllDiscoveredPlaylists(80) // More videos per playlist
+      const playlistVideos = await scraper.scrapeAllDiscoveredPlaylists(config.maxResultsPerPlaylist)
       allVideos.push(...playlistVideos)
       console.log(`✅ Added ${playlistVideos.length} videos from ${discoveredPlaylists.length} playlists`)
     } else {
@@ -210,9 +134,9 @@ const ultimateScrapingMain = async (): Promise<void> => {
     
     // ULTIMATE FINAL REPORT
     console.log('\\n' + '🎉'.repeat(40))
-    console.log('🎉 ULTIMATE LARRY HEARD COLLECTION COMPLETE! 🎉')
+    console.log(`🎉 ULTIMATE ${config.displayName.toUpperCase()} COLLECTION COMPLETE! 🎉`)
     console.log('🎉'.repeat(40))
-    console.log(`\\n📁 Saved to: ${path.join(__dirname, '../data/larry-heard-collection.csv')}`)
+    console.log(`\\n📁 Saved to: ${config.outputFile}`)
     console.log(`🎵 ULTIMATE COLLECTION: ${uniqueVideos.length} unique videos`)
     console.log(`📋 Playlists discovered & scraped: ${discoveredPlaylists.length}`)
     console.log(`🔍 Search terms used: ${ultimateSearchTerms.length}`)
@@ -231,17 +155,28 @@ const ultimateScrapingMain = async (): Promise<void> => {
     
     // Final stats breakdown
     console.log('\\n📊 ULTIMATE STATS:')
-    console.log(`   🎵 Total unique Larry Heard videos: ${uniqueVideos.length}`)
+    console.log(`   🎵 Total unique ${config.displayName} videos: ${uniqueVideos.length}`)
     console.log(`   📋 Playlists scraped: ${discoveredPlaylists.length}`)
-    console.log(`   🏷️  Aliases covered: 10`)
-    console.log(`   🎸 Groups covered: 5`)
+    console.log(`   🏷️  Aliases covered: ${config.aliases.length}`)
+    console.log(`   🎸 Groups covered: ${config.groups.length}`)
     console.log(`   🔍 Search strategies: ${ultimateSearchTerms.length}`)
     console.log(`   🚫 Duplicates prevented: ${duplicatesRemoved}`)
     
-    console.log('\\n✨ THE MOST COMPLETE LARRY HEARD COLLECTION POSSIBLE! ✨')
+    console.log(`\\n✨ THE MOST COMPLETE ${config.displayName.toUpperCase()} COLLECTION POSSIBLE! ✨`)
     
   } catch (error) {
-    console.error('❌ Ultimate scraping failed:', error instanceof Error ? error.message : 'Unknown error')
+    if (error instanceof Error && error.message.includes('Configuration file not found')) {
+      console.error('❌ Configuration error:', error.message)
+      console.log('\\n📋 Available configurations:')
+      const availableConfigs = ConfigLoader.listAvailableConfigs()
+      if (availableConfigs.length > 0) {
+        availableConfigs.forEach(config => console.log(`   - ${config}`))
+      } else {
+        console.log('   No configurations found. Please create a configuration file first.')
+      }
+    } else {
+      console.error('❌ Ultimate scraping failed:', error instanceof Error ? error.message : 'Unknown error')
+    }
     process.exit(1)
   }
 }
@@ -271,7 +206,20 @@ const loadCsvData = async (filePath: string): Promise<VideoData[]> => {
 
 // Run the ultimate scraper
 if (require.main === module) {
-  ultimateScrapingMain().catch(error => {
+  const artistName = process.argv[2]
+  
+  if (artistName === '--list') {
+    console.log('📋 Available artist configurations:')
+    const availableConfigs = ConfigLoader.listAvailableConfigs()
+    if (availableConfigs.length > 0) {
+      availableConfigs.forEach(config => console.log(`   - ${config}`))
+    } else {
+      console.log('   No configurations found. Please create a configuration file first.')
+    }
+    process.exit(0)
+  }
+  
+  ultimateScrapingMain(artistName).catch(error => {
     console.error('❌ Fatal error:', error)
     process.exit(1)
   })
