@@ -2012,12 +2012,6 @@ export const larryHeardVideos: VideoData[] = [
     "channel": "Unknown"
   },
   {
-    "url": "https://www.youtube.com/watch?v=os1Pznk4zJU",
-    "title": "mr FINGERS On My Way 1992 Album version Introduction",
-    "videoId": "os1Pznk4zJU",
-    "channel": "Unknown"
-  },
-  {
     "url": "https://www.youtube.com/watch?v=xj-MPJ5glYc",
     "title": "Mr Fingers - Stars (1992 Version)",
     "videoId": "xj-MPJ5glYc",
