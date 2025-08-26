@@ -40,7 +40,7 @@ const {
 
 <style scoped>
 .app {
-  height: 100vh;
+  height: 100svh;
   width: 100vw;
   background: #000;
   color: white;

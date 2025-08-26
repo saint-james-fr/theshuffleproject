@@ -48,7 +48,7 @@ defineProps<Props>();
   width: 100%;
   height: 100%;
   border: none;
-  max-height: calc(100vh - 200px);
+  max-height: calc(100svh - 200px);
 }
 
 .video-info {
