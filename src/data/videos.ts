@@ -392,12 +392,6 @@ export const larryHeardVideos: VideoData[] = [
     "channel": "Sensient - Topic"
   },
   {
-    "url": "https://www.youtube.com/watch?v=RmF7-ipVwaQ",
-    "title": "Loose Fingers-Lost in Time",
-    "videoId": "RmF7-ipVwaQ",
-    "channel": "Κωνσταντίνος Παφιωλης"
-  },
-  {
     "url": "https://www.youtube.com/watch?v=aSdZ7uwNrVg",
     "title": "URBAN INC - LOOSEFINGERS",
     "videoId": "aSdZ7uwNrVg",
