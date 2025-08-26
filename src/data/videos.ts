@@ -560,12 +560,6 @@ export const larryHeardVideos: VideoData[] = [
     "channel": "Garden Radio"
   },
   {
-    "url": "https://www.youtube.com/watch?v=uSspI1BJroI",
-    "title": "MAMP Ep 142 Larry Heard Original Classics Pt 1 (Mr Fingers Mr White Loosefingers  More)",
-    "videoId": "uSspI1BJroI",
-    "channel": "Mark Anthony's Music Picks"
-  },
-  {
     "url": "https://www.youtube.com/watch?v=1qD-tpmN3K4",
     "title": "Larry Heard Praise",
     "videoId": "1qD-tpmN3K4",
