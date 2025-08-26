@@ -224,12 +224,6 @@ export const larryHeardVideos: VideoData[] = [
     "channel": "jellybeanbenitiz"
   },
   {
-    "url": "https://www.youtube.com/watch?v=EzEe94YsMt8",
-    "title": "Disco D - Ghettronics Side B",
-    "videoId": "EzEe94YsMt8",
-    "channel": "warreals"
-  },
-  {
     "url": "https://www.youtube.com/watch?v=5Igb7x2wx9g",
     "title": "Bang Le Dex - Larry Heard aka Mr Fingers - EP 01312024",
     "videoId": "5Igb7x2wx9g",
@@ -1883,12 +1877,6 @@ export const larryHeardVideos: VideoData[] = [
     "url": "https://www.youtube.com/watch?v=DZ04WG-JX8Q",
     "title": "Larry Heard - Interlaced Expressions",
     "videoId": "DZ04WG-JX8Q",
-    "channel": "Unknown"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=Ojc0PlEOig8",
-    "title": "Kaleidoscopic Events",
-    "videoId": "Ojc0PlEOig8",
     "channel": "Unknown"
   },
   {
