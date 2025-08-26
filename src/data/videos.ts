@@ -2460,6 +2460,30 @@ export const larryHeardVideos: VideoData[] = [
     "title": "Flashback",
     "videoId": "JbBuq_-AfO0",
     "channel": "Discogs"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=Za7W2TiIDOw",
+    "title": "The RAM Project - Choices",
+    "videoId": "Za7W2TiIDOw",
+    "channel": "Dat Vibe"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=OPo3R4gB4Oc",
+    "title": "The RAM Project - Gonna Be Alright",
+    "videoId": "OPo3R4gB4Oc",
+    "channel": "Dat Vibe"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=czOq1NAB-5M",
+    "title": "The RAM Project - Urban Playground",
+    "videoId": "czOq1NAB-5M",
+    "channel": "Dat Vibe"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=Lbq-nSJFIRg",
+    "title": "The RAM Project - Changes",
+    "videoId": "Lbq-nSJFIRg",
+    "channel": "mr."
   }
 ]
 
