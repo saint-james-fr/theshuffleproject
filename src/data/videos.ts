@@ -2168,12 +2168,6 @@ export const larryHeardVideos: VideoData[] = [
     "channel": "Discogs"
   },
   {
-    "url": "https://www.youtube.com/watch?v=b9CpRaFkoh0",
-    "title": "Premonition of Lost Love (Jordan & Kevin's Zanzibar Dub) feat. Ona King",
-    "videoId": "b9CpRaFkoh0",
-    "channel": "Discogs"
-  },
-  {
     "url": "https://www.youtube.com/watch?v=d_SX9nbUrE8",
     "title": "LARRY HEARD / REMINISCE D.A.T. VOCAL REMIX (LIFE LINE RECORDS 2003)",
     "videoId": "d_SX9nbUrE8",
@@ -2195,12 +2189,6 @@ export const larryHeardVideos: VideoData[] = [
     "url": "https://www.youtube.com/watch?v=lD7TCF_4RMY",
     "title": "Larry Heard - I Know That It's You (Musique Tropique)",
     "videoId": "lD7TCF_4RMY",
-    "channel": "Discogs"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=p_B1MaeLQQg",
-    "title": "Larry Heard/Ona King Premonition Of Lost Love Bernard Badie mix",
-    "videoId": "p_B1MaeLQQg",
     "channel": "Discogs"
   },
   {
@@ -2264,12 +2252,6 @@ export const larryHeardVideos: VideoData[] = [
     "channel": "Discogs"
   },
   {
-    "url": "https://www.youtube.com/watch?v=6tyt28-NFSc",
-    "title": "Larry Heard Presents Ona King - Premonition Of Lost Love (Thrillseekers Bub)",
-    "videoId": "6tyt28-NFSc",
-    "channel": "Discogs"
-  },
-  {
     "url": "https://www.youtube.com/watch?v=a2hdz4eMz4c",
     "title": "Larry Heard - Gentle Morning Sun (Wolf & Lamb Remix)",
     "videoId": "a2hdz4eMz4c",
@@ -2297,12 +2279,6 @@ export const larryHeardVideos: VideoData[] = [
     "url": "https://www.youtube.com/watch?v=3U6sV4tuzF4",
     "title": "Larry Heard presents Mr. White - Supernova (Main) [ML2236]",
     "videoId": "3U6sV4tuzF4",
-    "channel": "Discogs"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=6exkUTDVu34",
-    "title": "Larry Heard Presents Ona King - Premonition Of Lost Love (Jordan & Kevin's Zanzibar Bub)",
-    "videoId": "6exkUTDVu34",
     "channel": "Discogs"
   },
   {
