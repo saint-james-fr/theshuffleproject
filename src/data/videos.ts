@@ -134,12 +134,6 @@ export const larryHeardVideos: VideoData[] = [
     "channel": "Larry Heard Presents Mr. White - Topic"
   },
   {
-    "url": "https://www.youtube.com/watch?v=tdIQTEYXDP4",
-    "title": "Larry Heard Presents Mr White The Sun Cant Compare (Long Version)",
-    "videoId": "tdIQTEYXDP4",
-    "channel": "Streptoccoccus"
-  },
-  {
     "url": "https://www.youtube.com/watch?v=wlPmnh0g9KM",
     "title": "Another Night",
     "videoId": "wlPmnh0g9KM",
@@ -180,12 +174,6 @@ export const larryHeardVideos: VideoData[] = [
     "title": "Mr Fingers - Youre Someone Special",
     "videoId": "kVZDcUxosMw",
     "channel": "UNDERGROUND CLASSICS HOUSE"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=XADGj9qvj3E",
-    "title": "What About This Love (Extended Version)",
-    "videoId": "XADGj9qvj3E",
-    "channel": "Mr. Fingers - Topic"
   },
   {
     "url": "https://www.youtube.com/watch?v=82kLIHVrRkU",
@@ -248,12 +236,6 @@ export const larryHeardVideos: VideoData[] = [
     "channel": "Bang Le' Dex Official"
   },
   {
-    "url": "https://www.youtube.com/watch?v=zce_PoBiR8Y",
-    "title": "Larry Heard  Space Jungle",
-    "videoId": "zce_PoBiR8Y",
-    "channel": "MyHouse Channel"
-  },
-  {
     "url": "https://www.youtube.com/watch?v=qZK9looYGl4",
     "title": "Gherkin Jerks - Meltdown",
     "videoId": "qZK9looYGl4",
@@ -314,12 +296,6 @@ export const larryHeardVideos: VideoData[] = [
     "channel": "Mr. Fingers - Topic"
   },
   {
-    "url": "https://www.youtube.com/watch?v=nQWYVRK7JDs",
-    "title": "Loosefingers - Deep Inside",
-    "videoId": "nQWYVRK7JDs",
-    "channel": "Jazzy Groove Channel"
-  },
-  {
     "url": "https://www.youtube.com/watch?v=pzAmJsDCtOQ",
     "title": "When Summer Comes (12 Version)",
     "videoId": "pzAmJsDCtOQ",
@@ -344,12 +320,6 @@ export const larryHeardVideos: VideoData[] = [
     "channel": "tthrober"
   },
   {
-    "url": "https://www.youtube.com/watch?v=voiWmzGbBD8",
-    "title": "Loosefingers - What is House",
-    "videoId": "voiWmzGbBD8",
-    "channel": "placid34"
-  },
-  {
     "url": "https://www.youtube.com/watch?v=EBh29AXXQdY",
     "title": "Loosefingers  Dreamin Of Better Days",
     "videoId": "EBh29AXXQdY",
@@ -362,40 +332,16 @@ export const larryHeardVideos: VideoData[] = [
     "channel": "Mr. Fingers - Topic"
   },
   {
-    "url": "https://www.youtube.com/watch?v=nhWGghXzSLA",
-    "title": "Loosefingers  What Is House (Long Version)",
-    "videoId": "nhWGghXzSLA",
-    "channel": "In House We Trust"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=X0L8wX4i6Pk",
-    "title": "Loosefingers (Larry Heard)-What Is House 2009",
-    "videoId": "X0L8wX4i6Pk",
-    "channel": "joey82ify"
-  },
-  {
     "url": "https://www.youtube.com/watch?v=T_qWtNP0Fj4",
     "title": "Loosefingers - Lost in Time",
     "videoId": "T_qWtNP0Fj4",
     "channel": "RoN"
   },
   {
-    "url": "https://www.youtube.com/watch?v=bJyl5LX3Jo0",
-    "title": "Loosefingers Glancing At The Moon",
-    "videoId": "bJyl5LX3Jo0",
-    "channel": "OLD SKOOL HOUSE"
-  },
-  {
     "url": "https://www.youtube.com/watch?v=VL1qJF05wfg",
     "title": "Loose Fingers",
     "videoId": "VL1qJF05wfg",
     "channel": "Sensient - Topic"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=aSdZ7uwNrVg",
-    "title": "URBAN INC - LOOSEFINGERS",
-    "videoId": "aSdZ7uwNrVg",
-    "channel": "Skylax Records"
   },
   {
     "url": "https://www.youtube.com/watch?v=_GLfi_cha9g",
@@ -416,18 +362,6 @@ export const larryHeardVideos: VideoData[] = [
     "channel": "The Housefactors - Topic"
   },
   {
-    "url": "https://www.youtube.com/watch?v=bhlpmxniHc8",
-    "title": "Big Bang Theory",
-    "videoId": "bhlpmxniHc8",
-    "channel": "The Housefactors - Topic"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=9Biky-vtA9Q",
-    "title": "The Housefactors - Big Bang Theory [ML2307]",
-    "videoId": "9Biky-vtA9Q",
-    "channel": "Electronic Love Collective"
-  },
-  {
     "url": "https://www.youtube.com/watch?v=X_Q1NLeZ2QY",
     "title": "The Housefactors - Freestyle",
     "videoId": "X_Q1NLeZ2QY",
@@ -438,12 +372,6 @@ export const larryHeardVideos: VideoData[] = [
     "title": "The Housefactors - Total Control (Original Mix)",
     "videoId": "V67AzkDkKng",
     "channel": "mazz rhythm"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=6gLDfJBdSAY",
-    "title": "The Housefactors Big Bang Theory",
-    "videoId": "6gLDfJBdSAY",
-    "channel": "Bunker Headz"
   },
   {
     "url": "https://www.youtube.com/watch?v=9sToHYP8ymk",
@@ -638,18 +566,6 @@ export const larryHeardVideos: VideoData[] = [
     "channel": "Mark Anthony's Music Picks"
   },
   {
-    "url": "https://www.youtube.com/watch?v=7ep_BvevmnI",
-    "title": "basiC realitieS - Desert Valley (Gherkin Jerks aka Larry Heard Tribute Mix II) [VIBR023]",
-    "videoId": "7ep_BvevmnI",
-    "channel": "Electronic Love Collective"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=5A9h9jOe8NI",
-    "title": "Larry Heard - Missing You (Instrumental Mix)",
-    "videoId": "5A9h9jOe8NI",
-    "channel": "soundcorporative"
-  },
-  {
     "url": "https://www.youtube.com/watch?v=1qD-tpmN3K4",
     "title": "Larry Heard Praise",
     "videoId": "1qD-tpmN3K4",
@@ -684,12 +600,6 @@ export const larryHeardVideos: VideoData[] = [
     "title": "Larry Heard - Praise (GUs Thank You Mix)",
     "videoId": "z0cxFCR-XrI",
     "channel": "4theloveofhousemuzik"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=vZmYoA8z8TM",
-    "title": "Larry Heard - Missing You (Mannmademusic Revisited mix) (Freebie)",
-    "videoId": "vZmYoA8z8TM",
-    "channel": "HOD Daily"
   },
   {
     "url": "https://www.youtube.com/watch?v=4OXaTi16dB8",
@@ -1046,12 +956,6 @@ export const larryHeardVideos: VideoData[] = [
     "channel": "MannerWSF"
   },
   {
-    "url": "https://www.youtube.com/watch?v=iCFoCgUf360",
-    "title": "Larry Heard  Deep House Mix  EP ONE  Every Monday (Hopefully) )",
-    "videoId": "iCFoCgUf360",
-    "channel": "Mr Pascall"
-  },
-  {
     "url": "https://www.youtube.com/watch?v=A-oovvmKgv0",
     "title": "Club Ice - Manhassett (Larry Heard space mix)",
     "videoId": "A-oovvmKgv0",
@@ -1062,12 +966,6 @@ export const larryHeardVideos: VideoData[] = [
     "title": "Neon Heights - Are We thru (Larry Heards Underground Vibe Remix)",
     "videoId": "TWNwBlbFnxE",
     "channel": "clovis86"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=O-OZ2Tksz0I",
-    "title": "Larry Heard  Mr White - You Rock Me",
-    "videoId": "O-OZ2Tksz0I",
-    "channel": "DEEP DUNGEON."
   },
   {
     "url": "https://www.youtube.com/watch?v=FJyuj6sKcwU",
@@ -1082,12 +980,6 @@ export const larryHeardVideos: VideoData[] = [
     "channel": "Techno & House Classics"
   },
   {
-    "url": "https://www.youtube.com/watch?v=KFmEPyGj1b0",
-    "title": "Larry Heard Presents Mr White - You Rock Me (Long Version) [ML-2225]",
-    "videoId": "KFmEPyGj1b0",
-    "channel": "Lucas Wave"
-  },
-  {
     "url": "https://www.youtube.com/watch?v=0i3gBbMvqVU",
     "title": "Shonky - Le Velour (Larry Heard Remix)",
     "videoId": "0i3gBbMvqVU",
@@ -1100,22 +992,10 @@ export const larryHeardVideos: VideoData[] = [
     "channel": "Resident Advisor"
   },
   {
-    "url": "https://www.youtube.com/watch?v=B3wIfZp71n0",
-    "title": "Vinyl Vaults Radio EP 8 - April 21 2016 - Larry Heard spotlight",
-    "videoId": "B3wIfZp71n0",
-    "channel": "CTRL ROOM"
-  },
-  {
     "url": "https://www.youtube.com/watch?v=kuWlnR0doGM",
     "title": "Larry Heard - What",
     "videoId": "kuWlnR0doGM",
     "channel": "Dimitri Petry"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=okq5Mm9z6z0",
-    "title": "Larry Heard - Burning 4 Love (US Release) 1997",
-    "videoId": "okq5Mm9z6z0",
-    "channel": "ILoveHouseMusicTV"
   },
   {
     "url": "https://www.youtube.com/watch?v=By0ELvM_vGo",
@@ -1190,12 +1070,6 @@ export const larryHeardVideos: VideoData[] = [
     "channel": "edNbo"
   },
   {
-    "url": "https://www.youtube.com/watch?v=RQUXUQtAaMM",
-    "title": "Larry Heard - The Sun Cant Compare  You Rock Me [BLACK] (ML2225)",
-    "videoId": "RQUXUQtAaMM",
-    "channel": "Shop-Vinyles"
-  },
-  {
     "url": "https://www.youtube.com/watch?v=RBnLh1LrJcc",
     "title": "Larry Heard  Missing You",
     "videoId": "RBnLh1LrJcc",
@@ -1211,12 +1085,6 @@ export const larryHeardVideos: VideoData[] = [
     "url": "https://www.youtube.com/watch?v=VCwtHJYPb5w",
     "title": "Larry Heard  Loose Fingers - dawn of a new day",
     "videoId": "VCwtHJYPb5w",
-    "channel": "Babes Papes"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=VWWxLbSN7RQ",
-    "title": "Larry Heard  Loose Fingers - deep inside",
-    "videoId": "VWWxLbSN7RQ",
     "channel": "Babes Papes"
   },
   {
@@ -1310,12 +1178,6 @@ export const larryHeardVideos: VideoData[] = [
     "channel": "TimothyVdp / DJ Tracksuit"
   },
   {
-    "url": "https://www.youtube.com/watch?v=S_RSLsmK8PQ",
-    "title": "Brainiac - Mr Fingers (Live on KEXP)",
-    "videoId": "S_RSLsmK8PQ",
-    "channel": "KEXP"
-  },
-  {
     "url": "https://www.youtube.com/watch?v=z3VhgU96Gy0",
     "title": "Mr Fingers (Larry Heard) (live) at Nuits Sonores Lyon 11 May 2018",
     "videoId": "z3VhgU96Gy0",
@@ -1364,12 +1226,6 @@ export const larryHeardVideos: VideoData[] = [
     "channel": "Disclosure"
   },
   {
-    "url": "https://www.youtube.com/watch?v=aauB0TfFY7U",
-    "title": "1tribute2 Larry Heard (2021) - A Tribute to Mr Fingers",
-    "videoId": "aauB0TfFY7U",
-    "channel": "1tribute2"
-  },
-  {
     "url": "https://www.youtube.com/watch?v=Ed-2VQM35xU",
     "title": "Larry Heard Talks Robert Owens and Being Sampled  Red Bull Music Academy",
     "videoId": "Ed-2VQM35xU",
@@ -1392,18 +1248,6 @@ export const larryHeardVideos: VideoData[] = [
     "title": "Larry Heard ( Loose Fingers ) - Flashback",
     "videoId": "2F7k38RCDKw",
     "channel": "0XXELISIONXX0"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=fUAriACHlT0",
-    "title": "Family Reunion In Gloryland - Jerry  Larry",
-    "videoId": "fUAriACHlT0",
-    "channel": "Larry Heard"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=YIXh0JNvuHs",
-    "title": "Tracy Chapman  Eric Clapton - Give Me One Reason (1999)",
-    "videoId": "YIXh0JNvuHs",
-    "channel": "Tracy Chapman Online"
   },
   {
     "url": "https://www.youtube.com/watch?v=skwPsNLWViY",
@@ -1452,12 +1296,6 @@ export const larryHeardVideos: VideoData[] = [
     "title": "Alton Miller  Paradise (Larry Heard Vocal Rework)",
     "videoId": "jg-2tMrd1V8",
     "channel": "MyHouse Channel"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=hWRzSjsWHog",
-    "title": "Larry Heard Presents Mr White - You Rock Me",
-    "videoId": "hWRzSjsWHog",
-    "channel": "exiledlarky"
   },
   {
     "url": "https://www.youtube.com/watch?v=C3L9MxdzrQo",
@@ -1565,12 +1403,6 @@ export const larryHeardVideos: VideoData[] = [
     "url": "https://www.youtube.com/watch?v=EnJMFaece04",
     "title": "Larry Heard - Solitude",
     "videoId": "EnJMFaece04",
-    "channel": "Unknown"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=SKNv5yDFlUQ",
-    "title": "Larry Heard - Carlas Dance",
-    "videoId": "SKNv5yDFlUQ",
     "channel": "Unknown"
   },
   {
@@ -1778,12 +1610,6 @@ export const larryHeardVideos: VideoData[] = [
     "channel": "Unknown"
   },
   {
-    "url": "https://www.youtube.com/watch?v=_5NPPx8oURw",
-    "title": "And So I Dance",
-    "videoId": "_5NPPx8oURw",
-    "channel": "Unknown"
-  },
-  {
     "url": "https://www.youtube.com/watch?v=eA0qlxquYeY",
     "title": "Gentle Morning Rain",
     "videoId": "eA0qlxquYeY",
@@ -1847,12 +1673,6 @@ export const larryHeardVideos: VideoData[] = [
     "url": "https://www.youtube.com/watch?v=L2TgMP0bqB8",
     "title": "Luminous Energy",
     "videoId": "L2TgMP0bqB8",
-    "channel": "Unknown"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=HpEOuARBLyw",
-    "title": "Larry Heard - Night Images (Swayzak Remix)",
-    "videoId": "HpEOuARBLyw",
     "channel": "Unknown"
   },
   {
@@ -2090,12 +1910,6 @@ export const larryHeardVideos: VideoData[] = [
     "channel": "Unknown"
   },
   {
-    "url": "https://www.youtube.com/watch?v=1cmD0KRfgeQ",
-    "title": "Larry Heard - Dew Drops",
-    "videoId": "1cmD0KRfgeQ",
-    "channel": "Unknown"
-  },
-  {
     "url": "https://www.youtube.com/watch?v=spPuVN-4-P8",
     "title": "Larry Heard-When I Think Of You",
     "videoId": "spPuVN-4-P8",
@@ -2144,12 +1958,6 @@ export const larryHeardVideos: VideoData[] = [
     "channel": "Unknown"
   },
   {
-    "url": "https://www.youtube.com/watch?v=FbnyFXhJdXU",
-    "title": "Missing You (Jazz Cafe Mix Edit)",
-    "videoId": "FbnyFXhJdXU",
-    "channel": "Unknown"
-  },
-  {
     "url": "https://www.youtube.com/watch?v=WZQ2O4F55NU",
     "title": "Virtual Emotion (Main)",
     "videoId": "WZQ2O4F55NU",
@@ -2171,12 +1979,6 @@ export const larryHeardVideos: VideoData[] = [
     "url": "https://www.youtube.com/watch?v=ezOuwuNzFMo",
     "title": "Supernova (Dub)",
     "videoId": "ezOuwuNzFMo",
-    "channel": "Unknown"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=1CKenI4srLE",
-    "title": "Mr Fingers - What About This Love",
-    "videoId": "1CKenI4srLE",
     "channel": "Unknown"
   },
   {
@@ -2252,12 +2054,6 @@ export const larryHeardVideos: VideoData[] = [
     "channel": "Unknown"
   },
   {
-    "url": "https://www.youtube.com/watch?v=1puOrcL_WsA",
-    "title": "Larry Heard (And So I Dance) 1997",
-    "videoId": "1puOrcL_WsA",
-    "channel": "Discogs"
-  },
-  {
     "url": "https://www.youtube.com/watch?v=4yH6L6Sv20E",
     "title": "Larry Heard – Another Night (Re Edit)",
     "videoId": "4yH6L6Sv20E",
@@ -2270,12 +2066,6 @@ export const larryHeardVideos: VideoData[] = [
     "channel": "Discogs"
   },
   {
-    "url": "https://www.youtube.com/watch?v=94-9-keoSw4",
-    "title": "Larry Heard - And So I Dance (Julio Bashmore Version)",
-    "videoId": "94-9-keoSw4",
-    "channel": "Discogs"
-  },
-  {
     "url": "https://www.youtube.com/watch?v=aSvfInbFm5Q",
     "title": "Larry Heard - Evening Dance",
     "videoId": "aSvfInbFm5Q",
@@ -2285,12 +2075,6 @@ export const larryHeardVideos: VideoData[] = [
     "url": "https://www.youtube.com/watch?v=bg8Clh9He9Y",
     "title": "Larry Heard  -  Teleportation (Slam Remix)",
     "videoId": "bg8Clh9He9Y",
-    "channel": "Discogs"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=cJQtIHcHi4o",
-    "title": "Larry Heard Presents: Mr. White – The Sun Can't Compare 2006",
-    "videoId": "cJQtIHcHi4o",
     "channel": "Discogs"
   },
   {
@@ -2330,12 +2114,6 @@ export const larryHeardVideos: VideoData[] = [
     "channel": "Discogs"
   },
   {
-    "url": "https://www.youtube.com/watch?v=lMw-ioC0KGs",
-    "title": "Larry Heard - Missing You",
-    "videoId": "lMw-ioC0KGs",
-    "channel": "Discogs"
-  },
-  {
     "url": "https://www.youtube.com/watch?v=MOO9d9Yr6KA",
     "title": "Larry Heard - Space Jungle",
     "videoId": "MOO9d9Yr6KA",
@@ -2351,12 +2129,6 @@ export const larryHeardVideos: VideoData[] = [
     "url": "https://www.youtube.com/watch?v=Ov2rRPUAhkI",
     "title": "Larry Heard - Reminisce (Kaito Vocal Remix)",
     "videoId": "Ov2rRPUAhkI",
-    "channel": "Discogs"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=rRj3QLrik0E",
-    "title": "Larry Heard - Night Images (Swayzak Early Mid Afternoon Mix)",
-    "videoId": "rRj3QLrik0E",
     "channel": "Discogs"
   },
   {
@@ -2381,12 +2153,6 @@ export const larryHeardVideos: VideoData[] = [
     "url": "https://www.youtube.com/watch?v=UvKa23WO54Y",
     "title": "Larry Heard Presents Mr. White – Virtual Emotion",
     "videoId": "UvKa23WO54Y",
-    "channel": "Discogs"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=VeKZA8nCf10",
-    "title": "Larry Heard - Missing You (Larry's Jazz Cafe Mix)",
-    "videoId": "VeKZA8nCf10",
     "channel": "Discogs"
   },
   {
@@ -2435,12 +2201,6 @@ export const larryHeardVideos: VideoData[] = [
     "url": "https://www.youtube.com/watch?v=d_SX9nbUrE8",
     "title": "LARRY HEARD / REMINISCE D.A.T. VOCAL REMIX (LIFE LINE RECORDS 2003)",
     "videoId": "d_SX9nbUrE8",
-    "channel": "Discogs"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=GmWxEi0Pvwo",
-    "title": "Larry Heard Presents: Mr. White – You Rock Me / The Sun Can't Compare",
-    "videoId": "GmWxEi0Pvwo",
     "channel": "Discogs"
   },
   {
@@ -2504,12 +2264,6 @@ export const larryHeardVideos: VideoData[] = [
     "channel": "Discogs"
   },
   {
-    "url": "https://www.youtube.com/watch?v=0wvdxzLpDLU",
-    "title": "Larry Heard - Praise (GU's Thank You Mix)",
-    "videoId": "0wvdxzLpDLU",
-    "channel": "Discogs"
-  },
-  {
     "url": "https://www.youtube.com/watch?v=0ZiU_ONfNeI",
     "title": "Larry Heard / Loose Fingers - transmission x",
     "videoId": "0ZiU_ONfNeI",
@@ -2564,12 +2318,6 @@ export const larryHeardVideos: VideoData[] = [
     "channel": "Discogs"
   },
   {
-    "url": "https://www.youtube.com/watch?v=WA97ttfk1Gs",
-    "title": "Larry Heard Presents: Mr. White - You Rock Me (Long Version) (Alleviated Records | 2006)",
-    "videoId": "WA97ttfk1Gs",
-    "channel": "Discogs"
-  },
-  {
     "url": "https://www.youtube.com/watch?v=3U6sV4tuzF4",
     "title": "Larry Heard presents Mr. White - Supernova (Main) [ML2236]",
     "videoId": "3U6sV4tuzF4",
@@ -2582,27 +2330,9 @@ export const larryHeardVideos: VideoData[] = [
     "channel": "Discogs"
   },
   {
-    "url": "https://www.youtube.com/watch?v=6Ojex6eDADg",
-    "title": "Larry Heard - Night Images (Swayzak Mix)",
-    "videoId": "6Ojex6eDADg",
-    "channel": "Discogs"
-  },
-  {
     "url": "https://www.youtube.com/watch?v=cMJ6IyHmU28",
     "title": "Larry Heard - Time",
     "videoId": "cMJ6IyHmU28",
-    "channel": "Discogs"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=IQsdM7XYn6Y",
-    "title": "Larry Heard  -  Missing You (Son Dexter's Django Version)",
-    "videoId": "IQsdM7XYn6Y",
-    "channel": "Discogs"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=jcGpaNuAnmw",
-    "title": "Larry Heard Presents: Mr. White - You Rock Me (Edit) (Alleviated Records | 2006)",
-    "videoId": "jcGpaNuAnmw",
     "channel": "Discogs"
   },
   {
@@ -2648,30 +2378,6 @@ export const larryHeardVideos: VideoData[] = [
     "channel": "Discogs"
   },
   {
-    "url": "https://www.youtube.com/watch?v=SpYGlC2PAEk",
-    "title": "Larry Heard Presents: Mr. White - The Sun Can't Compare (Long Version) (Alleviated Records | 2006)",
-    "videoId": "SpYGlC2PAEk",
-    "channel": "Discogs"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=o19_oh_lrzE",
-    "title": "Larry Heard Presents: Mr. White - The Sun Can't Compare (Edit) (Alleviated Records | 2006)",
-    "videoId": "o19_oh_lrzE",
-    "channel": "Discogs"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=uZ19ZysB8yI",
-    "title": "Larry Heard - Caribbean Coast (Sceneries Not Songs, Vol. 1, 1994)",
-    "videoId": "uZ19ZysB8yI",
-    "channel": "Discogs"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=yLAzSglUnuM",
-    "title": "Larry Heard / Loose Fingers - flashback",
-    "videoId": "yLAzSglUnuM",
-    "channel": "Discogs"
-  },
-  {
     "url": "https://www.youtube.com/watch?v=_lgub3W3vKA",
     "title": "Larry Heard - Comfort",
     "videoId": "_lgub3W3vKA",
@@ -2687,12 +2393,6 @@ export const larryHeardVideos: VideoData[] = [
     "url": "https://www.youtube.com/watch?v=VgfKQMQceU8",
     "title": "Larry Heard - Daze Of Phaze",
     "videoId": "VgfKQMQceU8",
-    "channel": "Discogs"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=DW9jyOt-xLc",
-    "title": "Larry Heard Presents: Mr. White* - You Rock Me (Edit) [ML-2225]",
-    "videoId": "DW9jyOt-xLc",
     "channel": "Discogs"
   },
   {
@@ -2759,12 +2459,6 @@ export const larryHeardVideos: VideoData[] = [
     "url": "https://www.youtube.com/watch?v=BragVyf3FXU",
     "title": "Larry Heard - Two Journeys",
     "videoId": "BragVyf3FXU",
-    "channel": "Discogs"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=Derguzg9rmg",
-    "title": "Larry Heard / Loose Fingers - glancing at the moon",
-    "videoId": "Derguzg9rmg",
     "channel": "Discogs"
   },
   {
