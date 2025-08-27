@@ -20,6 +20,9 @@ const {
   <div class="app">
     <header class="app-header">
       <h1 class="app-title">The Shuffle Project: {{ artistConfig.displayName }}</h1>
+      <div class="app-subtitle link-container">
+        <a href="https://theshuffleproject.site">See all projects</a> •
+      </div>
       <p class="app-subtitle">{{ totalVideos }} tracks • scraped from Youtube & Discogs</p>
     </header>
 
@@ -73,6 +76,13 @@ const {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+.link-container {
+  a {
+    color: #999;
+    font-size: 0.75rem;
+  }
 }
 
 .app-main {
