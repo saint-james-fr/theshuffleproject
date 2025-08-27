@@ -1,5 +1,6 @@
 import { ultimateScrapingMain } from './ultimate-scraper'
 import { discogsPuppeteerScrapingMain } from './discogs-puppeteer-scraper'
+import { discogsRemixScrapingMain } from './discogs-remix-scraper'
 import { addPlaylistMain } from './add-playlist'
 import { addVideoMain } from './add-video'
 import { convertCsvToVueData } from './convert-to-vue'
@@ -26,6 +27,10 @@ const runScraper = async (): Promise<void> => {
       
     case 'discogs':
       await runDiscogsScraper(args[1], args[2])
+      break
+      
+    case 'discogs-remixes':
+      await runDiscogsRemixScraper(args[1])
       break
       
     case 'add-playlist':
@@ -55,6 +60,7 @@ const showUsage = (): void => {
   console.log('  list                              List available artist configurations')
   console.log('  scrape <artist-name>              Run ultimate scraper for an artist')
   console.log('  discogs <artist-name> <url>       Scrape Discogs videos for an artist')
+  console.log('  discogs-remixes <artist-name>     Scrape Discogs remix credits for an artist')
   console.log('  add-playlist <artist> <url>       Add a YouTube playlist to collection')
   console.log('  add-video <artist> <url>          Add a single YouTube video to collection')
   console.log('  update-vue <artist-name>          Convert CSV data to Vue format')
@@ -63,6 +69,7 @@ const showUsage = (): void => {
   console.log('  yarn scraper list')
   console.log('  yarn scraper scrape larry-heard')
   console.log('  yarn scraper discogs larry-heard "https://www.discogs.com/artist/123"')
+  console.log('  yarn scraper discogs-remixes ron-trent')
   console.log('  yarn scraper add-playlist larry-heard "https://www.youtube.com/playlist?list=ABC123"')
   console.log('  yarn scraper add-video larry-heard "https://www.youtube.com/watch?v=dQw4w9WgXcQ"')
   console.log('  yarn scraper update-vue larry-heard')
@@ -115,6 +122,23 @@ const runDiscogsScraper = async (artistName?: string, discogsUrl?: string): Prom
     await discogsPuppeteerScrapingMain(artistName, discogsUrl)
   } catch (error) {
     console.error('❌ Discogs scraping failed:', error instanceof Error ? error.message : 'Unknown error')
+    process.exit(1)
+  }
+}
+
+const runDiscogsRemixScraper = async (artistName?: string): Promise<void> => {
+  if (!artistName) {
+    console.error('❌ Please specify an artist name')
+    console.log('📋 Available artists:')
+    listConfigs()
+    process.exit(1)
+  }
+  
+  try {
+    console.log(`🚀 Starting Discogs remix scraper for: ${artistName}`)
+    await discogsRemixScrapingMain(artistName)
+  } catch (error) {
+    console.error('❌ Discogs remix scraping failed:', error instanceof Error ? error.message : 'Unknown error')
     process.exit(1)
   }
 }
