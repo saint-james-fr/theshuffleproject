@@ -64,7 +64,7 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(PORT, () => {
-  console.log('\n🎵 Ron Trent Video Clustering Visualizer');
+  console.log('\n🎵 Video Clustering Visualizer');
   console.log('==========================================');
   console.log(`🌐 Server running at: http://localhost:${PORT}`);
   console.log('📊 Interactive visualization with filters and search');

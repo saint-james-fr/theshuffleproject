@@ -1,5 +1,4 @@
 // Terminal-based cluster visualization and summary
-import fs from 'fs';
 import { readFileSync } from 'fs';
 import readline from 'readline';
 
@@ -96,7 +95,7 @@ class ClusterSummaryVisualizer {
 
   showSummary(): void {
     console.log('\n' + '='.repeat(70));
-    console.log(this.formatTitle('🎵 RON TRENT VIDEO CLUSTERING ANALYSIS'));
+    console.log(this.formatTitle('🎵 CLUSTERING ANALYSIS'));
     console.log('='.repeat(70));
     
     const { summary } = this.data;
@@ -107,7 +106,7 @@ class ClusterSummaryVisualizer {
     console.log(`📊 Total Videos:      ${this.formatNumber(summary.totalVideos)}`);
     console.log(`🔍 Clusters Found:    ${this.formatNumber(summary.clustersFound)}`);
     console.log(`📹 Videos Clustered:  ${this.formatNumber(clusteredVideos)} (${((clusteredVideos / summary.totalVideos) * 100).toFixed(1)}%)`);
-    console.log(`📈 Avg Cluster Size:  ${this.formatNumber(avgClusterSize)} videos`);
+    console.log(`📈 Avg Cluster Size:  ${this.formatNumber(parseInt(avgClusterSize))} videos`);
     console.log(`🎯 Avg Confidence:    ${this.formatConfidence(parseFloat(avgConfidence) / 100)}`);
     console.log(`⏰ Generated:         ${new Date(summary.timestamp).toLocaleString()}`);
   }
@@ -337,7 +336,7 @@ switch (command) {
     visualizer.interactive();
     break;
   default:
-    console.log('\n🎵 Ron Trent Video Clustering - Terminal Visualizer');
+    console.log('\n🎵 Video Clustering - Terminal Visualizer');
     console.log('\nUsage:');
     console.log('  npx tsx scripts/cluster-summary.ts summary              # Show summary stats');
     console.log('  npx tsx scripts/cluster-summary.ts top [limit]          # Show top clusters');

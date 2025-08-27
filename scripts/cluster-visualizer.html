@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ron Trent Video Clustering Visualization</title>
+    <title>Video Clustering Visualization</title>
     <style>
         * {
             margin: 0;
@@ -180,22 +180,61 @@
             border-radius: 8px;
             transition: background 0.2s ease;
             cursor: pointer;
+            position: relative;
         }
 
         .video-item:hover {
             background: rgba(255, 255, 255, 0.2);
         }
 
+        .video-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .video-info {
+            flex: 1;
+            min-width: 0;
+        }
+
         .video-title {
             font-weight: 500;
             margin-bottom: 5px;
             line-height: 1.3;
+            word-wrap: break-word;
         }
 
         .video-channel {
             font-size: 0.8rem;
             opacity: 0.8;
             color: #FFD700;
+        }
+
+        .copy-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.7rem;
+            transition: background 0.2s ease;
+            flex-shrink: 0;
+            height: fit-content;
+        }
+
+        .copy-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .copy-btn:active {
+            background: rgba(255, 255, 255, 0.4);
+        }
+
+        .copy-btn.copied {
+            background: rgba(46, 204, 113, 0.6);
         }
 
         .reason-boiler { border-left-color: #e74c3c; }
@@ -230,6 +269,30 @@
             display: none;
         }
 
+        .cluster-card.done {
+            opacity: 0.4;
+            filter: grayscale(1);
+            position: relative;
+        }
+
+        .cluster-card.done::before {
+            content: "✓ DONE";
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(46, 204, 113, 0.8);
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: bold;
+            z-index: 10;
+        }
+
+        .cluster-card.done .video-item {
+            pointer-events: none;
+        }
+
         .expand-btn {
             background: rgba(255, 255, 255, 0.2);
             border: none;
@@ -250,7 +313,7 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>🎵 Ron Trent Video Clustering</h1>
+            <h1>🎵 Video Clustering</h1>
             <p>Advanced clustering analysis of YouTube videos using TF-IDF, Levenshtein distance, and Jaccard similarity</p>
         </div>
 
@@ -295,10 +358,27 @@
     <script>
         let clustersData = null;
         let filteredClusters = [];
+        let doneClusters = new Set();
+
+        // Load done clusters from localStorage
+        function loadDoneClusters() {
+            const saved = localStorage.getItem('doneClusters');
+            if (saved) {
+                doneClusters = new Set(JSON.parse(saved));
+            }
+        }
+
+        // Save done clusters to localStorage
+        function saveDoneClusters() {
+            localStorage.setItem('doneClusters', JSON.stringify([...doneClusters]));
+        }
 
         // Load the clustering data
         async function loadData() {
             try {
+                // Load done clusters first
+                loadDoneClusters();
+                
                 const response = await fetch('./advanced-clusters.json');
                 clustersData = await response.json();
                 
@@ -380,7 +460,7 @@
             noResults.style.display = 'none';
             
             grid.innerHTML = filteredClusters.map(cluster => `
-                <div class="cluster-card">
+                <div class="cluster-card ${doneClusters.has(cluster.clusterId) ? 'done' : ''}" onclick="toggleClusterDone(${cluster.clusterId})">
                     <div class="cluster-header">
                         <div class="cluster-id">Cluster #${cluster.clusterId}</div>
                         <div class="cluster-count">${cluster.videos.length} videos</div>
@@ -397,15 +477,22 @@
                     
                     <ul class="video-list ${cluster.videos.length > 5 ? 'collapsed' : ''}" id="videos-${cluster.clusterId}">
                         ${cluster.videos.map(video => `
-                            <li class="video-item" onclick="openVideo('${video.url}')">
-                                <div class="video-title">${video.title}</div>
-                                <div class="video-channel">${video.channel || 'Unknown Channel'}</div>
+                            <li class="video-item" onclick="openVideo(event, '${video.url}')">
+                                <div class="video-content">
+                                    <div class="video-info">
+                                        <div class="video-title">${video.title}</div>
+                                        <div class="video-channel">${video.channel || 'Unknown Channel'}</div>
+                                    </div>
+                                    <button class="copy-btn" onclick="copyTitle(event, '${video.title.replace(/'/g, "\\'")}')">
+                                        📋
+                                    </button>
+                                </div>
                             </li>
                         `).join('')}
                     </ul>
                     
                     ${cluster.videos.length > 5 ? `
-                        <button class="expand-btn" onclick="toggleExpand(${cluster.clusterId})">
+                        <button class="expand-btn" onclick="toggleExpand(event, ${cluster.clusterId})">
                             Show all ${cluster.videos.length} videos
                         </button>
                     ` : ''}
@@ -458,11 +545,62 @@
             applyFilters();
         }
 
-        function openVideo(url) {
+        function openVideo(event, url) {
+            event.stopPropagation();
             window.open(url, '_blank');
         }
 
-        function toggleExpand(clusterId) {
+        function toggleClusterDone(clusterId) {
+            if (doneClusters.has(clusterId)) {
+                doneClusters.delete(clusterId);
+            } else {
+                doneClusters.add(clusterId);
+            }
+            saveDoneClusters();
+            renderClusters();
+        }
+
+        function copyTitle(event, title) {
+            // Prevent the video link from opening
+            event.stopPropagation();
+            
+            // Copy to clipboard
+            navigator.clipboard.writeText(title).then(() => {
+                // Visual feedback
+                const btn = event.target;
+                const originalText = btn.textContent;
+                btn.textContent = '✓';
+                btn.classList.add('copied');
+                
+                setTimeout(() => {
+                    btn.textContent = originalText;
+                    btn.classList.remove('copied');
+                }, 1000);
+            }).catch(err => {
+                console.error('Failed to copy text: ', err);
+                // Fallback for older browsers
+                const textArea = document.createElement('textarea');
+                textArea.value = title;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+                
+                // Visual feedback
+                const btn = event.target;
+                const originalText = btn.textContent;
+                btn.textContent = '✓';
+                btn.classList.add('copied');
+                
+                setTimeout(() => {
+                    btn.textContent = originalText;
+                    btn.classList.remove('copied');
+                }, 1000);
+            });
+        }
+
+        function toggleExpand(event, clusterId) {
+            event.stopPropagation();
             const videoList = document.getElementById(`videos-${clusterId}`);
             const btn = videoList.nextElementSibling;
             
