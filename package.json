@@ -15,7 +15,9 @@
     "prepare-assets": "./scripts/prepare-assets.sh",
     "build-for-artist": "./scripts/build-for-artist.sh",
     "docker-build": "./scripts/docker-build.sh",
-    "scraper": "cd scraper && yarn scraper"
+    "scraper": "cd scraper && yarn scraper",
+    "deploy:larry": "git push prod-larryheard",
+    "deploy:ron": "git push prod-rontrent"
   },
   "dependencies": {
     "vue": "^3.5.18"
