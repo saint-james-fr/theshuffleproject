@@ -1,28 +1,13 @@
 # Multi-stage build for Vue.js app with nginx
 FROM node:23-alpine AS build
 
+# Install bash for the prepare-assets script
+RUN apk add --no-cache bash
+
 WORKDIR /app
 
-# Build arguments for artist configuration
+# Build argument for artist name (only one needed!)
 ARG ARTIST_NAME=larry-heard
-ARG VITE_ARTIST_NAME
-ARG VITE_ARTIST_DISPLAY_NAME
-ARG VITE_SITE_URL
-ARG VITE_ARTIST_DESCRIPTION
-ARG VITE_ARTIST_KEYWORDS
-ARG VITE_SOCIAL_IMAGE
-ARG VITE_TWITTER_IMAGE
-ARG VITE_THEME_COLOR
-
-# Set environment variables for Vite
-ENV VITE_ARTIST_NAME=${VITE_ARTIST_NAME}
-ENV VITE_ARTIST_DISPLAY_NAME=${VITE_ARTIST_DISPLAY_NAME}
-ENV VITE_SITE_URL=${VITE_SITE_URL}
-ENV VITE_ARTIST_DESCRIPTION=${VITE_ARTIST_DESCRIPTION}
-ENV VITE_ARTIST_KEYWORDS=${VITE_ARTIST_KEYWORDS}
-ENV VITE_SOCIAL_IMAGE=${VITE_SOCIAL_IMAGE}
-ENV VITE_TWITTER_IMAGE=${VITE_TWITTER_IMAGE}
-ENV VITE_THEME_COLOR=${VITE_THEME_COLOR}
 
 # Copy package files
 COPY package.json yarn.lock ./
@@ -43,17 +28,22 @@ COPY scripts/prepare-assets.sh ./scripts/
 # Copy source code
 COPY . .
 
-# Set up environment from artist config
+# Load artist configuration and set environment variables
 RUN if [ -f "env-configs/${ARTIST_NAME}.env" ]; then \
+        echo "Loading config for ${ARTIST_NAME}..."; \
         cp "env-configs/${ARTIST_NAME}.env" .env; \
-        echo "Using config for ${ARTIST_NAME}"; \
+        # Source the env file and export variables for build time \
+        set -a && . "env-configs/${ARTIST_NAME}.env" && set +a; \
+        echo "Configured for: $VITE_ARTIST_DISPLAY_NAME"; \
     else \
         echo "Warning: No config found for ${ARTIST_NAME}, using defaults"; \
+        echo "VITE_ARTIST_NAME=${ARTIST_NAME}" > .env; \
+        echo "VITE_ARTIST_DISPLAY_NAME=${ARTIST_NAME}" >> .env; \
     fi
 
 # Prepare assets for the artist
 RUN chmod +x scripts/prepare-assets.sh && \
-    ./scripts/prepare-assets.sh "${ARTIST_NAME}"
+    bash scripts/prepare-assets.sh "${ARTIST_NAME}"
 
 # Generate data for the artist if not exists
 RUN cd scraper && \

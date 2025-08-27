@@ -17,7 +17,7 @@ const getArtistConfig = (): ArtistConfig => {
   const siteUrl = import.meta.env.VITE_SITE_URL || 'https://larry-heard.theshuffleproject.site'
   
   // Convert artist name to camelCase for data file variable name
-  const dataFileName = artistName.replace(/-([a-z])/g, (g) => g[1].toUpperCase()) + 'Videos'
+  const dataFileName = artistName.replace(/-([a-z])/g, (g: string) => g[1].toUpperCase()) + 'Videos'
   
   // Default configuration for Larry Heard with fallbacks
   const defaultConfig: ArtistConfig = {

@@ -22,7 +22,7 @@ Thumbs.db
 .gitignore
 
 # Scraper (not needed for frontend deployment)
-scraper/
+# scraper/
 
 # Documentation
 README.md
