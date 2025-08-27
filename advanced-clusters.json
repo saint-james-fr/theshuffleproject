@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalVideos": 479,
-    "clustersFound": 80,
-    "clusteredVideos": 215,
-    "timestamp": "2025-08-27T10:24:17.335Z"
+    "totalVideos": 516,
+    "clustersFound": 67,
+    "clusteredVideos": 174,
+    "timestamp": "2025-08-27T13:45:07.807Z"
   },
   "clusters": [
     {
@@ -26,26 +26,7 @@
       "confidence": 1
     },
     {
-      "clusterId": 6,
-      "videos": [
-        {
-          "title": "Ron Trent  Chez Damier - The Meaning",
-          "url": "https://www.youtube.com/watch?v=9pFro-q8COg",
-          "videoId": "9pFro-q8COg",
-          "channel": "Underground Music Channel"
-        },
-        {
-          "title": "Ron Trent  Chez Damier - The Meaning (1995)",
-          "url": "https://www.youtube.com/watch?v=Mzrry0ghZRA",
-          "videoId": "Mzrry0ghZRA",
-          "channel": "sonictextures"
-        }
-      ],
-      "reason": "Likely duplicates",
-      "confidence": 1
-    },
-    {
-      "clusterId": 8,
+      "clusterId": 5,
       "videos": [
         {
           "title": "Untitled A",
@@ -79,101 +60,6 @@
       "clusterId": 9,
       "videos": [
         {
-          "title": "Ron Trent - Sweet Chocolate",
-          "url": "https://www.youtube.com/watch?v=zIX7R2KU9CY",
-          "videoId": "zIX7R2KU9CY",
-          "channel": "backwoodsman12"
-        },
-        {
-          "title": "Ron Trent - Sweet Chocolate",
-          "url": "https://www.youtube.com/watch?v=OPb4JoETBDI",
-          "videoId": "OPb4JoETBDI",
-          "channel": "Discogs"
-        }
-      ],
-      "reason": "Likely duplicates",
-      "confidence": 1
-    },
-    {
-      "clusterId": 11,
-      "videos": [
-        {
-          "title": "Ron Trent - Touch",
-          "url": "https://www.youtube.com/watch?v=BJ5ECujLEb8",
-          "videoId": "BJ5ECujLEb8",
-          "channel": "MoreThanJustADance"
-        },
-        {
-          "title": "Ron Trent - Touch",
-          "url": "https://www.youtube.com/watch?v=nnArgHaZKUw",
-          "videoId": "nnArgHaZKUw",
-          "channel": "MUSICANDPOWER"
-        }
-      ],
-      "reason": "Likely duplicates",
-      "confidence": 1
-    },
-    {
-      "clusterId": 12,
-      "videos": [
-        {
-          "title": "Ron Trent - Sweetness",
-          "url": "https://www.youtube.com/watch?v=-ZjGz3r_wpc",
-          "videoId": "-ZjGz3r_wpc",
-          "channel": "Jazzy Groove Channel"
-        },
-        {
-          "title": "Ron Trent - sweetness",
-          "url": "https://www.youtube.com/watch?v=tuzvato_G6g",
-          "videoId": "tuzvato_G6g",
-          "channel": "Unknown"
-        }
-      ],
-      "reason": "Likely duplicates",
-      "confidence": 1
-    },
-    {
-      "clusterId": 14,
-      "videos": [
-        {
-          "title": "RT Factor - Who Are We",
-          "url": "https://www.youtube.com/watch?v=prh-wg2Jxt8",
-          "videoId": "prh-wg2Jxt8",
-          "channel": "Bambatta Music"
-        },
-        {
-          "title": "RT Factor (aka Ron Trent) - Who Are We",
-          "url": "https://www.youtube.com/watch?v=tiHLS4KQHwE",
-          "videoId": "tiHLS4KQHwE",
-          "channel": "tevz"
-        }
-      ],
-      "reason": "Likely duplicates",
-      "confidence": 1
-    },
-    {
-      "clusterId": 15,
-      "videos": [
-        {
-          "title": "RT Factor - Blue Twilight",
-          "url": "https://www.youtube.com/watch?v=YxvnNJVoX9M",
-          "videoId": "YxvnNJVoX9M",
-          "channel": "MyHouse Channel"
-        },
-        {
-          "title": "RT Factor - Blue Twilight (Electric Blue EBC001)",
-          "url": "https://www.youtube.com/watch?v=ewsCgCJYEVk",
-          "videoId": "ewsCgCJYEVk",
-          "channel": "Jonathan Van Campenhout"
-        }
-      ],
-      "reason": "Likely duplicates",
-      "confidence": 1
-    },
-    {
-      "clusterId": 17,
-      "videos": [
-        {
           "title": "World Sky  Universes (aka Ron Trent) - The Answer",
           "url": "https://www.youtube.com/watch?v=lSwEJPA0xMY",
           "videoId": "lSwEJPA0xMY",
@@ -184,19 +70,32 @@
           "url": "https://www.youtube.com/watch?v=QHDeO7jE8rI",
           "videoId": "QHDeO7jE8rI",
           "channel": "adrian cojocaru"
-        },
-        {
-          "title": "World Sky  Universes - The Answer",
-          "url": "https://www.youtube.com/watch?v=uPTo9Rs3WRE",
-          "videoId": "uPTo9Rs3WRE",
-          "channel": "Salo"
         }
       ],
       "reason": "Likely duplicates",
       "confidence": 1
     },
     {
-      "clusterId": 20,
+      "clusterId": 11,
+      "videos": [
+        {
+          "title": "Day By Day (Chez N Trent Vocal Mix)",
+          "url": "https://www.youtube.com/watch?v=j9Zo57of77g",
+          "videoId": "j9Zo57of77g",
+          "channel": "Dajae - Topic"
+        },
+        {
+          "title": "Day By Day (Urban Sound Gallery Mix)",
+          "url": "https://www.youtube.com/watch?v=m54bYoKYhuQ",
+          "videoId": "m54bYoKYhuQ",
+          "channel": "Rodrigo Felsen"
+        }
+      ],
+      "reason": "Same track - official vs unofficial uploads",
+      "confidence": 1
+    },
+    {
+      "clusterId": 12,
       "videos": [
         {
           "title": "Con-Fusion Kiddzz  Stresskill (Anger Mix)",
@@ -215,18 +114,18 @@
       "confidence": 1
     },
     {
-      "clusterId": 25,
+      "clusterId": 17,
       "videos": [
         {
-          "title": "Ron Trent - Fresh On Your Love",
-          "url": "https://www.youtube.com/watch?v=C1hyLRHLnrE",
-          "videoId": "C1hyLRHLnrE",
-          "channel": "MUSICANDPOWER"
+          "title": "Ron Trent - Her",
+          "url": "https://www.youtube.com/watch?v=Hn_XEZT0e8A",
+          "videoId": "Hn_XEZT0e8A",
+          "channel": "Tajak"
         },
         {
-          "title": "Ron Trent - Fresh On Your Love",
-          "url": "https://www.youtube.com/watch?v=oP7PtbIPOf4",
-          "videoId": "oP7PtbIPOf4",
+          "title": "Ron Trent  -  Her",
+          "url": "https://www.youtube.com/watch?v=VLfvcddO1bc",
+          "videoId": "VLfvcddO1bc",
           "channel": "Discogs"
         }
       ],
@@ -234,19 +133,38 @@
       "confidence": 1
     },
     {
-      "clusterId": 27,
+      "clusterId": 23,
       "videos": [
         {
-          "title": "Ron Trent - Message To The World (Electric Blue)",
-          "url": "https://www.youtube.com/watch?v=jdpA3lzmahI",
-          "videoId": "jdpA3lzmahI",
-          "channel": "Paradise Worldwide"
+          "title": "Romantic Flight - Black Romantic (Vocal) [MusicandPower] produced by Ron Trent",
+          "url": "https://www.youtube.com/watch?v=zUwuarQNnzw",
+          "videoId": "zUwuarQNnzw",
+          "channel": "Gi Za House Music"
         },
         {
-          "title": "Ron Trent - message to the world",
-          "url": "https://www.youtube.com/watch?v=hdEC7YcWyg0",
-          "videoId": "hdEC7YcWyg0",
-          "channel": "Babes Papes"
+          "title": "Romantic Flight - Black Romantic (Instrumental) [MusicandPower] produced by Ron Trent",
+          "url": "https://www.youtube.com/watch?v=kbI8fG8STQI",
+          "videoId": "kbI8fG8STQI",
+          "channel": "Gi Za House Music"
+        }
+      ],
+      "reason": "Likely duplicates",
+      "confidence": 1
+    },
+    {
+      "clusterId": 32,
+      "videos": [
+        {
+          "title": "Harks  Mudd - Susta (Ron Trent Remix)",
+          "url": "https://www.youtube.com/watch?v=Ld6SVBQBeGU",
+          "videoId": "Ld6SVBQBeGU",
+          "channel": "LengRecords"
+        },
+        {
+          "title": "Harks  Mudd - Susta (Ron Trent Dub)",
+          "url": "https://www.youtube.com/watch?v=xIJbC79j5PE",
+          "videoId": "xIJbC79j5PE",
+          "channel": "LengRecords"
         }
       ],
       "reason": "Likely duplicates",
@@ -254,75 +172,6 @@
     },
     {
       "clusterId": 38,
-      "videos": [
-        {
-          "title": "Ron Trent-Sundance (Original Mix)",
-          "url": "https://www.youtube.com/watch?v=iATSvaLZtL4",
-          "videoId": "iATSvaLZtL4",
-          "channel": "DEEΡeRSΗΛDeS ofHOUΣe"
-        },
-        {
-          "title": "Ron Trent - sundance",
-          "url": "https://www.youtube.com/watch?v=a5Jq0v0zKD8",
-          "videoId": "a5Jq0v0zKD8",
-          "channel": "Unknown"
-        },
-        {
-          "title": "Ron Trent - Sundance (Electric Blue)",
-          "url": "https://www.youtube.com/watch?v=tTPmixw2_yE",
-          "videoId": "tTPmixw2_yE",
-          "channel": "Discogs"
-        }
-      ],
-      "reason": "Likely duplicates",
-      "confidence": 1
-    },
-    {
-      "clusterId": 47,
-      "videos": [
-        {
-          "title": "Ron Trent - Seduction",
-          "url": "https://www.youtube.com/watch?v=R5Sv4_bf86U",
-          "videoId": "R5Sv4_bf86U",
-          "channel": "Unknown"
-        },
-        {
-          "title": "Ron Trent  -  Seduction",
-          "url": "https://www.youtube.com/watch?v=jtpII2bhqbY",
-          "videoId": "jtpII2bhqbY",
-          "channel": "Discogs"
-        }
-      ],
-      "reason": "Likely duplicates",
-      "confidence": 1
-    },
-    {
-      "clusterId": 48,
-      "videos": [
-        {
-          "title": "Ron Trent - Piano Track",
-          "url": "https://www.youtube.com/watch?v=7yRJZFCp-IU",
-          "videoId": "7yRJZFCp-IU",
-          "channel": "Unknown"
-        },
-        {
-          "title": "Ron Trent - Piano Track",
-          "url": "https://www.youtube.com/watch?v=w-iBZ5RfTHA",
-          "videoId": "w-iBZ5RfTHA",
-          "channel": "Unknown"
-        },
-        {
-          "title": "Ron Trent - Piano Track",
-          "url": "https://www.youtube.com/watch?v=iSMMzjGK3Xg",
-          "videoId": "iSMMzjGK3Xg",
-          "channel": "Discogs"
-        }
-      ],
-      "reason": "Likely duplicates",
-      "confidence": 1
-    },
-    {
-      "clusterId": 50,
       "videos": [
         {
           "title": "Ron Trent - Look Beyond (Dub)",
@@ -341,133 +190,45 @@
       "confidence": 1
     },
     {
-      "clusterId": 51,
+      "clusterId": 45,
       "videos": [
         {
-          "title": "Ron Trent - Space Dance",
-          "url": "https://www.youtube.com/watch?v=2UD1eLhJGUo",
-          "videoId": "2UD1eLhJGUo",
+          "title": "Aqua Bassino - Baby Cmon (Ron Trents Remix)",
+          "url": "https://www.youtube.com/watch?v=2CvUw6So90c",
+          "videoId": "2CvUw6So90c",
           "channel": "Unknown"
         },
         {
-          "title": "Ron Trent - space dance",
-          "url": "https://www.youtube.com/watch?v=7OkSzm3e5Mk",
-          "videoId": "7OkSzm3e5Mk",
-          "channel": "Unknown"
+          "title": "Aqua Bassino - Baby Cmon (Ron Trents Remix) (2002)",
+          "url": "https://www.youtube.com/watch?v=QxZFFqMm-_A",
+          "videoId": "QxZFFqMm-_A",
+          "channel": "Groove"
         }
       ],
       "reason": "Likely duplicates",
       "confidence": 1
     },
     {
-      "clusterId": 60,
+      "clusterId": 47,
       "videos": [
         {
-          "title": "Ron Trent  Anthony Nicholson - Aquarhythmatica",
-          "url": "https://www.youtube.com/watch?v=ek_dD-kdgm0",
-          "videoId": "ek_dD-kdgm0",
+          "title": "Skymark - Find A Place In This Crazy World (Ron Trent Mix)",
+          "url": "https://www.youtube.com/watch?v=5j7yRwikCCI",
+          "videoId": "5j7yRwikCCI",
           "channel": "Unknown"
         },
         {
-          "title": "Ron Trent & Anthony Nicholson - Aquarhythmatica",
-          "url": "https://www.youtube.com/watch?v=hB1dzf3glqg",
-          "videoId": "hB1dzf3glqg",
-          "channel": "Discogs"
-        },
-        {
-          "title": "Ron Trent & Anthony Nicholson - AquaRhythmatica (1998)",
-          "url": "https://www.youtube.com/watch?v=anVTVkh40VQ",
-          "videoId": "anVTVkh40VQ",
-          "channel": "Discogs"
+          "title": "Skymark - Find A Place In This Crazy World (Ron Trent Mix)",
+          "url": "https://www.youtube.com/watch?v=7NL2vO6yenI",
+          "videoId": "7NL2vO6yenI",
+          "channel": "Street Certified Records"
         }
       ],
       "reason": "Likely duplicates",
       "confidence": 1
     },
     {
-      "clusterId": 61,
-      "videos": [
-        {
-          "title": "Ron Trent - kids at play",
-          "url": "https://www.youtube.com/watch?v=DKEGa_qSl6U",
-          "videoId": "DKEGa_qSl6U",
-          "channel": "Unknown"
-        },
-        {
-          "title": "Ron Trent - Kids at Play",
-          "url": "https://www.youtube.com/watch?v=uutZlkDFU8g",
-          "videoId": "uutZlkDFU8g",
-          "channel": "Discogs"
-        }
-      ],
-      "reason": "Likely duplicates",
-      "confidence": 1
-    },
-    {
-      "clusterId": 62,
-      "videos": [
-        {
-          "title": "Ron Trent - blood and fire",
-          "url": "https://www.youtube.com/watch?v=ptcSiX1-vrg",
-          "videoId": "ptcSiX1-vrg",
-          "channel": "Unknown"
-        },
-        {
-          "title": "Ron Trent - Blood And Fire",
-          "url": "https://www.youtube.com/watch?v=Q6N2WhbBzfI",
-          "videoId": "Q6N2WhbBzfI",
-          "channel": "Discogs"
-        }
-      ],
-      "reason": "Likely duplicates",
-      "confidence": 1
-    },
-    {
-      "clusterId": 63,
-      "videos": [
-        {
-          "title": "Ron Trent  Anthony Nicholson - Soul Samba Express",
-          "url": "https://www.youtube.com/watch?v=Fw2HX6CYSu0",
-          "videoId": "Fw2HX6CYSu0",
-          "channel": "Unknown"
-        },
-        {
-          "title": "Ron Trent & Anthony Nicholson - Soul Samba Express (1998)",
-          "url": "https://www.youtube.com/watch?v=w6ru0f81Cn4",
-          "videoId": "w6ru0f81Cn4",
-          "channel": "Discogs"
-        },
-        {
-          "title": "Ron Trent & Anthony Nicholson - Soul Samba Express",
-          "url": "https://www.youtube.com/watch?v=0nH8cXZupFE",
-          "videoId": "0nH8cXZupFE",
-          "channel": "Discogs"
-        }
-      ],
-      "reason": "Likely duplicates",
-      "confidence": 1
-    },
-    {
-      "clusterId": 65,
-      "videos": [
-        {
-          "title": "Ron Trent – Spaces And Places (MAP002)",
-          "url": "https://www.youtube.com/watch?v=-mar80oXYwQ",
-          "videoId": "-mar80oXYwQ",
-          "channel": "Discogs"
-        },
-        {
-          "title": "Ron Trent – Spaces And Places",
-          "url": "https://www.youtube.com/watch?v=MxNBFclWTEE",
-          "videoId": "MxNBFclWTEE",
-          "channel": "Discogs"
-        }
-      ],
-      "reason": "Likely duplicates",
-      "confidence": 1
-    },
-    {
-      "clusterId": 70,
+      "clusterId": 49,
       "videos": [
         {
           "title": "Ursula Rucker & Ron Trent – Black Queen (Instrumental Mix) | | Deep House, Latin House",
@@ -486,7 +247,7 @@
       "confidence": 1
     },
     {
-      "clusterId": 73,
+      "clusterId": 53,
       "videos": [
         {
           "title": "Ron Trent Presents Indigo Tracks - When The Drum Calls (Drum Break Down Mix)",
@@ -505,7 +266,7 @@
       "confidence": 1
     },
     {
-      "clusterId": 74,
+      "clusterId": 54,
       "videos": [
         {
           "title": "Ron Trent - YNF (You'll Never Find)",
@@ -524,24 +285,24 @@
       "confidence": 1
     },
     {
-      "clusterId": 75,
+      "clusterId": 57,
       "videos": [
         {
-          "title": "Ron Trent Presents Indigo Tracks #3 - Respect Yourself (Africa Hi Fi Mix)",
-          "url": "https://www.youtube.com/watch?v=EWqkN5J7mWI",
-          "videoId": "EWqkN5J7mWI",
+          "title": "The Rhythm",
+          "url": "https://www.youtube.com/watch?v=YRUn_xuZPCk",
+          "videoId": "YRUn_xuZPCk",
           "channel": "Discogs"
         },
         {
-          "title": "Ron Trent Presents Indigo Tracks #3 - Respect Yourself (Dub)",
-          "url": "https://www.youtube.com/watch?v=eMwsjnn954s",
-          "videoId": "eMwsjnn954s",
+          "title": "The Rhythm (Afro Lounge)",
+          "url": "https://www.youtube.com/watch?v=hE47Y7Gcxjg",
+          "videoId": "hE47Y7Gcxjg",
           "channel": "Discogs"
         },
         {
-          "title": "Ron Trent Presents Indigo Tracks #3 - Respect Yourself (Beats)",
-          "url": "https://www.youtube.com/watch?v=4r7qNeD-sys",
-          "videoId": "4r7qNeD-sys",
+          "title": "The Rhythm (Instrumental)",
+          "url": "https://www.youtube.com/watch?v=xS4Y_ItZyUo",
+          "videoId": "xS4Y_ItZyUo",
           "channel": "Discogs"
         }
       ],
@@ -549,7 +310,7 @@
       "confidence": 1
     },
     {
-      "clusterId": 78,
+      "clusterId": 58,
       "videos": [
         {
           "title": "Ron Trent Presents The Master Plan - Melting Pot (Proclamation Version)",
@@ -568,7 +329,7 @@
       "confidence": 1
     },
     {
-      "clusterId": 79,
+      "clusterId": 60,
       "videos": [
         {
           "title": "Welcome Sire (Ambient Dubbiy)",
@@ -587,7 +348,7 @@
       "confidence": 1
     },
     {
-      "clusterId": 80,
+      "clusterId": 61,
       "videos": [
         {
           "title": "Ron Trent - Tribal Affair (Braxton's 326 Mix)",
@@ -606,7 +367,45 @@
       "confidence": 1
     },
     {
-      "clusterId": 54,
+      "clusterId": 63,
+      "videos": [
+        {
+          "title": "Dream On Baby (Ron Trent Concept2)",
+          "url": "https://www.youtube.com/watch?v=TduH5WTThZ8",
+          "videoId": "TduH5WTThZ8",
+          "channel": "Sarah Jane Morris - Topic"
+        },
+        {
+          "title": "Dream On Baby (Ron Trents Paradise Outro Concept)",
+          "url": "https://www.youtube.com/watch?v=6Qr0WViYlTQ",
+          "videoId": "6Qr0WViYlTQ",
+          "channel": "Sarah Jane Morris - Topic"
+        }
+      ],
+      "reason": "Likely duplicates",
+      "confidence": 1
+    },
+    {
+      "clusterId": 65,
+      "videos": [
+        {
+          "title": "Honey (Ron Trents Honey Mix)",
+          "url": "https://www.youtube.com/watch?v=1bCq5ZPDsgQ",
+          "videoId": "1bCq5ZPDsgQ",
+          "channel": "Erykah Badu"
+        },
+        {
+          "title": "Honey (Ron Trents Honey Dub)",
+          "url": "https://www.youtube.com/watch?v=yKg5V-J1zus",
+          "videoId": "yKg5V-J1zus",
+          "channel": "Erykah Badu"
+        }
+      ],
+      "reason": "Likely duplicates",
+      "confidence": 1
+    },
+    {
+      "clusterId": 41,
       "videos": [
         {
           "title": "Ront Trent - In The Spirit (The full experience mix)",
@@ -637,26 +436,7 @@
       "confidence": 0.9761904761904762
     },
     {
-      "clusterId": 57,
-      "videos": [
-        {
-          "title": "Robert Owens  Ron Trent  Movin On",
-          "url": "https://www.youtube.com/watch?v=vCHwVvDtWiY",
-          "videoId": "vCHwVvDtWiY",
-          "channel": "Unknown"
-        },
-        {
-          "title": "Robert Owens & Ron Trent | Movin' On (Vocal)",
-          "url": "https://www.youtube.com/watch?v=OwltYZxrObs",
-          "videoId": "OwltYZxrObs",
-          "channel": "Discogs"
-        }
-      ],
-      "reason": "Likely duplicates",
-      "confidence": 0.9642857142857143
-    },
-    {
-      "clusterId": 72,
+      "clusterId": 52,
       "videos": [
         {
           "title": "Ron Trent & Erik Rico - Sensation (Dub)",
@@ -675,149 +455,75 @@
       "confidence": 0.9615384615384616
     },
     {
-      "clusterId": 32,
+      "clusterId": 40,
       "videos": [
         {
-          "title": "Ron Trent - Her",
-          "url": "https://www.youtube.com/watch?v=Hn_XEZT0e8A",
-          "videoId": "Hn_XEZT0e8A",
-          "channel": "Tajak"
-        },
-        {
-          "title": "Ron Trent - her",
-          "url": "https://www.youtube.com/watch?v=dwk2MMHceiQ",
-          "videoId": "dwk2MMHceiQ",
+          "title": "Satoshi Tomiie - Thursday 2AM (Ron Trent Remix Dub)",
+          "url": "https://www.youtube.com/watch?v=i9mUnJ3IAn8",
+          "videoId": "i9mUnJ3IAn8",
           "channel": "Unknown"
         },
         {
-          "title": "Ron Trent  -  Her",
-          "url": "https://www.youtube.com/watch?v=VLfvcddO1bc",
-          "videoId": "VLfvcddO1bc",
-          "channel": "Discogs"
+          "title": "Satoshi Tomiie - Thursday 2AM (Ron Trent Remix Main) (2016)",
+          "url": "https://www.youtube.com/watch?v=xcM32ZwyLhE",
+          "videoId": "xcM32ZwyLhE",
+          "channel": "Groove"
         },
         {
-          "title": "Ron Trent - Her [RHMC006-1]",
-          "url": "https://www.youtube.com/watch?v=uA0puszwaA4",
-          "videoId": "uA0puszwaA4",
-          "channel": "Discogs"
-        }
-      ],
-      "reason": "Likely duplicates",
-      "confidence": 0.5
-    },
-    {
-      "clusterId": 36,
-      "videos": [
-        {
-          "title": "Ron Trent - Pop Dip and Spin",
-          "url": "https://www.youtube.com/watch?v=SisZ4h6dnd8",
-          "videoId": "SisZ4h6dnd8",
-          "channel": "TheDiscoPills - selected house, garage & techno"
+          "title": "Satoshi Tomiie - Thursday 2AM (Satoshi Tomiie Tool Dub Edit Of Ron Trent Remix)",
+          "url": "https://www.youtube.com/watch?v=rpUbW1vs8_I",
+          "videoId": "rpUbW1vs8_I",
+          "channel": "Temporal Rhythms"
         },
         {
-          "title": "Ron Trent - Pop Dip And Spin",
-          "url": "https://www.youtube.com/watch?v=fCG26OvcMP4",
-          "videoId": "fCG26OvcMP4",
-          "channel": "Unknown"
+          "title": "Satoshi Tomiie - Thursday 2AM (Ron Trent Dub)",
+          "url": "https://www.youtube.com/watch?v=gAuG9nlU0wo",
+          "videoId": "gAuG9nlU0wo",
+          "channel": "Temporal Rhythms"
         },
         {
-          "title": "Ron Trent - Pop Dip and Spin",
-          "url": "https://www.youtube.com/watch?v=xl_K0OzBNGg",
-          "videoId": "xl_K0OzBNGg",
-          "channel": "Discogs"
-        },
-        {
-          "title": "Pop Dip and Spin",
-          "url": "https://www.youtube.com/watch?v=w1SU_i08hIM",
-          "videoId": "w1SU_i08hIM",
-          "channel": "Discogs"
-        }
-      ],
-      "reason": "Likely duplicates",
-      "confidence": 0.5
-    },
-    {
-      "clusterId": 77,
-      "videos": [
-        {
-          "title": "The Rhythm",
-          "url": "https://www.youtube.com/watch?v=YRUn_xuZPCk",
-          "videoId": "YRUn_xuZPCk",
-          "channel": "Discogs"
-        },
-        {
-          "title": "The Rhythm (Afro Lounge)",
-          "url": "https://www.youtube.com/watch?v=hE47Y7Gcxjg",
-          "videoId": "hE47Y7Gcxjg",
-          "channel": "Discogs"
-        },
-        {
-          "title": "The Rhythm (Instrumental)",
-          "url": "https://www.youtube.com/watch?v=xS4Y_ItZyUo",
-          "videoId": "xS4Y_ItZyUo",
-          "channel": "Discogs"
-        },
-        {
-          "title": "Ron Trent Presents The Kings Dub - The Rhythm",
-          "url": "https://www.youtube.com/watch?v=UoJcaeMipEk",
-          "videoId": "UoJcaeMipEk",
-          "channel": "Discogs"
-        }
-      ],
-      "reason": "Likely duplicates",
-      "confidence": 0.5
-    },
-    {
-      "clusterId": 31,
-      "videos": [
-        {
-          "title": "Ron Trent - Altered States (1990)",
-          "url": "https://www.youtube.com/watch?v=KY3Y_fnNGVA",
-          "videoId": "KY3Y_fnNGVA",
-          "channel": "Techno & House Classics"
-        },
-        {
-          "title": "Ron Trent - Altered States [Roberto Figus Interpreted] arturia roland behringer rd9 sh01a",
-          "url": "https://www.youtube.com/watch?v=uyyWzBqsbNU",
-          "videoId": "uyyWzBqsbNU",
-          "channel": "Roberto Figus"
-        },
-        {
-          "title": "Altered States",
-          "url": "https://www.youtube.com/watch?v=XS0KWyRm1T8",
-          "videoId": "XS0KWyRm1T8",
-          "channel": "Ron Trent - Topic"
-        },
-        {
-          "title": "Ron Trent - Altered States",
-          "url": "https://www.youtube.com/watch?v=X0CgkC1PVbw",
-          "videoId": "X0CgkC1PVbw",
-          "channel": "Unknown"
-        },
-        {
-          "title": "Ron Trent - Altered States (Carl Craig's East Side Remix)",
-          "url": "https://www.youtube.com/watch?v=XyH5Ntc9hAo",
-          "videoId": "XyH5Ntc9hAo",
-          "channel": "Discogs"
-        },
-        {
-          "title": "Ron Trent - Altered States (Light City Mixx) (1992)",
-          "url": "https://www.youtube.com/watch?v=fMwycbY82C0",
-          "videoId": "fMwycbY82C0",
-          "channel": "Discogs"
-        },
-        {
-          "title": "Ron Trent - Altered States (Original Mix)",
-          "url": "https://www.youtube.com/watch?v=SwhTiHZouTY",
-          "videoId": "SwhTiHZouTY",
-          "channel": "Discogs"
+          "title": "Thursday 2am (Ron Trent 7AM Dub)",
+          "url": "https://www.youtube.com/watch?v=vkOdEeJB-Kk",
+          "videoId": "vkOdEeJB-Kk",
+          "channel": "Satoshi Tomiie - Topic"
         }
       ],
       "reason": "Same track - official vs unofficial uploads",
-      "confidence": 0.47619047619047616
+      "confidence": 0.6
     },
     {
-      "clusterId": 76,
+      "clusterId": 55,
+      "videos": [
+        {
+          "title": "Ron Trent Presents Indigo Tracks #3 - Respect Yourself (Africa Hi Fi Mix)",
+          "url": "https://www.youtube.com/watch?v=EWqkN5J7mWI",
+          "videoId": "EWqkN5J7mWI",
+          "channel": "Discogs"
+        },
+        {
+          "title": "Ron Trent Presents Indigo Tracks #3 - Respect Yourself (Dub)",
+          "url": "https://www.youtube.com/watch?v=eMwsjnn954s",
+          "videoId": "eMwsjnn954s",
+          "channel": "Discogs"
+        },
+        {
+          "title": "Ron Trent Presents Indigo Tracks #3 - Respect Yourself (Beats)",
+          "url": "https://www.youtube.com/watch?v=4r7qNeD-sys",
+          "videoId": "4r7qNeD-sys",
+          "channel": "Discogs"
+        },
+        {
+          "title": "Ron Trent - Respect Yourself (African Hi Fi Mix)",
+          "url": "https://www.youtube.com/watch?v=d5-OkcexLC0",
+          "videoId": "d5-OkcexLC0",
+          "channel": "MoreThanJustADance"
+        }
+      ],
+      "reason": "Likely duplicates",
+      "confidence": 0.5
+    },
+    {
+      "clusterId": 56,
       "videos": [
         {
           "title": "Ron Trent - Love Affair (Ron's Soulful mix)",
@@ -854,7 +560,7 @@
       "confidence": 0.4
     },
     {
-      "clusterId": 16,
+      "clusterId": 8,
       "videos": [
         {
           "title": "Rude Boy Science Featuring Trinidadian Deep - Black Mans Techno (Main",
@@ -879,7 +585,7 @@
       "confidence": 0.3333333333333333
     },
     {
-      "clusterId": 21,
+      "clusterId": 13,
       "videos": [
         {
           "title": "New African Orchestra - Village Dance (Orchestra Dub)",
@@ -904,32 +610,32 @@
       "confidence": 0.3333333333333333
     },
     {
-      "clusterId": 28,
+      "clusterId": 19,
       "videos": [
         {
-          "title": "Ron Trent presents WARM - What do the stars say to you (Behind The Record)",
-          "url": "https://www.youtube.com/watch?v=JjV4zzGzTG8",
-          "videoId": "JjV4zzGzTG8",
-          "channel": "Night Time Stories"
+          "title": "CDR Berlin workshop with RON TRENT Prescription Chicago 1",
+          "url": "https://www.youtube.com/watch?v=rKMMKCBhHl4",
+          "videoId": "rKMMKCBhHl4",
+          "channel": "Create Define Release"
         },
         {
-          "title": "Ron Trent presents WARM - What do the stars say to you (Album Sampler)",
-          "url": "https://www.youtube.com/watch?v=0fU31j2S4hc",
-          "videoId": "0fU31j2S4hc",
-          "channel": "Discogs"
+          "title": "Ron Trent - Prescription",
+          "url": "https://www.youtube.com/watch?v=xZLgtoTbsrg",
+          "videoId": "xZLgtoTbsrg",
+          "channel": "Unknown"
         },
         {
-          "title": "What do the stars say to you",
-          "url": "https://www.youtube.com/watch?v=9SxW1XNXNhk",
-          "videoId": "9SxW1XNXNhk",
-          "channel": "Discogs"
+          "title": "Ron Trent - Prescription (Full Album)",
+          "url": "https://www.youtube.com/watch?v=34zVF6CUIwQ",
+          "videoId": "34zVF6CUIwQ",
+          "channel": "Unknown"
         }
       ],
       "reason": "Likely duplicates",
       "confidence": 0.3333333333333333
     },
     {
-      "clusterId": 40,
+      "clusterId": 22,
       "videos": [
         {
           "title": "Ron Trent feat Robert Owens  Deep Down (Ron Trent Dub)",
@@ -954,7 +660,32 @@
       "confidence": 0.3333333333333333
     },
     {
-      "clusterId": 64,
+      "clusterId": 24,
+      "videos": [
+        {
+          "title": "CANT CHANGE ME (RON TRENT DUB)  NDAMBI techhouse vinyl RECORD",
+          "url": "https://www.youtube.com/watch?v=3FxiC8rNpio",
+          "videoId": "3FxiC8rNpio",
+          "channel": "vinyl cafe"
+        },
+        {
+          "title": "Cant Change Me (Ron Trent Remix)",
+          "url": "https://www.youtube.com/watch?v=owhRuAFu8G0",
+          "videoId": "owhRuAFu8G0",
+          "channel": "N’Dambi - Topic"
+        },
+        {
+          "title": "Cant Change Me (Ron Trent Dub)",
+          "url": "https://www.youtube.com/watch?v=-Qg_ybBb51M",
+          "videoId": "-Qg_ybBb51M",
+          "channel": "N’Dambi - Topic"
+        }
+      ],
+      "reason": "Same track - official vs unofficial uploads",
+      "confidence": 0.3333333333333333
+    },
+    {
+      "clusterId": 48,
       "videos": [
         {
           "title": "Ron Trent - Manifesto (Bewe Effect)",
@@ -979,7 +710,7 @@
       "confidence": 0.3333333333333333
     },
     {
-      "clusterId": 71,
+      "clusterId": 51,
       "videos": [
         {
           "title": "Ron Trent Featuring Robert Owens - Deep Down (Main Vocal) (Ron Trent Mix)",
@@ -1001,6 +732,31 @@
         }
       ],
       "reason": "Likely duplicates",
+      "confidence": 0.3333333333333333
+    },
+    {
+      "clusterId": 62,
+      "videos": [
+        {
+          "title": "Sonya Blade And The Funky Home Dogs  House Of Love (Vox Remix Dub)",
+          "url": "https://www.youtube.com/watch?v=CCFpCZxPNq4",
+          "videoId": "CCFpCZxPNq4",
+          "channel": "In House We Trust"
+        },
+        {
+          "title": "House Of Love (Chez N Trent Respect Vox Dub)",
+          "url": "https://www.youtube.com/watch?v=jTt5SHsRwWE",
+          "videoId": "jTt5SHsRwWE",
+          "channel": "Sonya Blade - Topic"
+        },
+        {
+          "title": "Sonya Blade And The Funky Home Dogs  House Of Love (Prescription Dub)",
+          "url": "https://www.youtube.com/watch?v=1nrI84LeSMs",
+          "videoId": "1nrI84LeSMs",
+          "channel": "In House We Trust"
+        }
+      ],
+      "reason": "Same track - official vs unofficial uploads",
       "confidence": 0.3333333333333333
     },
     {
@@ -1047,69 +803,7 @@
       "confidence": 0.2
     },
     {
-      "clusterId": 3,
-      "videos": [
-        {
-          "title": "Ron Trent Chez Damier - The Choice (Unreleased)",
-          "url": "https://www.youtube.com/watch?v=yxjFQiBu9vk",
-          "videoId": "yxjFQiBu9vk",
-          "channel": "SoulfulDotNL"
-        },
-        {
-          "title": "Ron Trent  Chez Damier - The Choice (Unreleased)",
-          "url": "https://www.youtube.com/watch?v=Fh-LqgtB4mg",
-          "videoId": "Fh-LqgtB4mg",
-          "channel": "Orange Pedor"
-        },
-        {
-          "title": "Ron Trent  Chez Damier - Choice (Prescription Doctors Dub Mix)",
-          "url": "https://www.youtube.com/watch?v=-g4p6_VcQ-4",
-          "videoId": "-g4p6_VcQ-4",
-          "channel": "Dat Vibe "
-        },
-        {
-          "title": "Chez N Trent - The Choice (Club Mix)",
-          "url": "https://www.youtube.com/watch?v=WPdx_bqjnsw",
-          "videoId": "WPdx_bqjnsw",
-          "channel": "Unknown"
-        }
-      ],
-      "reason": "Likely duplicates",
-      "confidence": 0.16666666666666666
-    },
-    {
-      "clusterId": 7,
-      "videos": [
-        {
-          "title": "Ron Trent - Prescription 6 x LP Unmixed",
-          "url": "https://www.youtube.com/watch?v=wDnQ6pHS-7o",
-          "videoId": "wDnQ6pHS-7o",
-          "channel": "Not_Everyone_Understands_House_Music"
-        },
-        {
-          "title": "Prescription",
-          "url": "https://www.youtube.com/watch?v=ymJVZScv1GA",
-          "videoId": "ymJVZScv1GA",
-          "channel": "Ron Trent - Topic"
-        },
-        {
-          "title": "Ron Trent - Prescription",
-          "url": "https://www.youtube.com/watch?v=xZLgtoTbsrg",
-          "videoId": "xZLgtoTbsrg",
-          "channel": "Unknown"
-        },
-        {
-          "title": "Ron Trent - Prescription (Full Album)",
-          "url": "https://www.youtube.com/watch?v=34zVF6CUIwQ",
-          "videoId": "34zVF6CUIwQ",
-          "channel": "Unknown"
-        }
-      ],
-      "reason": "Same track - official vs unofficial uploads",
-      "confidence": 0.16666666666666666
-    },
-    {
-      "clusterId": 23,
+      "clusterId": 15,
       "videos": [
         {
           "title": "The Gallery Collective - The Dance (Full Gallery Mix)",
@@ -1140,38 +834,7 @@
       "confidence": 0.16666666666666666
     },
     {
-      "clusterId": 39,
-      "videos": [
-        {
-          "title": "Ron Trent - Morning Fever [Prescription Classic Recordings]",
-          "url": "https://www.youtube.com/watch?v=AvCabSNsLXI",
-          "videoId": "AvCabSNsLXI",
-          "channel": "Bootleg Cotton"
-        },
-        {
-          "title": "Ron Trent - Morning Fever",
-          "url": "https://www.youtube.com/watch?v=NlbohDHC3So",
-          "videoId": "NlbohDHC3So",
-          "channel": "Unknown"
-        },
-        {
-          "title": "Ron Trent - Morning Fever (HQ)",
-          "url": "https://www.youtube.com/watch?v=9Ski6-2yWI0",
-          "videoId": "9Ski6-2yWI0",
-          "channel": "Discogs"
-        },
-        {
-          "title": "Morning Fever",
-          "url": "https://www.youtube.com/watch?v=61evtq2KIig",
-          "videoId": "61evtq2KIig",
-          "channel": "Discogs"
-        }
-      ],
-      "reason": "Same track - different quality versions",
-      "confidence": 0.16666666666666666
-    },
-    {
-      "clusterId": 56,
+      "clusterId": 42,
       "videos": [
         {
           "title": "Ron Trent - Space Is The Place (Dubbin Version)",
@@ -1202,7 +865,7 @@
       "confidence": 0.16666666666666666
     },
     {
-      "clusterId": 22,
+      "clusterId": 14,
       "videos": [
         {
           "title": "Ron  Chez D - Untitled (A1)",
@@ -1239,26 +902,69 @@
       "confidence": 0.1
     },
     {
-      "clusterId": 4,
+      "clusterId": 21,
       "videos": [
         {
-          "title": "Chez Damier  Ron Trent - Foot Therapy",
-          "url": "https://www.youtube.com/watch?v=v4M3PF9CnaM",
-          "videoId": "v4M3PF9CnaM",
-          "channel": "UGLYHOUSE100"
+          "title": "Altered States",
+          "url": "https://www.youtube.com/watch?v=XS0KWyRm1T8",
+          "videoId": "XS0KWyRm1T8",
+          "channel": "Ron Trent - Topic"
         },
         {
-          "title": "Ron Trent & Chez Damier - Foot Therapy",
-          "url": "https://www.youtube.com/watch?v=6SYqzDqhKeI",
-          "videoId": "6SYqzDqhKeI",
+          "title": "Ron Trent - Realtered States 1",
+          "url": "https://www.youtube.com/watch?v=OYhXBRF8dCg",
+          "videoId": "OYhXBRF8dCg",
           "channel": "Discogs"
+        },
+        {
+          "title": "RT - Realtered States 2 1993",
+          "url": "https://www.youtube.com/watch?v=aWWLIzgcvYc",
+          "videoId": "aWWLIzgcvYc",
+          "channel": "Discogs"
+        },
+        {
+          "title": "Ron Trent - Altered States (Carl Craig's East Side Remix)",
+          "url": "https://www.youtube.com/watch?v=XyH5Ntc9hAo",
+          "videoId": "XyH5Ntc9hAo",
+          "channel": "Discogs"
+        },
+        {
+          "title": "Ron Trent - Altered States (Light City Mixx) (1992)",
+          "url": "https://www.youtube.com/watch?v=fMwycbY82C0",
+          "videoId": "fMwycbY82C0",
+          "channel": "Discogs"
+        }
+      ],
+      "reason": "Same track - official vs unofficial uploads",
+      "confidence": 0.1
+    },
+    {
+      "clusterId": 3,
+      "videos": [
+        {
+          "title": "Ron Trent Chez Damier - The Choice (Unreleased)",
+          "url": "https://www.youtube.com/watch?v=yxjFQiBu9vk",
+          "videoId": "yxjFQiBu9vk",
+          "channel": "SoulfulDotNL"
+        },
+        {
+          "title": "Ron Trent  Chez Damier - Choice (Prescription Doctors Dub Mix)",
+          "url": "https://www.youtube.com/watch?v=-g4p6_VcQ-4",
+          "videoId": "-g4p6_VcQ-4",
+          "channel": "Dat Vibe "
+        },
+        {
+          "title": "Chez N Trent - The Choice (Club Mix)",
+          "url": "https://www.youtube.com/watch?v=WPdx_bqjnsw",
+          "videoId": "WPdx_bqjnsw",
+          "channel": "Unknown"
         }
       ],
       "reason": "Likely duplicates",
       "confidence": 0
     },
     {
-      "clusterId": 5,
+      "clusterId": 4,
       "videos": [
         {
           "title": "Ron Trent  Chez Damier - Come Together (Sundiatta Om Unreleased Version)",
@@ -1277,7 +983,7 @@
       "confidence": 0
     },
     {
-      "clusterId": 10,
+      "clusterId": 6,
       "videos": [
         {
           "title": "Ron Trent Presents TKumah Sadeek - In Time",
@@ -1296,7 +1002,7 @@
       "confidence": 0
     },
     {
-      "clusterId": 13,
+      "clusterId": 7,
       "videos": [
         {
           "title": "RT Factor - What Does It Mean",
@@ -1315,114 +1021,26 @@
       "confidence": 0
     },
     {
-      "clusterId": 18,
+      "clusterId": 10,
       "videos": [
         {
-          "title": "Indigenous Space People - Across The Universe - Future Vision Records",
-          "url": "https://www.youtube.com/watch?v=azZ7lTW04-Y",
-          "videoId": "azZ7lTW04-Y",
-          "channel": "container 212"
+          "title": "World Sky  Universes aka Ron Trent - The Answer (Brooklyn World Instrumental) - Prescription 5018",
+          "url": "https://www.youtube.com/watch?v=nlZprfC_BhA",
+          "videoId": "nlZprfC_BhA",
+          "channel": "Moodytraxx"
         },
         {
-          "title": "Indigenous Space People Across The Universe",
-          "url": "https://www.youtube.com/watch?v=eqxa_XMoybQ",
-          "videoId": "eqxa_XMoybQ",
-          "channel": "Tony brush aka dancephoria FR"
-        },
-        {
-          "title": "Indigenous Space People - Across The Universe",
-          "url": "https://www.youtube.com/watch?v=xXgp8m1LqOg",
-          "videoId": "xXgp8m1LqOg",
-          "channel": "Techno & House Classics"
-        }
-      ],
-      "reason": "Likely duplicates",
-      "confidence": 0
-    },
-    {
-      "clusterId": 19,
-      "videos": [
-        {
-          "title": "Konfusion Kidzz - On My Mind (1998)",
-          "url": "https://www.youtube.com/watch?v=HSmr7LASa4c",
-          "videoId": "HSmr7LASa4c",
-          "channel": "sonictextures"
-        },
-        {
-          "title": "On My Mind",
-          "url": "https://www.youtube.com/watch?v=guuEW8svKbk",
-          "videoId": "guuEW8svKbk",
-          "channel": "Release - Topic"
+          "title": "Prescription",
+          "url": "https://www.youtube.com/watch?v=ymJVZScv1GA",
+          "videoId": "ymJVZScv1GA",
+          "channel": "Ron Trent - Topic"
         }
       ],
       "reason": "Same track - official vs unofficial uploads",
       "confidence": 0
     },
     {
-      "clusterId": 24,
-      "videos": [
-        {
-          "title": "Groove Collective - Deal With It (USG Gallery Collective Mix) HipBone Records",
-          "url": "https://www.youtube.com/watch?v=zzMyBhH8x_E",
-          "videoId": "zzMyBhH8x_E",
-          "channel": "Julien Ferment"
-        },
-        {
-          "title": "Groove Collective - Deal With It (The Gallery Collective Mix)",
-          "url": "https://www.youtube.com/watch?v=ltX3dE-4N0M",
-          "videoId": "ltX3dE-4N0M",
-          "channel": "Free is in Da House"
-        }
-      ],
-      "reason": "Likely duplicates",
-      "confidence": 0
-    },
-    {
-      "clusterId": 26,
-      "videos": [
-        {
-          "title": "Ron Trent presents Prescription  Word Sound  Power",
-          "url": "https://www.youtube.com/watch?v=u_pbu6Xar6E",
-          "videoId": "u_pbu6Xar6E",
-          "channel": "Rush Hour"
-        },
-        {
-          "title": "Ron Trent presents - Prescription Word Sound  Power",
-          "url": "https://www.youtube.com/watch?v=MFt5W0uQ6wU",
-          "videoId": "MFt5W0uQ6wU",
-          "channel": "Rush Hour"
-        }
-      ],
-      "reason": "Likely duplicates",
-      "confidence": 0
-    },
-    {
-      "clusterId": 29,
-      "videos": [
-        {
-          "title": "Ron Trent - City Beat (Original Mix)",
-          "url": "https://www.youtube.com/watch?v=6GBjIUUKgKQ",
-          "videoId": "6GBjIUUKgKQ",
-          "channel": "Nufăr Alb"
-        },
-        {
-          "title": "Ron Trent - City Beat 1991",
-          "url": "https://www.youtube.com/watch?v=_xN-MWKzkyg",
-          "videoId": "_xN-MWKzkyg",
-          "channel": "Jazzy Groove Channel"
-        },
-        {
-          "title": "City Beat",
-          "url": "https://www.youtube.com/watch?v=sSivKWFRBQg",
-          "videoId": "sSivKWFRBQg",
-          "channel": "Discogs"
-        }
-      ],
-      "reason": "Likely duplicates",
-      "confidence": 0
-    },
-    {
-      "clusterId": 30,
+      "clusterId": 16,
       "videos": [
         {
           "title": "Teddy Douglas  Land of Love (Ron Trent and John Lundun remix)",
@@ -1435,38 +1053,19 @@
           "url": "https://www.youtube.com/watch?v=gzSJZAQauo4",
           "videoId": "gzSJZAQauo4",
           "channel": "Ransom Note"
+        },
+        {
+          "title": "Land of Love (Ron Trent Overdub Remix)",
+          "url": "https://www.youtube.com/watch?v=7X2efrY90yI",
+          "videoId": "7X2efrY90yI",
+          "channel": "Teddy Douglas - Topic"
         }
       ],
-      "reason": "Likely duplicates",
+      "reason": "Same track - official vs unofficial uploads",
       "confidence": 0
     },
     {
-      "clusterId": 33,
-      "videos": [
-        {
-          "title": "Ron Trent - Liquid Love",
-          "url": "https://www.youtube.com/watch?v=7-7VLdlkHWA",
-          "videoId": "7-7VLdlkHWA",
-          "channel": "DeepAfroSoulMusic"
-        },
-        {
-          "title": "Ron Trent - Liquid Love Reprise",
-          "url": "https://www.youtube.com/watch?v=7IFtJ7HXO_s",
-          "videoId": "7IFtJ7HXO_s",
-          "channel": "Unknown"
-        },
-        {
-          "title": "Liquid Love",
-          "url": "https://www.youtube.com/watch?v=bR5ss1bIoRI",
-          "videoId": "bR5ss1bIoRI",
-          "channel": "Discogs"
-        }
-      ],
-      "reason": "Likely duplicates",
-      "confidence": 0
-    },
-    {
-      "clusterId": 34,
+      "clusterId": 18,
       "videos": [
         {
           "title": "Blak Beat Niks  Ritual Of Love (Rons Vocal Beat Down Mix)",
@@ -1478,39 +1077,14 @@
           "title": "Blak Beat Niks - Ritual Of Love (Rons Vocal Beat Down Mix) (1992)",
           "url": "https://www.youtube.com/watch?v=2d8CShqv3a8",
           "videoId": "2d8CShqv3a8",
-          "channel": "Unknown"
+          "channel": "Jelle Hamstra"
         }
       ],
       "reason": "Likely duplicates",
       "confidence": 0
     },
     {
-      "clusterId": 35,
-      "videos": [
-        {
-          "title": "Ron Trent - Street Wave (feat Lars Bartkuhn)",
-          "url": "https://www.youtube.com/watch?v=HLv_ClmFgpY",
-          "videoId": "HLv_ClmFgpY",
-          "channel": "I Feel A Groove"
-        },
-        {
-          "title": "Street Wave",
-          "url": "https://www.youtube.com/watch?v=HZkWA5D6oqY",
-          "videoId": "HZkWA5D6oqY",
-          "channel": "Ron Trent - Topic"
-        },
-        {
-          "title": "Ron Trent - Street Wave [RHMC006-1]",
-          "url": "https://www.youtube.com/watch?v=3GsjMdRmmXA",
-          "videoId": "3GsjMdRmmXA",
-          "channel": "Discogs"
-        }
-      ],
-      "reason": "Same track - official vs unofficial uploads",
-      "confidence": 0
-    },
-    {
-      "clusterId": 37,
+      "clusterId": 20,
       "videos": [
         {
           "title": "Its Hot",
@@ -1529,51 +1103,26 @@
       "confidence": 0
     },
     {
-      "clusterId": 41,
+      "clusterId": 25,
       "videos": [
         {
-          "title": "Ron Trent - Black Magic Woman - The Revisions EP (SACREDMEDICINE001) 12",
-          "url": "https://www.youtube.com/watch?v=MsC5JXmAmnM",
-          "videoId": "MsC5JXmAmnM",
-          "channel": "YORErecords"
+          "title": "Carlton - Cant Be Without (Damier  Trents Prescription Mix [Unreleased Version]) KSS 1049",
+          "url": "https://www.youtube.com/watch?v=NTqtIGKhaUM",
+          "videoId": "NTqtIGKhaUM",
+          "channel": "tRruefrEaKs"
         },
         {
-          "title": "Black Magic Woman",
-          "url": "https://www.youtube.com/watch?v=xixElCFCDXE",
-          "videoId": "xixElCFCDXE",
-          "channel": "Ron Trent - Topic"
-        },
-        {
-          "title": "Ron Trent - Black Magic Woman (Coflo Remix)",
-          "url": "https://www.youtube.com/watch?v=4K1N6tuqo9c",
-          "videoId": "4K1N6tuqo9c",
-          "channel": "Discogs"
-        }
-      ],
-      "reason": "Same track - official vs unofficial uploads",
-      "confidence": 0
-    },
-    {
-      "clusterId": 42,
-      "videos": [
-        {
-          "title": "Ron Trent - Music Life  Culture (Musica Komoda) (Main Mix) (1999) [Vinyl]",
-          "url": "https://www.youtube.com/watch?v=UYbZHTD05lo",
-          "videoId": "UYbZHTD05lo",
-          "channel": "Groove"
-        },
-        {
-          "title": "Ron Trent - Music, Life & Culture (Musica Komoda) (Main Mix)",
-          "url": "https://www.youtube.com/watch?v=58VG1avH-WM",
-          "videoId": "58VG1avH-WM",
-          "channel": "Discogs"
+          "title": "Carlton - Cant Be Without (Damier  Trents Prescription Mix)",
+          "url": "https://www.youtube.com/watch?v=swMlidLu8b8",
+          "videoId": "swMlidLu8b8",
+          "channel": "King Street Sounds"
         }
       ],
       "reason": "Likely duplicates",
       "confidence": 0
     },
     {
-      "clusterId": 43,
+      "clusterId": 26,
       "videos": [
         {
           "title": "Ron Trent x Harry Dennis The IT - Breeze",
@@ -1592,7 +1141,7 @@
       "confidence": 0
     },
     {
-      "clusterId": 44,
+      "clusterId": 27,
       "videos": [
         {
           "title": "Ron Trent And Chez Damier - Untitled A1",
@@ -1617,7 +1166,7 @@
       "confidence": 0
     },
     {
-      "clusterId": 45,
+      "clusterId": 28,
       "videos": [
         {
           "title": "Ron Trent  Chez Damier - Love is the message (Kai Alce Edit)",
@@ -1636,7 +1185,102 @@
       "confidence": 0
     },
     {
-      "clusterId": 46,
+      "clusterId": 29,
+      "videos": [
+        {
+          "title": "Jungle By Night - Spending Week (Ron Trent Remix)",
+          "url": "https://www.youtube.com/watch?v=fB4WFTMuojs",
+          "videoId": "fB4WFTMuojs",
+          "channel": "Chaleur Cosmique"
+        },
+        {
+          "title": "Spending Week (Ron Trent Remix)",
+          "url": "https://www.youtube.com/watch?v=9cOKHn3q3gk",
+          "videoId": "9cOKHn3q3gk",
+          "channel": "Jungle by Night - Topic"
+        }
+      ],
+      "reason": "Same track - official vs unofficial uploads",
+      "confidence": 0
+    },
+    {
+      "clusterId": 30,
+      "videos": [
+        {
+          "title": "BADBADNOTGOOD - Unfolding (Ron Trent Remix)",
+          "url": "https://www.youtube.com/watch?v=QhxX_URxHWo",
+          "videoId": "QhxX_URxHWo",
+          "channel": "BADBADNOTGOOD"
+        },
+        {
+          "title": "BADBADNOTGOOD feat Laraaji - Unfolding (Momentum 73) (Ron Trent Remix)",
+          "url": "https://www.youtube.com/watch?v=6zmQ2x2ZQlQ",
+          "videoId": "6zmQ2x2ZQlQ",
+          "channel": "Collected Compositions "
+        }
+      ],
+      "reason": "Likely duplicates",
+      "confidence": 0
+    },
+    {
+      "clusterId": 31,
+      "videos": [
+        {
+          "title": "ANASTACIA-Im outta love (RON TRENT mix)-PROMO 2x12",
+          "url": "https://www.youtube.com/watch?v=pQDIHDM1BO4",
+          "videoId": "pQDIHDM1BO4",
+          "channel": "Spartagasy78"
+        },
+        {
+          "title": "Anastacia - Im outta love (Ron Trents Club mix)",
+          "url": "https://www.youtube.com/watch?v=CMjVvmSPaEk",
+          "videoId": "CMjVvmSPaEk",
+          "channel": "Hinco Heemskerk"
+        }
+      ],
+      "reason": "Likely duplicates",
+      "confidence": 0
+    },
+    {
+      "clusterId": 33,
+      "videos": [
+        {
+          "title": "Carola Pisaturo  Anthony Dear Breeze - RON TRENT Remix (Claque Musique 015)",
+          "url": "https://www.youtube.com/watch?v=QDbD1kWT0xM",
+          "videoId": "QDbD1kWT0xM",
+          "channel": "claquemusique"
+        },
+        {
+          "title": "Dear Breeze (Ron Trent Remix)",
+          "url": "https://www.youtube.com/watch?v=GMgw1ohOFtQ",
+          "videoId": "GMgw1ohOFtQ",
+          "channel": "Carola Pisaturo - Topic"
+        }
+      ],
+      "reason": "Same track - official vs unofficial uploads",
+      "confidence": 0
+    },
+    {
+      "clusterId": 34,
+      "videos": [
+        {
+          "title": "Ron Trent ft Harry Dennis - Black Magic Woman (Joaquins Edits  Overdubs Version)[Sacred Medicine]",
+          "url": "https://www.youtube.com/watch?v=pm1FtNvxF1Y",
+          "videoId": "pm1FtNvxF1Y",
+          "channel": "Gi Za House Music"
+        },
+        {
+          "title": "Black Magic Woman",
+          "url": "https://www.youtube.com/watch?v=xixElCFCDXE",
+          "videoId": "xixElCFCDXE",
+          "channel": "Ron Trent - Topic"
+        }
+      ],
+      "reason": "Same track - official vs unofficial uploads",
+      "confidence": 0
+    },
+    {
+      "clusterId": 35,
       "videos": [
         {
           "title": "Ron Trent Presents Tkumah Sadeek - Crossroads (Dub)",
@@ -1655,7 +1299,26 @@
       "confidence": 0
     },
     {
-      "clusterId": 49,
+      "clusterId": 36,
+      "videos": [
+        {
+          "title": "Ron Trent - Black Magic Woman feat Harry Dennis",
+          "url": "https://www.youtube.com/watch?v=YfZhVihpEjI",
+          "videoId": "YfZhVihpEjI",
+          "channel": "Rush Hour"
+        },
+        {
+          "title": "Ron Trent - Black Magic Woman (Coflo Remix)",
+          "url": "https://www.youtube.com/watch?v=4K1N6tuqo9c",
+          "videoId": "4K1N6tuqo9c",
+          "channel": "Discogs"
+        }
+      ],
+      "reason": "Likely duplicates",
+      "confidence": 0
+    },
+    {
+      "clusterId": 37,
       "videos": [
         {
           "title": "Reno Ka - Where Is The Love (Main Mix) produced by Ron Trent",
@@ -1674,56 +1337,37 @@
       "confidence": 0
     },
     {
-      "clusterId": 52,
+      "clusterId": 39,
       "videos": [
         {
-          "title": "Ron Trent - Hooked On Your Love (Soul Deep House)",
-          "url": "https://www.youtube.com/watch?v=yxkDJsOFiDc",
-          "videoId": "yxkDJsOFiDc",
+          "title": "Jill Scott - Spring Summer Feeling (Ron Trent Mix)",
+          "url": "https://www.youtube.com/watch?v=egN9MaUR-BY",
+          "videoId": "egN9MaUR-BY",
           "channel": "Unknown"
         },
         {
-          "title": "Ron Trent - Hooked On Your Love 1982",
-          "url": "https://www.youtube.com/watch?v=jJRIBJnrZnA",
-          "videoId": "jJRIBJnrZnA",
-          "channel": "Unknown"
+          "title": "Spring Summer Feeling (The Ron Trent Mix)",
+          "url": "https://www.youtube.com/watch?v=Mev0C29qDZs",
+          "videoId": "Mev0C29qDZs",
+          "channel": "Jill Scott"
         }
       ],
       "reason": "Likely duplicates",
       "confidence": 0
     },
     {
-      "clusterId": 53,
+      "clusterId": 43,
       "videos": [
         {
-          "title": "Ron Trent - Family",
-          "url": "https://www.youtube.com/watch?v=GhkNMx1lCIQ",
-          "videoId": "GhkNMx1lCIQ",
+          "title": "Ron Trent - Liquid Love Reprise",
+          "url": "https://www.youtube.com/watch?v=7IFtJ7HXO_s",
+          "videoId": "7IFtJ7HXO_s",
           "channel": "Unknown"
         },
         {
-          "title": "Family",
-          "url": "https://www.youtube.com/watch?v=RWzu3ZLMVcc",
-          "videoId": "RWzu3ZLMVcc",
-          "channel": "Unknown"
-        }
-      ],
-      "reason": "Likely duplicates",
-      "confidence": 0
-    },
-    {
-      "clusterId": 55,
-      "videos": [
-        {
-          "title": "Ron Trent Vs Lono Brazil - Manchild (In The Promised Land) (Ron Trent Full vocal version)",
-          "url": "https://www.youtube.com/watch?v=tKXtkZCd5Fs",
-          "videoId": "tKXtkZCd5Fs",
-          "channel": "Unknown"
-        },
-        {
-          "title": "Ron Trent vs. Lono Brazil - Manchild (In The Promised Land) (Ron Trent Full Vocal Version)",
-          "url": "https://www.youtube.com/watch?v=CyoDDSX7uXk",
-          "videoId": "CyoDDSX7uXk",
+          "title": "Liquid Love",
+          "url": "https://www.youtube.com/watch?v=bR5ss1bIoRI",
+          "videoId": "bR5ss1bIoRI",
           "channel": "Discogs"
         }
       ],
@@ -1731,52 +1375,46 @@
       "confidence": 0
     },
     {
-      "clusterId": 58,
+      "clusterId": 44,
       "videos": [
         {
-          "title": "Ron Trent Sao Paulo Sound Systems",
-          "url": "https://www.youtube.com/watch?v=f7rcq6J-T0E",
-          "videoId": "f7rcq6J-T0E",
+          "title": "Naomi Daniel-Feel The Fire (Chez n Trent Dub)-KMS UK-1995",
+          "url": "https://www.youtube.com/watch?v=1D55Xa14qfo",
+          "videoId": "1D55Xa14qfo",
           "channel": "Unknown"
         },
         {
-          "title": "Sao Paulo Sound Systems",
-          "url": "https://www.youtube.com/watch?v=CZZdL_Mq5BM",
-          "videoId": "CZZdL_Mq5BM",
-          "channel": "Discogs"
+          "title": "Naomi Daniel - Feel The Fire (Chez DTrent Dub) (1993)",
+          "url": "https://www.youtube.com/watch?v=qAjang6DH6k",
+          "videoId": "qAjang6DH6k",
+          "channel": "SilentChaos Music"
         }
       ],
       "reason": "Likely duplicates",
       "confidence": 0
     },
     {
-      "clusterId": 59,
+      "clusterId": 46,
       "videos": [
         {
-          "title": "Ron Trent - Rock The Box",
-          "url": "https://www.youtube.com/watch?v=KUK5n11Ty14",
-          "videoId": "KUK5n11Ty14",
+          "title": "Marshall Jefferson Featuring Curtis McLean  Step By Step (Ron Trent Remix)",
+          "url": "https://www.youtube.com/watch?v=aZSUB0FqaHc",
+          "videoId": "aZSUB0FqaHc",
           "channel": "Unknown"
         },
         {
-          "title": "Ron Trent 'Rock The Box'",
-          "url": "https://www.youtube.com/watch?v=7DbyyhrmnuA",
-          "videoId": "7DbyyhrmnuA",
-          "channel": "Discogs"
+          "title": "Marshall Jefferson featuring Curtis McLean - Step By Step (Ron Trent Remix) 1995 FREETOWN INC",
+          "url": "https://www.youtube.com/watch?v=UumLl2STFCI",
+          "videoId": "UumLl2STFCI",
+          "channel": "sprado1"
         }
       ],
       "reason": "Likely duplicates",
       "confidence": 0
     },
     {
-      "clusterId": 66,
+      "clusterId": 50,
       "videos": [
-        {
-          "title": "Ron Trent - Dancin' - Tomi Chair (4K) 2018",
-          "url": "https://www.youtube.com/watch?v=CvzOimd6AmE",
-          "videoId": "CvzOimd6AmE",
-          "channel": "Discogs"
-        },
         {
           "title": "Ron Trent - Dancin' (Ed Nine Remix)",
           "url": "https://www.youtube.com/watch?v=Bp4dvW00WBA",
@@ -1800,57 +1438,82 @@
       "confidence": 0
     },
     {
+      "clusterId": 59,
+      "videos": [
+        {
+          "title": "Ron Trent - Drum",
+          "url": "https://www.youtube.com/watch?v=r87UKp42ckw",
+          "videoId": "r87UKp42ckw",
+          "channel": "Discogs"
+        },
+        {
+          "title": "Tengo Sed (The Batidos Song) - Ron Trent Drum Mix",
+          "url": "https://www.youtube.com/watch?v=ElFXvRtfPi0",
+          "videoId": "ElFXvRtfPi0",
+          "channel": "MASA"
+        }
+      ],
+      "reason": "Likely duplicates",
+      "confidence": 0
+    },
+    {
+      "clusterId": 64,
+      "videos": [
+        {
+          "title": "Jody Watley -- Saturday Night Experience (Ron Trent Vocal)",
+          "url": "https://www.youtube.com/watch?v=cptMKIPoN3Q",
+          "videoId": "cptMKIPoN3Q",
+          "channel": "Let there be House"
+        },
+        {
+          "title": "Jody Watley  Saturday Night Experience (Ron Trent Remix)",
+          "url": "https://www.youtube.com/watch?v=x1cAOUtzweU",
+          "videoId": "x1cAOUtzweU",
+          "channel": "MsJazzylinn"
+        }
+      ],
+      "reason": "Likely duplicates",
+      "confidence": 0
+    },
+    {
+      "clusterId": 66,
+      "videos": [
+        {
+          "title": "Tears to Sound (Ron Trent Mix)",
+          "url": "https://www.youtube.com/watch?v=8MnJBQNxhFw",
+          "videoId": "8MnJBQNxhFw",
+          "channel": "Ilija Rudman - Topic"
+        },
+        {
+          "title": "Tears To Sound feat Andre Espeut (Ron Trent Vocal Mix - Ilija Rudman Radio Edit)",
+          "url": "https://www.youtube.com/watch?v=2IhIGMXM6DM",
+          "videoId": "2IhIGMXM6DM",
+          "channel": "Ilija Rudman - Topic"
+        },
+        {
+          "title": "Ilija Rudman Ft Andre Espeut - Tears To Sound (Ron Trent Instrumental Mix) [Imogen Soundsystem Edit",
+          "url": "https://www.youtube.com/watch?v=-qxeLqDq-Kc",
+          "videoId": "-qxeLqDq-Kc",
+          "channel": "Four On The Floor"
+        }
+      ],
+      "reason": "Same track - official vs unofficial uploads",
+      "confidence": 0
+    },
+    {
       "clusterId": 67,
       "videos": [
         {
-          "title": "Ron Trent - Just Another Love Song",
-          "url": "https://www.youtube.com/watch?v=Fymd-Cy0fDI",
-          "videoId": "Fymd-Cy0fDI",
-          "channel": "Discogs"
+          "title": "Ebo TAYLOR - Krumandey (Ron Trent remix)",
+          "url": "https://www.youtube.com/watch?v=41fv4owlt3M",
+          "videoId": "41fv4owlt3M",
+          "channel": "Desert_ Essence971"
         },
         {
-          "title": "Just Another Love Song",
-          "url": "https://www.youtube.com/watch?v=xyxmEvJEKg4",
-          "videoId": "xyxmEvJEKg4",
-          "channel": "Discogs"
-        }
-      ],
-      "reason": "Likely duplicates",
-      "confidence": 0
-    },
-    {
-      "clusterId": 68,
-      "videos": [
-        {
-          "title": "Ron Trent - Jazz Funk Freedom (Original Mix)",
-          "url": "https://www.youtube.com/watch?v=PPULrWHUTvc",
-          "videoId": "PPULrWHUTvc",
-          "channel": "Discogs"
-        },
-        {
-          "title": "Ron Trent - Jazz Funk [RHMC006-1]",
-          "url": "https://www.youtube.com/watch?v=_myhwDqrJUU",
-          "videoId": "_myhwDqrJUU",
-          "channel": "Discogs"
-        }
-      ],
-      "reason": "Likely duplicates",
-      "confidence": 0
-    },
-    {
-      "clusterId": 69,
-      "videos": [
-        {
-          "title": "Ron Trent - And Fly Away [RHMC006-1]",
-          "url": "https://www.youtube.com/watch?v=9ApB86hpNLc",
-          "videoId": "9ApB86hpNLc",
-          "channel": "Discogs"
-        },
-        {
-          "title": "Ron Trent - And Fly Away",
-          "url": "https://www.youtube.com/watch?v=P61SENcUtxo",
-          "videoId": "P61SENcUtxo",
-          "channel": "Discogs"
+          "title": "Ebo Taylor - Krumandey - Ron Trent Remix",
+          "url": "https://www.youtube.com/watch?v=OD2cCkbSU30",
+          "videoId": "OD2cCkbSU30",
+          "channel": "Mr Bongo"
         }
       ],
       "reason": "Likely duplicates",
