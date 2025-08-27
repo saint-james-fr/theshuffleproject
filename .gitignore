@@ -23,7 +23,7 @@ idst
 *.njsproj
 *.sln
 *.sw?
-
+*.tmp
 .env
 .vscode
 # Editor se

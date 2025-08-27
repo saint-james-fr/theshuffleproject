@@ -19,6 +19,7 @@
     "cluster:cli": "npx tsx scripts/cluster-summary.ts",
     "cluster:html": "node scripts/serve-visualizer.js",
     "scraper": "cd scraper && yarn scraper",
+    "deploy": "yarn deploy:larry && yarn deploy:ron",
     "deploy:larry": "git push prod-larryheard",
     "deploy:ron": "git push prod-rontrent"
   },

@@ -5,11 +5,6 @@
   "main": "dist/index.js",
   "scripts": {
     "scraper": "npx tsx src/scraper-runner.ts",
-    "scrape": "npx tsx src/scraper-runner.ts scrape larry-heard && npx tsx src/scraper-runner.ts update-vue larry-heard",
-    "add-playlist": "npx tsx src/scraper-runner.ts add-playlist",
-    "add-video": "npx tsx src/scraper-runner.ts add-video",
-    "add-discogs-puppeteer": "npx tsx src/scraper-runner.ts discogs",
-    "update-vue": "npx tsx src/scraper-runner.ts update-vue",
     "build": "tsc"
   },
   "keywords": [
