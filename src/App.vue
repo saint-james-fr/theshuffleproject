@@ -21,7 +21,7 @@ const {
     <header class="app-header">
       <h1 class="app-title">The Shuffle Project: {{ artistConfig.displayName }}</h1>
       <div class="app-subtitle link-container">
-        <a href="https://theshuffleproject.site">See all projects</a> •
+        <a href="https://theshuffleproject.site">See all projects</a>
       </div>
       <p class="app-subtitle">{{ totalVideos }} tracks • scraped from Youtube & Discogs</p>
     </header>
