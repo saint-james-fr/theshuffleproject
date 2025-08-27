@@ -1,9 +1,18 @@
 import fs from "fs";
 import csvParser from "csv-parser";
-import _ from "lodash";
+import _ from "lodash-es";
 import natural from "natural";
 
-const PATH = "scraper/data/larry-heard-collection.csv";
+const artist = process.argv[2];
+
+if (!artist) {
+  console.error("Please provide an artist name as an argument");
+  process.exit(1);
+}
+
+const PATH = `scraper/data/${artist}-collection.csv`;
+
+console.log(`Clustering ${artist}...`);
 
 type VideoRecord = {
   title: string;
@@ -165,11 +174,11 @@ class AdvancedMusicClustering {
     // Only allow clustering for very similar titles (potential duplicates)
     const coreDistance = natural.LevenshteinDistance(processed1.core, processed2.core);
     const maxLen = Math.max(processed1.core.length, processed2.core.length);
-    
+
     if (maxLen === 0) return 0;
-    
+
     const coreSim = 1 - coreDistance / maxLen;
-    
+
     // Be very strict - require very high core similarity for any clustering
     if (coreSim < 0.9) {
       return 0;
@@ -183,13 +192,18 @@ class AdvancedMusicClustering {
     // STRICT RULE: Don't cluster tracks with same artist but different track names
     if (processed1.artist && processed2.artist && processed1.trackName && processed2.trackName) {
       // Check if artists are the same or very similar
-      const artistSim = 1 - natural.LevenshteinDistance(processed1.artist, processed2.artist) / 
-        Math.max(processed1.artist.length, processed2.artist.length);
-      
-      if (artistSim > 0.8) { // Same/similar artist
-        const trackSim = 1 - natural.LevenshteinDistance(processed1.trackName, processed2.trackName) / 
-          Math.max(processed1.trackName.length, processed2.trackName.length);
-        
+      const artistSim =
+        1 -
+        natural.LevenshteinDistance(processed1.artist, processed2.artist) /
+          Math.max(processed1.artist.length, processed2.artist.length);
+
+      if (artistSim > 0.8) {
+        // Same/similar artist
+        const trackSim =
+          1 -
+          natural.LevenshteinDistance(processed1.trackName, processed2.trackName) /
+            Math.max(processed1.trackName.length, processed2.trackName.length);
+
         // If track names are different (< 95% similar), these are different songs by same artist
         if (trackSim < 0.95) {
           return true; // Definitely different tracks
@@ -199,9 +213,11 @@ class AdvancedMusicClustering {
 
     // Don't cluster if one has artist and other doesn't, but they seem like different tracks
     if ((processed1.artist && !processed2.artist) || (!processed1.artist && processed2.artist)) {
-      const trackSim = 1 - natural.LevenshteinDistance(processed1.trackName, processed2.trackName) / 
-        Math.max(processed1.trackName.length, processed2.trackName.length);
-      
+      const trackSim =
+        1 -
+        natural.LevenshteinDistance(processed1.trackName, processed2.trackName) /
+          Math.max(processed1.trackName.length, processed2.trackName.length);
+
       // Only cluster if track names are nearly identical (potential duplicates)
       if (trackSim < 0.95) {
         return true;
@@ -211,16 +227,16 @@ class AdvancedMusicClustering {
     // Don't cluster different remix/version types - they are intentionally different
     const title1Lower = processed1.trackName.toLowerCase();
     const title2Lower = processed2.trackName.toLowerCase();
-    
+
     const hasRemixTerms1 = this.hasRemixTerms(title1Lower);
     const hasRemixTerms2 = this.hasRemixTerms(title2Lower);
-    
+
     // If both have remix terms but they're different types, don't cluster
     if (hasRemixTerms1 && hasRemixTerms2) {
       const remixType1 = this.extractRemixType(title1Lower);
       const remixType2 = this.extractRemixType(title2Lower);
-      
-      if (remixType1 !== remixType2 && remixType1 !== 'unknown' && remixType2 !== 'unknown') {
+
+      if (remixType1 !== remixType2 && remixType1 !== "unknown" && remixType2 !== "unknown") {
         return true; // Different remix types = intentionally different tracks
       }
     }
@@ -234,7 +250,7 @@ class AdvancedMusicClustering {
     if (hasRemixTerms1 && hasRemixTerms2) {
       const variations1 = this.countVersionVariations(title1Lower);
       const variations2 = this.countVersionVariations(title2Lower);
-      
+
       // If we already have many variations, be very strict about adding more
       if (variations1 > 2 || variations2 > 2) {
         return true;
@@ -245,38 +261,38 @@ class AdvancedMusicClustering {
   }
 
   private hasRemixTerms(title: string): boolean {
-    const remixTerms = ['mix', 'remix', 'edit', 'version', 'vocal', 'instrumental', 'dub', 'club'];
-    return remixTerms.some(term => title.includes(term));
+    const remixTerms = ["mix", "remix", "edit", "version", "vocal", "instrumental", "dub", "club"];
+    return remixTerms.some((term) => title.includes(term));
   }
 
   private extractRemixType(title: string): string {
-    const remixTerms = ['instrumental', 'vocal', 'club', 'jazz cafe', 'dub', 'extended', 'radio'];
+    const remixTerms = ["instrumental", "vocal", "club", "jazz cafe", "dub", "extended", "radio"];
     for (const term of remixTerms) {
       if (title.includes(term)) {
         return term;
       }
     }
-    return 'unknown';
+    return "unknown";
   }
 
   private countVersionVariations(title: string): number {
-    const variations = ['mix', 'remix', 'edit', 'version', 'vocal', 'instrumental', 'dub', 'club', 'extended'];
-    return variations.filter(variation => title.includes(variation)).length;
+    const variations = ["mix", "remix", "edit", "version", "vocal", "instrumental", "dub", "club", "extended"];
+    return variations.filter((variation) => title.includes(variation)).length;
   }
 
   // Check if one processed title is a subset of another
   private isSubsetMatch(processed1: any, processed2: any): boolean {
     const tokens1 = new Set(processed1.core.split(" ").filter(Boolean));
     const tokens2 = new Set(processed2.core.split(" ").filter(Boolean));
-    
+
     // Check if all tokens from the smaller set are in the larger set
     const smallerSet = tokens1.size <= tokens2.size ? tokens1 : tokens2;
     const largerSet = tokens1.size > tokens2.size ? tokens1 : tokens2;
-    
+
     // Require significant overlap (at least 80% of smaller set's tokens)
-    const intersection = [...smallerSet].filter(token => largerSet.has(token));
+    const intersection = [...smallerSet].filter((token) => largerSet.has(token));
     const overlapRatio = intersection.length / smallerSet.size;
-    
+
     return overlapRatio >= 0.8 && smallerSet.size >= 2; // At least 2 meaningful tokens
   }
 
@@ -339,16 +355,16 @@ class AdvancedMusicClustering {
         // Only allow clustering for very specific duplicate scenarios
         const processed1 = this.preprocessTitle(this.videos[i].title);
         const processed2 = this.preprocessTitle(this.videos[j].title);
-        
+
         // Exact track name match (like "Midi Beats" and "Gherkin Jerks - Midi Beats")
-        const isExactTrackMatch = processed1.trackName && processed2.trackName && 
-          processed1.trackName === processed2.trackName;
-        
+        const isExactTrackMatch =
+          processed1.trackName && processed2.trackName && processed1.trackName === processed2.trackName;
+
         // Very similar titles (potential duplicates)
         const isVeryDuplicate = this.isVeryLikelyDuplicate(this.videos[i].title, this.videos[j].title);
 
         // Only cluster if we have high confidence AND it passes strict checks
-        if ((ensembleScore >= threshold || isExactTrackMatch || isVeryDuplicate)) {
+        if (ensembleScore >= threshold || isExactTrackMatch || isVeryDuplicate) {
           currentCluster.push(this.videos[j]);
           assigned.add(j);
         }
@@ -374,21 +390,22 @@ class AdvancedMusicClustering {
     // Remove common noise and compare
     const clean1 = this.cleanForDuplicateCheck(title1);
     const clean2 = this.cleanForDuplicateCheck(title2);
-    
+
     // Must be very similar to be considered a duplicate
     const similarity = natural.JaroWinklerDistance(clean1, clean2);
-    
+
     // Also check if one title contains the other (subset duplicate)
     const isSubset = clean1.includes(clean2) || clean2.includes(clean1);
-    
+
     // Very strict: 95% similarity OR clear subset relationship
     return similarity > 0.95 || (isSubset && Math.min(clean1.length, clean2.length) > 10);
   }
 
   private cleanForDuplicateCheck(title: string): string {
-    return title.toLowerCase()
+    return title
+      .toLowerCase()
       .replace(/\([^)]*\)/g, "") // Remove parentheses content
-      .replace(/\[[^\]]*\]/g, "") // Remove bracket content  
+      .replace(/\[[^\]]*\]/g, "") // Remove bracket content
       .replace(/[–-]/g, " ") // Replace dashes with spaces
       .replace(/\s+/g, " ") // Normalize spaces
       .trim();
@@ -398,29 +415,29 @@ class AdvancedMusicClustering {
   private isMeaningfulCategory(title1: string, title2: string): boolean {
     const t1 = title1.toLowerCase();
     const t2 = title2.toLowerCase();
-    
+
     // Live performances and DJ sets
-    const liveTerms = ['live', 'set', 'festival', 'dekmantel', 'boiler room', 'dj'];
-    const bothLive = liveTerms.some(term => t1.includes(term)) && liveTerms.some(term => t2.includes(term));
-    
+    const liveTerms = ["live", "set", "festival", "dekmantel", "boiler room", "dj"];
+    const bothLive = liveTerms.some((term) => t1.includes(term)) && liveTerms.some((term) => t2.includes(term));
+
     // Interviews
-    const bothInterviews = t1.includes('interview') && t2.includes('interview');
-    
+    const bothInterviews = t1.includes("interview") && t2.includes("interview");
+
     // Same project/collaboration (like Chez Damier)
-    const collaborationTerms = ['chez damier', 'fingers inc', 'mr white', 'gherkin jerks'];
-    const sameCollaboration = collaborationTerms.some(term => t1.includes(term) && t2.includes(term));
-    
+    const collaborationTerms = ["chez damier", "fingers inc", "mr white", "gherkin jerks"];
+    const sameCollaboration = collaborationTerms.some((term) => t1.includes(term) && t2.includes(term));
+
     // Must also share similar core content (not just the category)
     if (bothLive || bothInterviews || sameCollaboration) {
       // Check if they share some meaningful words beyond just the category terms
-      const words1 = t1.split(/\s+/).filter(w => w.length > 3);
-      const words2 = t2.split(/\s+/).filter(w => w.length > 3);
-      const commonWords = words1.filter(w => words2.includes(w));
-      
+      const words1 = t1.split(/\s+/).filter((w) => w.length > 3);
+      const words2 = t2.split(/\s+/).filter((w) => w.length > 3);
+      const commonWords = words1.filter((w) => words2.includes(w));
+
       // Need at least 2 meaningful words in common (beyond category terms)
       return commonWords.length >= 2;
     }
-    
+
     return false;
   }
 
@@ -448,7 +465,9 @@ class AdvancedMusicClustering {
     if (titles.some((t) => t.includes("boiler room"))) {
       return "Boiler Room performances";
     }
-    if (titles.some((t) => t.includes("live") || t.includes("set") || t.includes("festival") || t.includes("dekmantel"))) {
+    if (
+      titles.some((t) => t.includes("live") || t.includes("set") || t.includes("festival") || t.includes("dekmantel"))
+    ) {
       return "Live performances and DJ sets";
     }
     if (titles.some((t) => t.includes("interview"))) {
@@ -460,7 +479,7 @@ class AdvancedMusicClustering {
     if (cluster.some((v) => v.channel?.includes("Topic")) && cluster.some((v) => !v.channel?.includes("Topic"))) {
       return "Same track - official vs unofficial uploads";
     }
-    
+
     return "Likely duplicates";
   }
 

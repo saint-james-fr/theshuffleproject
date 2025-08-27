@@ -285,9 +285,9 @@ yarn build-for-artist frankie-knuckles
 yarn docker-build larry-heard
 
 # Video clustering analysis
-npx tsx scripts/cluster.ts                    # Generate clusters
+npx tsx scripts/cluster.ts larry-heard                   # Generate clusters
 node scripts/serve-visualizer.js              # Interactive web visualization
-npx tsx scripts/cluster-summary.ts interactive       # Interactive mode
+npx tsx scripts/cluster-summary.ts      # Interactive mode
 
 # deployment
 dokku docker-options:add tsp-larryheard build "--build-arg ARTIST_NAME=larry-heard"
