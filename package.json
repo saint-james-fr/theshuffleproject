@@ -20,6 +20,9 @@
     "deploy:ron": "git push prod-rontrent"
   },
   "dependencies": {
+    "csv-parser": "^3.2.0",
+    "lodash": "^4.17.21",
+    "natural": "^8.1.0",
     "vue": "^3.5.18"
   },
   "devDependencies": {

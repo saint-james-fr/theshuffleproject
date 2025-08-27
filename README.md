@@ -7,6 +7,7 @@ A generic music artist discovery platform that scrapes YouTube and Discogs to cr
 - 🎵 **Artist-Agnostic**: Configure for any music artist
 - 🔀 **Shuffle Experience**: Random track discovery with infinite playback
 - 📊 **Comprehensive Scraping**: YouTube videos and Discogs integration
+- 🧠 **Smart Clustering**: AI-powered duplicate detection using TF-IDF and similarity algorithms
 - 🐳 **Docker Support**: Easy deployment with environment-based builds
 - 🎨 **Customizable**: Per-artist branding and configuration
 - 📱 **Responsive**: Works on desktop and mobile
@@ -23,7 +24,7 @@ cd scraper && yarn install && cd ..
 # List available artist configurations
 yarn scraper list
 
-# Build for Larry Heard (default)
+# Build for Larry Heard 
 yarn build-for-artist larry-heard
 
 # Build for Ron Trent
@@ -282,6 +283,11 @@ yarn build-for-artist frankie-knuckles
 
 # Docker deployment
 yarn docker-build larry-heard
+
+# Video clustering analysis
+npx tsx scripts/cluster.ts                    # Generate clusters
+node scripts/serve-visualizer.js              # Interactive web visualization
+npx tsx scripts/cluster-summary.ts interactive       # Interactive mode
 
 # deployment
 dokku docker-options:add tsp-larryheard build "--build-arg ARTIST_NAME=larry-heard"
