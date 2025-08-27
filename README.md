@@ -26,8 +26,8 @@ yarn scraper list
 # Build for Larry Heard (default)
 yarn build-for-artist larry-heard
 
-# Build for Frankie Knuckles
-yarn build-for-artist frankie-knuckles
+# Build for Ron Trent
+yarn build-for-artist ron-trent
 ```
 
 ### 2. Development
@@ -162,11 +162,11 @@ cd scraper && npx tsx src/convert-to-vue.ts <artist-name>
 |----------|-------------|---------|
 | `VITE_ARTIST_NAME` | URL-safe artist name | `larry-heard` |
 | `VITE_ARTIST_DISPLAY_NAME` | Human-readable name | `Larry Heard` |
-| `VITE_SITE_URL` | Full site URL | `https://larry-heard.site` |
+| `VITE_SITE_URL` | Full site URL | `https://larryheard.theshuffleproject.site` |
 | `VITE_ARTIST_DESCRIPTION` | SEO description | `Discover tracks from...` |
 | `VITE_ARTIST_KEYWORDS` | SEO keywords (comma-separated) | `house,music,deep` |
-| `VITE_SOCIAL_IMAGE` | Open Graph image URL | `https://site.com/og.jpg` |
-| `VITE_TWITTER_IMAGE` | Twitter card image URL | `https://site.com/tw.jpg` |
+| `VITE_SOCIAL_IMAGE` | Open Graph image URL | `https://larryheard.theshuffleproject.site/og-image.jpg` |
+| `VITE_TWITTER_IMAGE` | Twitter card image URL | `https://larryheard.theshuffleproject.site/twitter-image.jpg` |
 | `VITE_THEME_COLOR` | App theme color | `#000000` |
 
 ## Docker Build Arguments
@@ -175,10 +175,10 @@ When building Docker images, you can pass environment variables as build argumen
 
 ```bash
 docker build \
-  --build-arg VITE_ARTIST_NAME="frankie-knuckles" \
-  --build-arg VITE_ARTIST_DISPLAY_NAME="Frankie Knuckles" \
-  --build-arg VITE_SITE_URL="https://frankie-knuckles.site" \
-  -t shuffle-frankie-knuckles .
+  --build-arg VITE_ARTIST_NAME="larry-heard" \
+  --build-arg VITE_ARTIST_DISPLAY_NAME="Larry Heard" \
+  --build-arg VITE_SITE_URL="https://larryheard.site" \
+  -t shuffle-larry-heard .
 ```
 
 ## Architecture
@@ -243,13 +243,13 @@ docker run -d -p 80:80 --name shuffle-larry shuffle-larry-heard:production
 ### Multi-Artist Deployment
 ```bash
 # Build multiple artists
-for artist in larry-heard frankie-knuckles; do
+for artist in larry-heard ron-trent; do
   yarn docker-build $artist
 done
 
 # Deploy with different ports
 docker run -d -p 8001:80 shuffle-larry-heard:latest
-docker run -d -p 8002:80 shuffle-frankie-knuckles:latest
+docker run -d -p 8002:80 shuffle-ron-trent:latest
 ```
 
 ## Contributing
@@ -269,7 +269,7 @@ MIT License - feel free to use for any music artist discovery project.
 yarn scraper list
 
 # Scrape complete data for an artist
-yarn scraper scrape frankie-knuckles
+yarn scraper scrape larry-heard
 
 # Add a playlist to collection
 yarn scraper add-playlist larry-heard "https://youtube.com/playlist?list=ABC123"

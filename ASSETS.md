@@ -9,7 +9,6 @@ The system uses artist-specific asset directories and templates to generate cust
 ```
 public-assets/
 ├── larry-heard/          # Larry Heard specific assets
-├── frankie-knuckles/     # Frankie Knuckles specific assets  
 ├── default/              # Default assets for new artists
 └── <artist-name>/        # Custom assets for any artist
 
@@ -112,7 +111,7 @@ yarn dev
 ### Production Build
 ```bash
 # Build for specific artist (includes asset preparation)
-yarn build-for-artist frankie-knuckles
+yarn build-for-artist larry-heard
 ```
 
 ### Docker Build
