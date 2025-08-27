@@ -282,3 +282,6 @@ yarn build-for-artist frankie-knuckles
 
 # Docker deployment
 yarn docker-build larry-heard
+
+# deployment
+dokku docker-options:add tsp-larryheard build "--build-arg ARTIST_NAME=larry-heard"
